@@ -1,0 +1,511 @@
+   This section contain fogpanel core billing setting. Fogpanel bill cloud users
+based on this section billing setting. In this section where you change the vast 
+majority of Fogpanel billing settings. This section contain following configuration
+settings.
+
+h3. 1.Billable items
+
+   In fogpanel every service is a billable item. if admin want to provide services 
+for users. Admin user must add billable item for that service, without billable
+items fogpanel not bill also user unable to provide service for users. Fogpanel have 
+pre-built billable items. Those pre-built billable items are listed in this section.
+This billable items to be billed with periodic life cycles based on life cycle 
+method setup in Billing type. Invoices are generated for enabled billable item only. 
+Admin users can edit billable items to enable tax and discount for a particular 
+item. Admin are not able to add any billable items now. In future we provide this 
+option.
+ 
+ ( Note:- Pre-built billable items are used for cloudstack IAAS)
+
+!adminguide/configuration/12.png!
+
+ *Pre-built billable items in fogpanel are:*
+
+   # Computing offer 
+   # Disk offer
+   # Snapshot 
+   # Templates
+   # Bandwidth 
+   # Discount
+   # Late fee
+   # Custom item
+   # Recurring item
+   # Stopped Instance
+   # Setup cost for Instance
+   # Secondary Ip-cost
+   # Vm-snapshot
+   # Monthly Instance
+   # MOnthly volume
+
+!adminguide/configuration/13.png!
+
+{note}
+
+ Currently discount option is work only for computing offer billable item. 
+In future version discount is apply for all billable item.
+
+{note}
+
+ *Pre-built billable items are describe in details:*
+  
+   *Computing offer*
+    
+          This Billable item is used to bill resource of cpu and ram consumed by cloud 
+    users. 
+   *Disk offer*
+         
+           This Billable item is used to bill resources of secondary disk ( data disk or
+ extra disk) aquired by cloud users. 
+   *Snapshot* 
+       
+            This Billable item is used to bill resource of snapshot (backup) created 
+     by cloud users.
+   *Templates*
+      
+             This billable item is used to bill resource of templates used by 
+     cloud users.
+              
+   *Bandwidth* 
+
+            This billable item is used to bill bandwidth used by cloud users.
+ 
+   *Discount*
+ 
+            This billable item is used to provide discounts service for cloud
+         billable items.
+   *Late fee*
+
+           This billable item is used to apply late fee for cloud users invoices
+        due.
+
+   *Custom item*
+
+            This billable item is used to provide option for admin users to add
+        items for cloud users.
+
+   *Recurring item*
+
+              This billable item is used to provide option for admin users to add
+           items for cloud users.
+
+   *Stopped Instance*
+
+              This billable item is used to bill the stopped instances under
+            cloud users.
+   *Setup cost for Instance*
+
+               This billable item is used to bill the setup cost for cloud user
+            Instance.
+   *Secondary Ip-cost*
+
+                This billable item is used to bill the secondary ip(Additional
+             ips) for cloud users.
+   *Vm-snapshot*
+
+               This billable item is used to bill the vm-snapshot created by
+             cloud users.
+   *Monthly Instance*
+
+             By default fogpanel bill instance on hourly resource usage. If this
+             billable item is enabled. New option billing type- hourly or monthly  is listed in create 
+             vm page under User panel. If user choose monthly type mode. They pay
+             instance for monthly. This monthly mode is like dedicated server
+             billing. if you subscribe resource. if you use resource or not or delete or stopped you 
+             need to pay bill for that month. we denote this as tradition billing method for dedicated servers
+             and vps. 
+   *Monthly volume*
+
+             This billable item is used to bill the user aquired disk on month not
+             hourly. It work like MOnthly instance billable item.
+
+h3. 2.Credit
+
+    Fogpanel is new methodology cloud billing system. we denote this methodology as
+ hybrid billing. In this billing system cloud accounts are based on credit limit. It is a
+credit provide for accounts. If user signup in fogpanel credit limit is set for 
+that user. If user reached that limit, User account is disabled automatically, User must pay
+and reactive the account again.  Credit limit provide security for the service provider. It block 
+user to use resource with-in that credit limit. This credit limit is set by admin globally under setting.
+Fogpanel contain two types of accounts. Those accounts types are trail accounts and retail accounts.
+In this credit setting admin user must set credit limit for trial and retail accounts. This section contain
+following tabs:
+
+ *Trial  Management*
+     This configuration contain resource limit and credit limit option for
+Trial account.
+
+ *Options in Trail management*
+ 
+   * Trial Enabled - Option use to enable trial management in fogpanel.
+   * Trial Credit limit- Credit limit for trial account
+   * Instance limit - how many instances trial user allow to create
+   * Storage limit - How disks trial user allow to create.
+   * Snapshot limit - How snapshot/backup trail user allow to create.
+   * Bandwidth limit - how many gb of bandwidth provide for trail account usage.
+ 
+
+!adminguide/configuration/14.png!
+
+*Retail Management*
+
+     This configuration contain credit limit and signup card verification option
+for Retail account.
+
+ *Option in Retail account Management*
+
+     * Credit limit - Option to setup credit limit for retail accounts.
+    
+          !adminguide/configuration/15.png!
+
+*Credit limit notification settings:*
+
+    It contain credit limit notification threshold values. Options in this 
+menu contain level1-threshold, level2-threshold and level3-threshold.
+
+       !adminguide/configuration/16.png!
+
+h3. 3.Payment settings:
+
+            This section contain two payment configuration. Those are
+         
+           *Credit-card processing  enable:*
+                   
+                      If this option is enabled credit card verification is 
+                    perform in sign-up or create-vm.
+            *Credit-card processing disable:*
+                        
+                     If this option is disabled user must enter payment through
+                     api. This option is usefull to integrate fogpanel with any
+                    third party billing softwares. 
+h3. 4.Billing type settings:
+
+             This section contain two configuration option. Those option are 
+            Used to charge the billable items.
+
+             * Hourly billing enable:*
+
+                           By default this option is enabled in fogpanel.All of
+                       cloud relate billable items are charged based on hourly.
+
+             * Monthly billing enable:*
+
+                       If Admin want to enable monthly billing for users. Admin
+                    user enabled this option while enabled both hourly and monthly
+                    billing options are listed for cloud user. Cloud user choose
+                    their billing type by self.            
+
+            
+h3. 5.Invoice*
+
+     FogPanel automatically generates invoices for billable items used for cloud
+users. In fogpanel two types of invoice generation method is avaliable.Admin must 
+choose any one of invoice type during installation.
+
+ Two types of invoice generated types are:
+
+     *Fixed Invoice date*
+     *Number of Days to generate Invoice*
+
+
+ *Fixed Invoice:*
+
+         If admin choose fixed invoice date type. As on admin mention date 
+invoice is created for all of users.
+
+ (e.g) If invoice date is setup to 28. Every month 28th invoice is generated for all the users.
+  
+   * Option in fixed invoice date:*
+
+        *Invoice Generation is fixed:*
+                       
+                 If admin user enabled this option. It ask admin to provide
+                two following values:
+                
+               *Date of month:*
+      
+                        In which date every month invoice is generated for cloud 
+                   user. In this date invoice is generated without fail.
+
+                 *Due days:*
+                          
+                         Admin need to provide the number of due days for 
+                      created invoice. If user not paid generated invoice within 
+                      due days. Late fee is applicable for user.
+
+ *Number of Days to generate Invoice*
+
+              If admin choose number of Days to generate Invoice type. As on mention days invoice is
+generate for all of users in cloud.
+
+  (e.g) If Billing period days is setup to 45 days. Invoice is generate 45 days once
+for all of users in cloud.
+
+  *Option in Number of days to generate Invoice*
+  
+          * Invoice generation fixed:*
+                               
+                        This option must be disabled. After that number of days
+               to generate invoice method is enabled automatically.
+
+          * Billing period days:*
+                   
+                    Admin provide number of days to generate invoice for all of
+                users in cloud 
+          * Due days :*
+
+                 Admin provide number of due days for generated invoice. If users
+                not pay invoice within due days, The late fee is applicable for
+                that user.
+ 
+
+h3. 6.Taxes
+
+    This section contain option to add/edit/delete Tax for billable items.
+
+    *Options in add new Tax*
+           
+         Add Tax have the following options:  
+
+         *Tax name: Admin desired tax-name 
+          
+         *Description: Desired tax-name description
+
+         *Percentage: The allocated Percentage(%) of the tax
+                       
+    *Options in edit Tax*
+    
+            Edit tax have the following options:
+
+            *Tax name: Admin desired tax-name 
+          
+            *Description: Desired tax-name description
+
+            *Percentage: The allocated Percentage(%) of the tax
+
+    *Options in delete Tax*
+
+                This option is use to delete existing tax.
+
+           
+      !adminguide/configuration/18.png!
+
+h3. 7.Promotion
+
+     Promotions can be setup to offer discounts for sign-up users. Existing
+users are not use this option only new sign-up users have the promotion code.During
+sign-up they use promotion code to get discount. Both trail and retail account have
+promotion code. In Trial account promotion code is mandatory. In retail account signup
+it is optional. In fogpanel term promotion code is a method of credit provide for users. 
+
+ Promotion code contain three type of action those are  add,list and delete:
+
+ *How to add promotion code*
+
+ Add promotion code options:*
+  
+   *Code:  Admin desired name or some code
+   *Type: fixed amount is default
+   *Value: choose the amount you provide for this promo code
+   *Start Date: start date of promo code
+   *End Date: end date of promo code to expiry
+   *Maximum uses: Maximum users will allow to use this promocode.
+               If this limit is reached promocode expiry automatically.
+   *Admin notes:  Provide some message about this promo code. like why promocode 
+                is provided etc..
+
+  {note}
+Admin users are unable to edit promotion code. They are able to delete only.
+  {note}
+
+ *Promocode list option contain following elements:*
+
+  *Start Date: start date of promocode
+  *End Date: Expiry date of promocode
+  *Max Uses:  Maximum users will allow to use this promocode.
+  *Promotion values: Credit amount for use this promocode
+  *Uses: As on date promocode used stats
+  *Types: Fixed
+  *Note: Admin notes
+  *Code: Promo code name
+  *Action: Delete to erase demo code.
+
+ !adminguide/configuration/19.png!
+
+h3. 8.Discount
+
+      Discount is nothing but credit provide for users and plan. By default 
+fogpanel support discount option for computation offer and Monthly vm instance 
+billable item only. In future version fogpanel support extensive discount features. 
+In User current usage page (draft invoice) discount applicable items are listed with
+discount percentage.In fogpanel two types of discount methodology is avaliable.
+
+  *Plan based Discount*
+  *User based Discount*
+ 
+
+ *Plan based Discount*
+
+            Admin use this discount option in following methods:
+        {note}
+  
+            1. Admin provide discount for all users for a particular plan.
+            2. Admin provide discount for a particular user for a particular plan.
+            3. Admin provide discount for all users for all plans.
+            4. Admin provide discount for a users for all plans.
+            
+       Currently fogpanel provide discount for computation plan. In future
+     release we add more. 
+      
+       {note}
+ 
+  *Add plan based discount:*
+
+* Discount name: Provide name for discount
+* Type : Default Plan based	 
+* Sub Type: Create VM (Discount is applied for computation offer only)
+* Value(in %) : Percentage of amount provide for discount
+* Start Date(yyyy-mm-dd): discount start date
+* End Date(yyyy-mm-dd): discount end date
+* Billing Cycles: Number of billing cycle this  discount is valid
+* Apply to user: Choose apply for all user or selective users. If choose selective
+users following options need to choose:
+* for All plan: Discount apply for all plans or selective plans
+*for All user:  Discount apply for all users or selective users
+
+!adminguide/configuration/28.png!
+
+  *List/Delete plan based discount:*
+
+   Discount list contain following informations:
+  * Name: Discount name
+  * Type: Discount type
+  * Discount value
+  * start date & end date of discount
+  * Discount apply for plans and users list
+  * Discount Action with delete option
+
+ *User based discount*
+
+           This discount option is used to provide discount for users.Fogpanel
+         use following formula to update usage cost when user based discount is
+         enabled for user.
+        
+          {code}
+
+            (DailyUsagecost)-(User discount percentage) = Daily ActualUsage-Cost
+                
+           {code}
+
+    *Add User based discount:*
+      
+       * Discount name: Provide name for discount
+       * Type : Default Plan based	 
+       * Sub Type: Create VM (Discount is applied for computation offer only)
+       * Value(in %) : Percentage of amount provide for discount
+       * Start Date(yyyy-mm-dd): discount start date
+       * End Date(yyyy-mm-dd): discount end date
+       * Billing Cycles: Number of billing cycle this  discount is valid
+       * Apply to user: Choose apply for all user or selective users.
+
+    *List/Delete User based discount:*
+           
+         Discount list contain following informations:
+        * Name: Discount name
+        * Type: Discount type
+        * Discount value
+        * start date & end date of discount
+        * Discount apply for plans and users list
+        * Discount Action with delete option    
+ 
+h3. 9.Late fee
+
+     Late fee is based on invoice. Invoice is generated for cloud-user with 
+ due days. If user exceed due days limit. Fogpanel apply late fee for cloud-users
+ non-payable invoice. Late fee charge is applied and those charges are added in
+current month invoice (Draft invoice). In fogpanel two types of late fee method 
+is avaliable those are:
+
+   *Minimum amount method*
+   *Applicable amount method*
+
+ *Minimum amount method*
+               
+    This method contain two options those are:
+
+    *Late fee minimum amount :  Minimum amount need to apply for late fee*
+   
+       {note}
+
+    (e.g) we setup this option as 100 USD. Invoices payable amount above 100 USD 
+is applicable for late fee. If no late fee is not applicable.
+     
+       {note}
+
+    Late fee minimum percentage : Late fee calculate from percentage of amount 
+taken from payable invoice.
+
+    {note}
+     
+(e.g) if we set this minimum percentage option as 40%. Invoice amount is 
+ 1000 USD. This is above the minimum amount late fee of 100 USD. Late fee
+ amount is 400 USD apply for invoice.
+   
+   {note}    
+
+ *Applicable amount method*
+         
+        This method contain only one option:
+
+    Late fee applicable amount:  Amount applicable for late fee. 
+     
+     {note}
+
+     (e.g) if we set this option as 200 USD. Late fee calculate from above two 
+option will be greater than this amount if yes 400 USD is applicable. if no 
+late fee is not applicable.
+
+ {note}
+
+    This option is used to avoid reduce late fee amount for minimum amount.
+ {code}
+  
+ Admin must enable both method in fogpanel for late fee option to work
+
+ {code}
+ !adminguide/configuration/20.png!
+
+h3. 10.Payment Gateway
+
+   By default fogpanel support paypal gateway provider only. In future version
+Fogpanel support authorized.net etc.. gateways.
+
+ This category contains two sections:
+
+  *Payment gateway setting*
+  *Processing fee setting*
+
+  h4. Payment gateway setting
+
+
+ h4. Processing fee setting
+
+      Fee need to pay for gateway providers to process user payments request. In 
+fogpanel two types of processing mode is avaliable. Admin user choose any one of
+the method to processing payment request. The following are two types:
+  
+   *Include method*
+   *Exclude method*
+ 
+In include method admin should pay for processing fee.
+It not taken from user payments for processing. 
+In exclude method processing fee is take from user payments for processing.
+
+!adminguide/configuration/22.png!
+
+h3. 11.Currency
+
+    By default fogpanel support only one currency of any type. During 
+installation you have provided default currency details. Admin users are unable 
+to change the default currency.
+
+!adminguide/configuration/23.png!

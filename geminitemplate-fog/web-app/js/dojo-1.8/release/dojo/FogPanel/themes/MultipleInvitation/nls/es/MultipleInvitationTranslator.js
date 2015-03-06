@@ -1,0 +1,2 @@
+//>>built
+define("FogPanel/themes/MultipleInvitation/nls/es/MultipleInvitationTranslator",{inviUserName:"Nombre",inviEmail:"electr\u00f3nico",inviSignType:"Tipo",inviTrial:"Ensayo",inviRetail:"Venta al por menor",inviDalete:"eliminar"});

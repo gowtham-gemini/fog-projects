@@ -1,0 +1,23 @@
+  Cloud infrastructure maintenance schedule must be logged as event 
+in this section. The posted event is listed in calender view of both admin and 
+users. This options is used to show the current health status of cloud service.
+
+ !adminguide/cloud/11.png!
+
+ h3. ADD/EDIT/DELETE event
+
+            Admin users are able to add event schedule. Login as admin user in 
+side menu click Cloud,maintanance then use option add to add schedule maintenance
+events.
+
+ !adminguide/cloud/12.png!
+
+ *Add event page contain following elements:*
+
+   Zone: Select zone you want add maintenance
+   Cloud Maintenance Date: Date to choose maintenance will perform.
+   Desc: Detail about maintenance
+  
+ To edit and delete events just select the event in calander. The selected event 
+have the options of edit and delete.
+

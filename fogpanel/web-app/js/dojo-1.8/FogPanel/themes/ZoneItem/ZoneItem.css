@@ -1,0 +1,29 @@
+.ZoneItem {
+    margin-top: 10px;
+    padding: 5px;
+    /*width: 650px;*/
+    /*height: 210px;*/
+}
+
+.ZoneItem label {
+    float: left;
+    /*width: 200px;*/
+    text-align: right;
+    margin-right: 10px;
+}
+
+.ZoneItem .dijitTextBox {
+    width: 250px;
+}
+
+.ZoneItem .dijitEditor {
+    margin-top: 20px;
+}
+
+.ZoneItem  .dijitButton {
+    float: right;
+    /*margin: 0px;*/
+}
+.dijitEditor .dijitEditorIFrameContainer iframe {
+    height: 150px;
+}

@@ -1,0 +1,26 @@
+.fogpanel_report_widget{
+	border-left:1px solid #DEE3EA;
+	font-family: 'Open Sans', sans-serif;
+	float:left;
+}
+.fogpanel_report_widget th{
+	font-size:12px;
+	font-weight:600;
+	color:#333333;
+	text-align:left;
+	width:15%;
+	white-space:nowrap;
+	padding:8px 5px;
+	border-top:1px solid #DEE3EA;
+	border-bottom:1px solid #DEE3EA;
+	border-right:1px solid #DEE3EA;
+	background:#F7F7F7;
+}
+.fogpanel_report_widget td{
+	font-size:12px;
+	color:#333333;
+	text-align:left;	
+	padding:8px 5px;
+	border-right:1px solid #DEE3EA;
+	border-bottom:1px solid #DEE3EA;
+}

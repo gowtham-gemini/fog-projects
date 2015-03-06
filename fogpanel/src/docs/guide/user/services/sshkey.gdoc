@@ -1,0 +1,23 @@
+  SSH-key built-in product service for service provider to enhanced the security
+of Instance or virtual machine.In addition to the username and password 
+authentication of instance. Users using SSH keys to log in to the Instances. 
+By default each cloud user have their own SSH key,One cloud user cannot log in 
+to another cloud user's instances unless they share their SSH key files. Using a 
+single SSH key pair, you can manage multiple instances.In fogpanel on every user 
+is having a default ssh key with the file name of 'accountName-default'. This 
+default ssh key is attached to vm in create vm form or user create their own 
+keys. User have option to reset ssh key for running vm, Before reset vm must be 
+in stopped.
+
+  !userguide/services/sshkey/1.png!
+
+*Create ssh key*
+
+  This option to create ssh key in fogpanel. After created the ssh-key
+you can use the option view to see the key.
+
+*View/Download/Delete-ssh key*
+
+    In list gird you have use action view to viewed the ssh-key. This view 
+action pop up your ssh-key also it contains download and delete action.
+

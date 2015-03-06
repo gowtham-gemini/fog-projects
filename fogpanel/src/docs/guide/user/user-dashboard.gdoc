@@ -1,0 +1,5 @@
+  User logged in fogpanel,It redirect and landing in dashboard. In additional 
+home menu include Account setting,Billing Alerts,Cloud notification,
+Ticket notification and logout.It contains quick account summary of infra resource acquired statistic and 
+charge applied for that acquired resource as on date.Also it contains billing 
+and cost management,payment,support summaries representative in graphs.

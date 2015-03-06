@@ -1,0 +1,110 @@
+/* FONT STACK */
+body,
+input, select, textarea {
+	font-family: "HelveticaNeue-Light",
+                     "Helvetica Neue Light", 
+                     "Helvetica Neue", 
+                      Helvetica,
+                      Arial, 
+                      "Lucida Grande", 
+                      sans-serif;
+        
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+        
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+body {
+	background: #55575B;
+	color: #fff;
+}
+
+.centered_container {
+	width: 980px;
+	display: block;
+	clear: both;
+	position: relative;
+	margin: 0 auto;
+}
+
+#appLayout {
+        height: 100%;
+}
+
+#leftCol {
+        width: 14em;
+}
+
+#loader {
+        width: 100%;
+        position: static;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        display: block;
+        background: #f0f0f0;
+}
+
+.banner {
+	float: left;
+	display: inline-block;
+}
+
+.menu {
+	position: relative;
+	display: inline-block;
+	float: right;
+        margin: 0px;
+        padding: 0px;	
+}
+
+.menu li {
+        list-style: none;
+        display: inline-block;
+        float: left;
+        margin: 3px;
+        height: 20px;
+        border: 1px solid gray;
+        padding: 0px 5px 3px 5px;
+}
+
+.menu li a {
+        text-decoration: none;
+        color: #f4f4f4;
+        font-size: 12px;
+        font-weight: 200;
+}
+       
+#screen-loader {
+        width: 100%;
+        position: static;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        display: block;
+        background: #f0f0f0;
+}
+
+#bookList {
+        height: 300px;
+        width: 700px;
+}
+
+/* Dojo Style overriding */
+.claro .dijitSplitContainer-dijitContentPane, .claro .dijitBorderContainer-dijitContentPane {
+        background: #55575B;
+        color: #fff; 
+}
+
+.claro .dijitSplitContainer-child, .claro .dijitBorderContainer-child {
+        border: 0px;	
+}

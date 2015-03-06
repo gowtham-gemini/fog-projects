@@ -1,0 +1,19 @@
+.InstanceStatusContainer {
+   
+}
+
+/*.InstanceStatusContainer .span1 {
+	cursor: pointer;
+	max-width:16px !important;
+	max-height:16px !important;
+	min-height:16px !important;
+}
+*/
+.InstanceStatusContainer img{
+	max-width:24px !important;
+	max-height:24px !important;
+	cursor:pointer;
+}
+.row-fluid.grind-icons [class*="span"]:first-child{
+    margin-left:2.564102564102564%;
+}

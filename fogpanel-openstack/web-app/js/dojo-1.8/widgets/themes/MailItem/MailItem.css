@@ -1,0 +1,99 @@
+.MailItem {
+    width: 100%;
+    height: 100px;
+    background: url('images/mail_item_bg.png') repeat-x;
+    margin: 0px;
+}
+
+.MailItemUnread {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    margin-top: -55px;
+    visibility: visible;
+}
+
+.MailItemRead .MailItemUnread {
+    visibility: hidden;
+}
+
+.MailItemThreadCount {
+    width: 30px;
+    height: 30px;
+    background: url('images/thread_bg.png') no-repeat;
+    float: left;
+    visibility: hidden;
+   
+}
+
+.MailItemThreaded .MailItemThreadCount {
+    visibility: visible;
+}
+
+.MailItemSelected {
+    background: #316AC5;
+}
+
+.MailItemSpam {
+    background: #FF9348;
+}
+
+.MailItemHover {
+    background: #CFF0F7;
+}
+
+.MailItemInfo {
+    width: 96.6%;
+    height:99%;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+.SenderInfo, .SubjectInfo {
+    width: 100%;
+    height: 30px;
+     text-align: left;
+}
+
+.SenderName, .SunjectName {
+    width: 90%;
+    height: 100%;
+    float: left;
+     text-align: left;
+}
+
+.Action, .Date {
+    width: 10%;
+    height: 100%;
+    float: right;
+}
+ul {
+    margin: 0px;
+    margin-top: 2px;
+    list-style: none;
+    padding-left: 23px;
+    height:100%;
+}
+
+li {
+    width: 17px;
+    height:20px;
+    margin-left: 5px;
+    display: inline-block;
+    background: black;
+}
+
+.MessagePreview {
+      width: 100%;
+      height: 39%;
+      text-align: left;
+}
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+h3, h4 {
+    margin: 0;
+    padding: 5px;
+}

@@ -1,0 +1,132 @@
+Provides option to get static data(ie: Country, State and Billable Item List) by providing list of static data based on various filters.
+
+h3. List Country
+
+Lists all the Country available.
+
+*Request URL* 
+
+    https://demo.fogpanel.com/FogPanel/api/admin/staticData/listCountry?apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=668f66b81643aa61490cf108d391c1e5
+
+*Example Response*
+
+{code}
+   
+[ 
+    {
+        "countryId":"1",
+        "countryName":"India"
+    },
+    {
+        "countryId":"2",
+        "countryName":"Kenya"
+    },
+    {
+        "countryId":"3",
+        "countryName":"Mexico"
+    }
+]
+{code}
+
+h3. List State
+
+Lists all the State available based on country specified.
+
+*Arguments*
+
+* *country* (Required) : The id of the country
+
+*Request URL* 
+
+    https://demo.fogpanel.com/FogPanel/api/admin/staticData/listState?country=1&apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=668f66b81643aa61490cf108d391c1e5
+
+*Example Response*
+
+{code}
+   
+[ 
+    {
+        "countryId":"1",
+        "countryName":"NWE YORK"
+    },
+    {
+        "countryId":"2",
+        "countryName":"NEW YORK"
+    }
+]
+{code}
+
+*List Billable Item*
+
+Lists all the Billable item available.
+
+*Request URL* 
+
+    https://demo.fogpanel.com/FogPanel/api/admin/staticData/listBillableItem?apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=668f66b81643aa61490cf108d391c1e5
+
+*Example Response*
+
+{code}   
+[
+    {
+        "id":1,
+        "name":"ComputingOffer"
+    },
+    {
+        "id":2,
+        "name":"DiskOffer"
+    },
+    {
+        "id":3,
+        "name":"SnapShot"
+    },
+    {
+        "id":4,
+        "name":"Template"
+    },
+    {
+        "id":5,
+        "name":"BandWidth"
+    },
+    {
+        "id":6,
+        "name":"Discount"
+    },
+    {
+        "id":7,
+        "name":"Late Fee"
+    },
+    {
+        "id":8,
+        "name":"Custom Item"
+    },
+    {
+        "id":9,
+        "name":"RecurringItem"
+    },
+    {
+        "id":10,
+        "name":"StoppedInstance"
+    },
+    {
+        "id":11,
+        "name":"SetupCostForInstance"
+    },
+    {
+        "id":12,
+        "name":"SecondaryIPCost"
+    },
+    {
+        "id":13,
+        "name":"Monthly Instance"
+    },
+    {
+        "id":14,
+        "name":"Monthly Volume"
+    },
+    {
+        "id":15,
+        "name":"Monthly Snapshot"
+    }
+]
+{code}

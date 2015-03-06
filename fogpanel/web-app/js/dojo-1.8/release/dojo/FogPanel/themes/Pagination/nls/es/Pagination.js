@@ -1,0 +1,2 @@
+//>>built
+define("FogPanel/themes/Pagination/nls/es/Pagination",{pagination:{previous:"&laquo;",previousTitle:"anterior",next:"&raquo;",nextTitle:"pr\u00f3ximo",firstTitle:"Primera p\u00e1gina",lastTitle:"\u00faltimo p\u00e1gina",helip:"&hellip;",pageTitle:"p\u00e1gina"}});

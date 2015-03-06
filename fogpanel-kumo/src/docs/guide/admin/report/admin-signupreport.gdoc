@@ -1,0 +1,16 @@
+  It provide analysis of trial and retail accounts.Admin users choose Date Range
+and account type to get accounts report.
+
+ Analysis include following elements:
+
+  * Account no:*
+  * Signup-date:*
+  * Contact Email:*
+  * Account status etc..*
+ 
+ {note}
+
+ Admin users have download  generated analysis report as csv and pdf.
+ {note}
+
+!adminguide/reports/2.png!

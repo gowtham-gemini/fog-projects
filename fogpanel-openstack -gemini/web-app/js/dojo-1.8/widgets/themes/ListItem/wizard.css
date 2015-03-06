@@ -1,0 +1,155 @@
+html {
+	height: 100%;
+	width: 100%;
+      }
+/*.rotator {
+    border:solid 1px #e5e5e5;
+    width:1000px;
+    height:500px;
+}*/
+.pane {
+    background-color:#EBEEF1;
+    width:1000px;
+    height:500px;
+    overflow:hidden;
+}
+
+.formContainer {
+    border: solid 1px black;
+    background-color:#EBEEF1;
+    width: 690px;
+    height: 400px;
+    float: left;
+    margin: 0 0 0 2px; 
+    overflow: auto;
+    
+}
+
+.serviceListContainer {
+    border: solid 1px black;
+    background-color:#EBEEF1;
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 0 0 0 2px; 
+    overflow: auto;
+    
+}
+serviceElement {
+    margin-left: 50px;
+}
+
+serviceElement .dijitCheckBox {
+          margin-top: 10px;
+      }
+      
+serviceElement .dijitButtonText {
+          float: right;
+      }
+
+.require {
+    color: #F00003;
+}
+
+h1 {    
+    margin-top: -5px;
+}
+
+#result 
+{       
+    margin-top: 10px;
+    float: right;
+    width: 335px;
+    text-align: left;
+    display: none;
+    
+}
+
+
+
+serviceElement .dijitTextBox {
+    width: 330px;
+    margin-top: 5px;
+}
+
+serviceElement span {
+    width: 330px;
+    margin-top: 5px;
+}
+
+serviceElement label {
+    float: left;
+    margin-top: 1px;
+    width: 140px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+serviceElement .dijitButtonText{
+    float: right;
+
+}
+
+.buttonStyle
+{
+    float:right;
+     
+    
+}
+
+.zoneInfo
+{
+     width: 480px;
+     margin-top: 10px;
+     margin-left: 80px;
+}
+.zoneInfo h4
+{
+    float: left;
+    margin: -5px 0 0 55px;
+}
+
+.zone_item {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+    
+.zone_item label {
+    float: left;
+    width: 50px;
+    margin-left: 40px;
+/*     background: red;*/
+}
+.zone_item .dijitTextBox {
+    width: 100px;
+    margin-left:  5px;
+}
+
+serviceElement .dijitCheckBox {
+          margin-top: 5px;
+      }
+.zone_item span {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.messlanious {
+    margin-right: 50px;
+    margin-top: 150px;
+    
+}
+
+.messlanious .dijitTextBox {
+    width: 330px;
+    margin-top: 5px;
+}
+
+
+.messlanious label {
+    float: left;
+   margin-top: 5px;
+    width: 140px;
+    text-align: right;
+    margin-right: 10px;
+}

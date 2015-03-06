@@ -1,0 +1,33 @@
+   Cloudstack tab contain two following menus. 
+
+*System* 
+*Zone description*
+
+ h3. System
+
+     Admin users entered cloudstack configuration and key information in this 
+area.It contain admin cloudstack url,api key,secrete key and your admin single
+sign-on URL. 
+
+{note}
+ Cloudstack configuration keys and URLS are need to valid one. Otherwise 
+fogpanel not integerate/connect to cloudstack.
+{note}
+To get started using the CloudStack API, you should have the following:
+
+*URL:* URL of the CloudStack server you wish to integrate with.
+*Single Sign On URL:* The URL used to acced VM console from panel.
+*API Key:* The api key of the admin user from cloud stack.
+*Secret key:* The Secret key of the admin user from cloud stack.
+
+!adminguide/configuration/25.png!
+
+h3. Zone Description*
+
+    Admin users have renamed their cloudstack zones in this section. 
+That renamed zone is mapped to cloudstack real zone name also this section
+contain pod description, cluster description. Admin may use this description to 
+provide technical details of their Infrastructure.
+
+
+!adminguide/configuration/26.png!

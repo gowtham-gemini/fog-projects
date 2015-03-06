@@ -1,0 +1,213 @@
+#status {
+    background-color: #eee;
+    border: .2em solid #fff;
+    margin: 2em 2em 1em;
+    padding: 1em;
+    width: 12em;
+    float: left;
+    -moz-box-shadow: 0px 0px 1.25em #ccc;
+    -webkit-box-shadow: 0px 0px 1.25em #ccc;
+    box-shadow: 0px 0px 1.25em #ccc;
+    -moz-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+    border-radius: 0.6em;
+}
+
+.ie6 #status {
+    display: inline; /* float double margin fix http://www.positioniseverything.net/explorer/doubled-margin.html */
+}
+
+#status ul {
+    font-size: 0.9em;
+    list-style-type: none;
+    margin-bottom: 0.6em;
+    padding: 0;
+}
+
+#status li {
+    line-height: 1.3;
+}
+
+#status h1 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin: 0 0 0.3em;
+}
+
+#page-body {
+    margin: 2em 1em 1.25em 18em;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0.25em 0;
+}
+
+#controller-list ul {
+    list-style-position: inside;
+}
+
+#controller-list li {
+    line-height: 1.3;
+    list-style-position: inside;
+    margin: 0.25em 0;
+}
+
+@media screen and (max-width: 480px) {
+    #status {
+        display: none;
+    }
+
+    #page-body {
+        margin: 0 1em 1em;
+    }
+
+    #page-body h1 {
+        margin-top: 0;
+    }
+}
+.table-width {
+    width: 900px;
+
+}
+.mandatoryStar {
+    color: red;
+}
+ol.a {
+    list-style-type: none;
+}
+.form-width{
+    width: 500px;
+}
+.button-link {
+    background:none!important;
+     border:none; 
+     /*padding:0!important;*/
+     padding-right: 16px;
+    /*border is optional*/
+     /*border-bottom:1px solid #444;*/ 
+    cursor: pointer;
+    color: #428bca;
+}
+a.disabled
+{
+  color:#050;
+}
+.navbar-inverse .nav > li > a {
+    
+    height: 60px;
+    padding: 17px 15px 8px;
+}
+.navbar-inverse .navbar-header > a > img {
+    height: 40px;
+}
+.navbar-inverse input.search {
+    top:10px;
+}
+div#button-set > a,form {
+    margin-right: 15px;
+}
+.showmail {
+    white-space:pre-wrap;
+    font-family: sans-serif;
+}
+/* PAGINATION */
+
+.pagination {
+	border-top: 0;
+	margin: 0;
+	padding: 0.3em 0.2em;
+	text-align: center;
+        float: right;
+/*	   -moz-box-shadow: 0 0 3px 1px #AAAAAA;
+	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
+	        box-shadow: 0 0 3px 1px #AAAAAA;*/
+	background-color: #fff;
+}
+
+.pagination a.next {
+    margin: 0 5px;
+}
+
+.pagination a,
+.pagination .currentStep {
+	color: #2a6496;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	   -moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+}
+
+.pagination a:hover, .pagination a:focus,
+.pagination .currentStep {
+	background-color: #428bca;
+	color: #fff;
+	outline: none;
+/*	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);*/
+}
+.breadcrumbs{
+	padding:50px 0;
+	display:block;
+	margin:15px 0;
+	color:#999;
+	border-bottom:1px solid #999;
+}
+.breadcrumbs a{
+	color:#333;
+}
+.breadcrumbs ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.breadcrumbs ul li{
+	margin:0;
+	padding:0 5px;
+	float:left;
+}
+.configList {
+    list-style-type: none;
+    
+}
+
+.configList li {
+    background: #F5F5F5;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 10px;
+    margin-bottom: 10px
+}
+.configList li a {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 5px;
+    padding: 10px;
+    color: #2B6893;
+}
+.configList li .time {
+    float: right;
+    font-size: 20px;
+    padding: 1px 10px;
+    color: #818181;
+}
+.configList li a:hover, .configList li a:active {
+    text-decoration: none;
+}
+.controls {
+display: inline-block;
+padding-left: 100px;
+margin-bottom: 0;
+vertical-align: middle;
+font-weight: normal;
+cursor: pointer;
+    
+}

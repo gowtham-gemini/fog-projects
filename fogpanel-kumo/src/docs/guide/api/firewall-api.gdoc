@@ -1,0 +1,34 @@
+Provides option to manage firewall, by providing list of firewalls based on various filters.
+
+*List Firewall*
+
+Lists all the firewall available by the filters specified.
+
+*Arguments*
+    
+* *baseOS* (Optional) : List the firewall with the given baseOS(The baseOS is either Linux or Windows).
+
+*Request URL* 
+
+    https://demo.fogpanel.com/FogPanel/api/admin/firewall/listFirewall?baseOS=Windows&apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=668f66b81643aa61490cf108d391c1e5
+    
+*Example Response*
+
+{code}   
+[   
+        {
+          "description":"Windows Firewall",
+          "securityGroupName":"Windows Firewall",
+          "securityGroupId":2,
+          "baseOS":"Windows",
+          "disabled": "false"        
+        },
+       {
+          "description":"WindowsFirewal2",
+          "securityGroupName":"WindowsFirewal2",
+          "securityGroupId":3,
+          "baseOS":"Windows",
+          "disabled":"false"
+        }  
+]
+{code}

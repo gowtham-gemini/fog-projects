@@ -1,0 +1,56 @@
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarGrid {
+  right: 50px;
+  left: 0;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarGridTable td {
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: none;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarGridTable td span {
+  padding-left: 2px;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarGridTable td.last-child {
+  border-left: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarContainer {
+  right: 50px;
+  left: 0;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarContainerTable td {
+  border-bottom: solid 1px transparent;
+  border-right: solid 1px transparent;
+  text-align: right;
+  vertical-align: top;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarYearColumnHeader {
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarColumnHeader {
+  right: 50px;
+  left: 0;
+}
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarColumnHeaderTable td {
+  border-left: 1px solid #b5bcc7;
+  border-right: none;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarRowHeader {
+  right: 0;
+  left: auto;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarEvent.dojoxCalendarHorizontal .labels {
+  text-align: right;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarEvent.dojoxCalendarLabel .labels {
+  text-align: right;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarEvent .resizeStartHandle {
+  right: 0;
+}
+.fog-classic .dojoxCalendarMatrixViewRtl .dojoxCalendarEvent .resizeEndHandle {
+  left: 0;
+  right: auto;
+}

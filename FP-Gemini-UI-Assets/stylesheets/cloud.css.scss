@@ -1,0 +1,103 @@
+.icon.scan {
+  background-position: -36px -2px;
+  height: 11px !important;
+  width: 11px !important;
+}
+.cloudIcon {
+  background: url("/assets/cloud_icon.png") no-repeat scroll -100px 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 0;
+  vertical-align: middle;
+  width: 33px;
+}
+.table .cloudIcon {
+  margin-right: 10px;
+}
+.cloudIcon.vm_icon {
+  background-position: 0px 5px;
+  height: 22px;
+}
+.cloudIcon.openstack_icon {
+  background-position: 0px -73px;
+  height: 25px;
+}
+.cloudIcon.gce_icon {
+  background-position: 0px -114px;
+  height: 23px;
+}
+.cloudIcon.azure_icon {
+  background-position: 0px 5px;
+  height: 22px;
+}
+.cloudIcon.aws_icon {
+  background-position: 0px 5px;
+  height: 22px;
+}
+h3 {
+  text-align: center;
+}
+span.name {
+  /*font-style: italic;*/
+}
+div.app-list {
+  overflow-y: auto;
+  max-height: 200px;
+}
+#cloud-modal div.app-list label {
+  float: none;
+  display: block;
+  width: 193px;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+div.buttons {
+  text-align: center;
+}
+div#status-msg, div#status-details {
+  margin: 15px;
+  width: 100%;
+}
+div#status-details {
+  overflow: scroll;
+  max-height: 150px;
+}
+span.new-cloud {
+  font-style: italic;
+}
+span#scan-progress-text {
+  left: 25%;
+  right: 0%;
+}
+span#scan-progress-value {
+  left: 60%;
+  right: 0%;
+}
+.myClouds .iconBtn {
+  text-align:left;
+}
+.myClouds .row div {
+  font-size: 14px;
+}
+.myClouds .row:first-child div {
+  font-weight: bold;
+  font-size: 15px;
+}
+div#add-cloud-btn {
+  display: block;
+  position: relative;
+}
+div#vm-names {
+  overflow-y: auto;
+  max-height: 250px;
+}
+div.app-list .tooltip {
+  margin-left: 10px;
+}
+div.app-list .tooltip > .tooltip-inner {
+  background-color: #243748; 
+  color: #fff; 
+  border: 1px solid #CCCCCC;  
+  text-align: left;  
+  max-width: 300px !important;
+}

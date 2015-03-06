@@ -1,0 +1,63 @@
+ It contains over all glance of your account.It provide summary of account
+services,billing,payments,support tickets with monthly wise graphical 
+representation.  
+ 
+  *Understanding The DashBoard*
+  
+   For better understanding fogpanel dashboard is classified into three sub 
+category those are:
+      
+    ** Current month usage and cost management stat
+    ** Services consumption stat
+    ** Overall billing,support,payments summary stat    
+  
+!userguide/dashboard/1.png!
+
+*Current month usage and cost management stat:*
+  
+    
+    **Usage-Cost (Daily/hourly-charge): User consumed services for past 24 hours
+  of charges is updating in this stat display. It reset 24 hours once and update 
+new charges based on user services consume.
+    
+  **Current Usage (Current month-charge): User consumed services charged for 
+current month is updating in this stat display. Daily usage cost are consolidated 
+charges into current usage.
+
+    **PayMents (Current month-payment): User paided payments for current month 
+is consolidated in this stat display.
+
+    **Service-health: Option use to display services health status. Few of status
+are failure,maintenance
+
+    **Launch vm: Option use to launch vm quick
+
+*Service consumption stat:*
+
+         This view contain following utilities those defined in details:
+
+   ** Running Vm`s :- Number of current running vm`s stats and current month 
+                      charge applied for running vm`s are displayed.
+   ** Stopped Vm`s :- Number of current stopped vm`s and current month charged 
+                      applied for stopped vm`s are displayed.
+   ** Storage Disk:-  Number of current root disk and data disk stat and current
+                      month charged applied for disks are displayed.
+   ** Snapshot`s:-    Number of current snapshot stat and current month charged 
+                      applied for snapshots are displayed.
+   ** Bandwidth:-     Current month bandwidth usage and current month charged 
+                      applied for bandwidth are displayed.
+
+*Overall billing,support,payments summary stat:*
+
+  ** Invoice summary: Both final and draft invoice are viewed based on months 
+                      with graph representation.
+  ** Payment summary: Current and previous month payments are viewed with 
+                      graph representation.
+  ** Custom & recurring item summary: Added custom and recurring items are listed 
+                                         based on month wise with graph 
+                                         representation.
+  ** Support Summary: Current month open,In-progress,On-hold,Closed ticket stat 
+              are display with graph representation.
+ 
+ 
+ 

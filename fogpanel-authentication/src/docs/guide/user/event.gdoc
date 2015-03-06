@@ -1,0 +1,10 @@
+An event is essentially a significant or meaningful change in the state of your 
+action in account. Any changes like create vm,attach disk 
+etc.. action are logged in this section.
+{note}
+
+Alerts are quick reminder for user to notify it.
+
+{note}
+
+                          !userguide/event/1.png! 

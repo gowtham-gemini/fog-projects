@@ -1,0 +1,33 @@
+  It contain services of snapshot,bandwidth,vmsanpshot,ipaddress.
+
+   h3. Bandwidth:
+        Bandwidth is charged  as per gb. Users may exceed allocated bandwidth,
+charges are applied for exceed bandwidth only.Bandwidth wizard contain edit 
+and view action only.
+
+!adminguide/services/6.png!
+
+ Following options are shown in bandwidth service:
+*zone: zone name
+*excess bandwidth cost: excess bandwidth cost per gb
+
+h3. Snapshot:
+  Snapshots are taken from volumes both root and data disk. Fogpanel charges 
+snapshot with base of snapshot size. 
+
+ !adminguide/services/7.png!
+
+Following options are shown in snapshot service:
+
+*zone: zone name
+*snapshot cost: per gb cost
+
+h3. Ipmanager
+   
+    This service provide secondary ips for user virtual machine. Fogpanel charge
+cost per ip per month.
+
+Following options are shown in ipmanager service:
+ 
+*zone: zone name
+*Ip-cost: cost per ip per month.

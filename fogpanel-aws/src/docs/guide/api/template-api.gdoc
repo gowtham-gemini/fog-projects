@@ -1,0 +1,91 @@
+Provides option to manage OS templates, by providing list of templates based on various filters.
+
+*List Template*
+
+Lists all the OS templates available by Zone's.
+
+*Arguments*
+    
+* *baseOS* (Optional) : List the templates with the given baseOS(value:Linux or Windows).
+* *appTemplate* ( Optional ) : This returns all api templates if true
+
+*Request URL* 
+
+    https://demo.fogpanel.com/FogPanel/api/admin/template/listTemplate?appTemplate=true&baseOS=Linux&apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=668f66b81643aa61490cf108d391c1e5
+    
+*Example Response*
+
+{code}
+   
+[ 
+  { 
+    "page": "1",
+    "recordPerPage": "100",
+    "totalPages" : "1",  
+    "totalRecords": "2",
+    "templates" : [
+        {
+          "isReady" : true,
+          "osCategory" : "Windows",
+          "status" : "Download Complete",
+          "extractable" : true,
+          "osTypeReferenceId" : "1bc70a16-92da-11e3-b34e-001676787aec",
+          "referenceId" : "16067904-92da-11e3-b34e-001676787aec",
+          "featured" false,
+          "format" : "VHD",
+          "isPublic" : true,
+          "osType" : "DOS",
+          "baseOS" : "Windows",
+          "cost" : 34,
+          "id" : 4,
+          "appTemplate" : true,
+          "description" : "AppTemplateWindow Description",
+          "hypervisor" : "XenServer",
+          "passwordEnabled" : true,
+          "name" : "AppTemplateWindow",     
+          "zones": [
+                {
+                    "referenceZoneId": "c05edf17-610a-42c6-8d6a-f86dfdf0cd11",
+                    "zoneId": "1",
+                    "zoneName": "zone1"
+                },
+                {
+                    "referenceZoneId": "11e3-001676787aec-487aec-1bc70a16",
+                    "zoneId": "2",
+                    "zoneName": "zone2"
+                },
+            ]
+        },
+        {
+            "isReady" : true,
+            "osCategory" : "Windows",
+            "status" : "Download Complete",
+            "extractable" : true,
+            "osTypeReferenceId" : "1bc70a16-92da-11e3-b34e-001676787aec",
+            "referenceId" : "dc69ea0b-6cd5-4175-b79a-b55c83e4e466",
+            "featured" false,
+            "format" : "VHD",
+            "isPublic" : true,
+            "osType" : "Windows XP (64-bit)",
+            "baseOS" : "Windows",
+            "cost" : 56,
+            "id" : 5,
+            "appTemplate" : true,
+            "description" : "WindowsXPTemplate Description",
+            "hypervisor" : "XenServer",
+            "passwordEnabled" : true,
+            "name" : "WindowsXPTemplate",  
+            "zones": [
+                {
+                    "referenceZoneId": "c05edf17-610a-42c6-8d6a-f86dfdf0cd11",
+                    "zoneId": "1",
+                    "zoneName": "zone1"
+                }
+            ]
+        },
+        ...
+        ]
+    },
+    ...
+]
+{code}

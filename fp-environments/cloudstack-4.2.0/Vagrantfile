@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+timezone = ENV['TZ'] || `sudo systemsetup -gettimezone|cut -d':' -f2`.strip!
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos-6.5-cloudstack-sim-4.2"
+  # config.vm.box_url = "http://lan.assistanz.com/fogpanel/vagrant-boxes/environemtns/centos-6.5-cloudstack-sim-4.2.box"
+  config.vm.box_url = "http://localhost/centos-6.5-cloudstack-sim-4.2.box"
+
+  config.vm.hostname = "cloudstack-simulator-4-2-x"
+  config.vm.network "private_network", ip: "10.4.2.101"
+
+  config.vm.provider "virtualbox" do |vbox|
+    vbox.memory = 4048
+  end
+
+  config.vm.synced_folder ".", "/tmp/cloudstack-simulator"
+
+  config.vm.provision :shell, :inline => "sudo ln -sf /usr/share/zoneinfo/#{timezone} /etc/localtime"
+  config.vm.provision :shell, path: "re-configure.sh"
+
+end

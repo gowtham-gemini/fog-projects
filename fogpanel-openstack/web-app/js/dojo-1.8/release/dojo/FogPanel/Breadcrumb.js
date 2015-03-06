@@ -1,0 +1,4 @@
+//>>built
+require({cache:{"url:FogPanel/templates/Breadcrumb.html":'<div class="breadcrumb_object"><li data-dojo-attach-point="divider">/</li><li><a class="disable" data-dojo-attach-point="breadcrumpName"></a></li></div>'}});
+define("FogPanel/Breadcrumb",["dojo/_base/declare","dijit/_Widget","dijit/_Templated","dojo/text!FogPanel/templates/Breadcrumb.html"],function(a,b,c,d){return a("FogPanel.Breadcrumb",[b,c],{templateString:d,additionalProperties:{},postCreate:function(){var a=this;this.breadcrumpName.innerHTML=this.additionalProperties.name;this.breadcrumpName.onclick=function(){a.onClick()}},addDiableClassTag:function(){this.breadcrumpName.className="disable"},removeDisableClass:function(){this.breadcrumpName.className=
+""},onClick:function(){}})});

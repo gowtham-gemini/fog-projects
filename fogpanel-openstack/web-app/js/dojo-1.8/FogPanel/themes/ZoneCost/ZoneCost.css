@@ -1,0 +1,18 @@
+.zoneCostContainer {
+    /*width: 650px;*/
+    margin-top: 5px;
+    
+}
+
+.zoneCostContainer .dijitTextBox {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.zoneNameContent {
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+

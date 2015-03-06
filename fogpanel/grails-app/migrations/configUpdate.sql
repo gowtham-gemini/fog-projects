@@ -1,0 +1,13 @@
+UPDATE billable_item set has_zone = 1 where id = 1; 
+UPDATE billable_item set has_zone = 1 where id = 2; 
+UPDATE billable_item set has_zone = 1 where id = 3; 
+UPDATE billable_item set has_zone = 1 where id = 4; 
+UPDATE billable_item set has_zone = 1 where id = 5; 
+UPDATE billable_item set has_zone = 1 where id = 6; 
+UPDATE billable_item set has_zone = 0 where id = 7; 
+UPDATE billable_item set has_zone = 0 where id = 8; 
+UPDATE billable_item set has_zone = 0 where id = 9; 
+UPDATE billable_item set has_zone = 1 where id = 10; 
+UPDATE billable_item set has_zone = 1 where id = 11; 
+UPDATE billable_item set has_zone = 1 where id = 12; 
+UPDATE config set value = "$" where name = "billing.default.currency"; 

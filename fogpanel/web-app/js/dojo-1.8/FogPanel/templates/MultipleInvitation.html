@@ -1,0 +1,24 @@
+<div class="row-fluid multiple_invitation" data-dojo-attach-point="mulipleWidgetContainer">
+    <div class="span4 field-box control-group zone-cost-boxcont">
+        <label class="control-label">${inviUserNameText}<span class="require">*</span></label>
+        <div class="controls">
+            <input type="text" data-dojo-attach-point="invitationName">
+        </div>
+    </div>
+    <div class="span4 field-box control-group zone-cost-boxcont">
+        <label class="control-label">${inviEmailText}<span class="require">*</span></label>
+        <div class="controls">
+            <input type="text" data-dojo-attach-point="invitationEmail">
+        </div>
+    </div>
+    <div class="span4 field-box control-group zone-cost-boxcont signupRadionList" data-dojo-attach-point="signupTypeContainer">
+        <label for="instanceZone" class="control-label">${inviSignTypeText}:<span class="require">*</span></label>
+        <div class="controls">
+            <input type="radio" data-dojo-attach-point="signupTypeTrial"/>
+            <label style="margin-right: 35px;">${inviTrialText}</label> 
+            <input type="radio" data-dojo-attach-point="signupTypeRetail"/> 
+            <label class="">${inviRetailText}</label>  
+        </div>
+        <div class="pull-right span1 hide_text" data-dojo-attach-point="invitationDeleteContent"><a title="${inviDaleteText}" data-dojo-attach-point="invitationDeleteOption"><img src="images/errorMessage.jpg" alt="loading"/></a></div>
+    </div>   
+</div>

@@ -1,0 +1,20 @@
+   It contain payment summary of current month and previous months. 
+Also,the current month due,credit,payment are highlight in static box.
+You can use Make payment option to make payment for current month draft invoice.
+
+ This page contain two section:
+
+  # Payment list
+  # Make payment
+
+*Payment list*
+
+     It list payment for current month and previous month with information of 
+Total payment paid, process fee, payment made date.
+
+*Make Payment*
+
+    You can use this option to make payment for current draft invoice. It contain field of 
+amount, Use default card or new card details.
+
+

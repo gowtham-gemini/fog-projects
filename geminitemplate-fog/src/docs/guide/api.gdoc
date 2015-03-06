@@ -1,0 +1,72 @@
+ Below are API reference material for FogPanel, provided by major feature version. Each feature version supports three levels of access, and the available API commands for each level are provided seperately.
+
+*Note*
+
+All API requests should have API Key and signature. The API Key and secret can be generated in admin panel.
+The user who makes the request is found using his API Key. The secret should not be shared with 
+
+*Signature Creation*
+
+   # Base64 for Query String without apiKey
+   # Append secret to the base64 value
+   # MD5 the new base64+secret value
+   # The MD5 value is the signature
+
+*Example*
+* API Key - ce42029e1e01d57ae41d60138ed6320610c988d0
+* Secret - ac166cc7d71c0a0099f95dfc20c625798b825ab22707ab1ceaa365afe4dc52b7dc3dd311dea709a90e57207cd0ad640187713d5ac5e4423fb9df7cfb8c861ef6
+* API URL - https://demo.fogpanel.com/FogPanel/
+* Request URL - https://demo.fogpanel.com/FogPanel/api/admin/account/listAccounts?status=ACTIVE
+
+*SIGNATURE CALCULATION*
+
+* Query String - status=ACTIVE
+* Base64 Value - c3RhdHVzPUFDVElWRQ==
+* Signature Calculation - MD5(c3RhdHVzPUFDVElWRQ==ac166cc7d71c0a0099f95dfc20c625798b825ab22707ab1ceaa365afe4dc52b7dc3dd311dea709a90e57207cd0ad640187713d5ac5e4423fb9df7cfb8c861ef6)
+* Signature - 00bc28dd8ff4815dab0a17f91745a280
+
+The signature changes based on the secret and when a small change happens in the query. 
+The signature is used to confirm that there are no middleman changing the values.
+
+*Error Response Codes*
+
+{code}
+
+1). 1000
+Reason : Required field missing
+
+{errorCode:1000 ,message:Required field missing}
+
+2). 2000
+Reason : Invalid field value
+
+{errorCode:2000 ,message:Invalid field value}
+
+3). 3000
+Reason : Security AuthenticationFailed
+
+{errorCode: "3000", message: "Security AuthenticationFailed"}
+
+4). 3100
+Reason : The API Key used is not valid or it was disabled
+
+{errorCode: "3100", message: "The API Key used is not valid or it was disabled"}
+
+5). 3200
+Reason : Invalid Signature
+
+{errorCode: "3200", message: "Invalid Signature"}
+
+6).3300 
+Reason: Invalid Payment Date
+
+{'errorCode':'3300' ,'message':'Date must be between'03-03-2014 to 01-04-2014}
+
+7). 4000
+Reason : Create VM Error
+
+{errorCode: "4000", message: "Cannot create VM , contact admin", result:"failed", name:"nandhini-1393242261076", referenceId:"d43468d8-7ff3-4180-8bca-b42e56ce02c1"}
+
+{code}
+
+

@@ -1,0 +1,15 @@
+.breadcrumb_object {
+    float: left;
+}
+
+.breadcrumb_object .disable {
+    color: #999999;
+    cursor: text;
+    text-decoration: none;
+}
+
+.breadcrumb_object .disable:active, .breadcrumb_object .disable:hover {
+    color: #999999;
+    cursor: text;
+    text-decoration: none;
+}

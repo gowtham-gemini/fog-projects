@@ -1,0 +1,80 @@
+/* TitlePane 
+ * 
+ * Styling TitlePane means styling the TitlePane title and its content container  (dijitTitlePane)
+ * 
+ * TitlePane title:
+ * 1. TitlePane title (default styling): 
+ * 		.dijitTitlePaneTitle - TitlePane's title div style: background-color, border
+ *
+ * 2. hovered TitlePane title (ie, mouse hover on a title bar)
+ * 		.dijitTitlePaneTitleHover - styles when mouse hover on the title div
+ * 
+ * 3. active TitlePane title (ie, mouse down on a title bar)
+ * 		.dijitTitlePaneTitleActive - styles when mouse down on the title div
+ * 
+ * 
+ * TitlePane Content Container:
+ * 1. outer/inner container: 
+ * 		.dijitTitlePaneContentOuter / dijitTitlePaneContentInner - styles for the content outer div
+ */
+.classic .dijitTitlePane {
+  margin-bottom: 10px;
+}
+.classic .dijitTitlePaneTitle {
+  background-color: #264460;
+  /*	.standard-gradient;*/
+
+  border: 1px solid #656d78;
+  padding: 6px 7px 6px 7px;
+  min-height: 17px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.classic .dijitTitlePaneTitleHover {
+  background-color: #f43300;
+  border-color: #5b2f24;
+}
+.classic .dijitTitlePaneTitleActive {
+  background-color: #c12901;
+  border-color: #5b2f24;
+  background-image: url("images/activeGradient.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+}
+.classic .dijitTitlePaneTitleFocus {
+  margin-top: 3px;
+  padding-bottom: 2px;
+}
+.classic .dijitTitlePane .dijitArrowNode {
+  background-image: url("images/spriteArrows.png");
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 7px;
+}
+.classic .dijitTitlePane .dijitOpen .dijitArrowNode {
+  background-position: 0 0;
+}
+.classic .dijitTitlePane .dijitClosed .dijitArrowNode {
+  background-position: -14px 0;
+}
+.classic .dijitTitlePane .dijitTitlePaneTextNode {
+  color: #ffffff;
+  padding-left: 10px;
+}
+.classic .dijitTitlePaneContentOuter {
+  background: #243748;
+  border: 1px solid #656d78;
+  border-top: none;
+}
+.classic .dijitTitlePaneContentInner {
+  padding: 10px;
+}
+.classic .dijitTitlePaneTextNode {
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: text-top;
+}

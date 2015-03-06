@@ -1,0 +1,11 @@
+ Departments are used to classified tickets. The first step in  user ticket 
+submission process is to choose their department. Admin users select department 
+in filter option to grab the user posted tickets.Common departments are Sales, 
+Support, Billing etc...
+{note}
+
+To setup departments, go to configuration > Support > 
+Departments.When creating a department you can enter a name and description. 
+Those created departments are displaying to users automatically. 
+
+{note}

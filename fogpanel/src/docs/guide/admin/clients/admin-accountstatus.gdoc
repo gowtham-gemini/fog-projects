@@ -1,0 +1,14 @@
+ Every account in fogpanel have any one of the following status:
+
+{note}
+
+Active - Account is active and using.
+Disable -  Account is disabled. Account aquire resource are paused in status also
+Users are able to login account but unable to perform any action. After logged in
+Account disabled page is appeared for user.
+Cancel - canceled by Admin
+Close - after cancel when total payable is zero the account will be closed
+Suspended - Suspended by admin.Due to abuse or some other reasons.
+Not verified - account not verified after sign up.
+
+{note}

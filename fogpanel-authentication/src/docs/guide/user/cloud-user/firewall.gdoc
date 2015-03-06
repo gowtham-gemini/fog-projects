@@ -1,0 +1,58 @@
+ Firewall filter Instance incoming and outgoing public internet traffic 
+according to a set of rules, called INBOUND and OUTBOUND rules. 
+These rules filter network traffic according to the IP address that is 
+attempting to communicate with the instance.You can modify firewall by deleting 
+or adding any number of inbound and outbound rules. When you do, 
+the new rules apply to Instance, whether running or stopped.
+If no inbound/outbound rules are specified, then no traffic will be allowed in, 
+except for responses to any traffic that has been allowed out through an egress rule. 
+In Fog-Panel firewall is based on a Instance. At time of instance creation 
+firewall and rules are pre-applied.
+
+!userguide/cloud-user/firewall/1.png!
+		
+		
+ *Adding Inbound and Outbound Rules to a Firewall*
+
+ !userguide/cloud-user/firewall/2.png!
+
+ !userguide/cloud-user/firewall/3.png!
+		
+		
+* Log in to the FogPanel UI.
+		
+* In the menu, choose cloud/Firewall
+		
+* In list view, choose firewall associated to vm, then click the Manage-Port.
+		
+* To add an inbound rule,click the inbound tab and fill out the following fields 
+to specify what network traffic is allowed into VM instances in this firewall. 
+If no inbound rules are specified, then no traffic will be allowed in, 
+except for responses to any traffic that has been allowed out through an 
+egress rule.
+
+* Options inside inbound rule*
+	
+* Add by CIDR:-
+ 
+     It indicate whether the source of the traffic will be defined by IP address 
+(CIDR).
+		
+*Protocol:-
+		
+ The networking protocol that sources will use to send traffic to the firewall. 
+TCP and UDP are typically used for data exchange and end-user communications. 
+ICMP is typically used to send error messages or network monitoring data.
+		
+*Start Port, End Port. (TCP, UDP only):- A range of listening ports that are the 
+destination for the incoming traffic. If you are opening a single port, 
+use the same number in both fields.
+		
+*ICMP Type, ICMP Code. (ICMP only):- The type of message and error code that 
+will be accepted.
+		
+*CIDR (Add by CIDR only):- To accept only traffic from IP addresses within a 
+particular address block, enter a CIDR or a comma-separated list of CIDRs. 
+The CIDR is the base IP address of the incoming traffic. 
+For example, 192.168.0.0/22. To allow all CIDRs, set to 0.0.0.0/0.
+	

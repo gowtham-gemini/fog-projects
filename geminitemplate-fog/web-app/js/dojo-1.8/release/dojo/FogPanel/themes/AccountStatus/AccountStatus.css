@@ -1,0 +1,19 @@
+.InstanceStatusContainer {
+   
+}
+
+/*.InstanceStatusContainer .span1 {
+	cursor: pointer;
+	max-width:16px !important;
+	max-height:16px !important;
+	min-height:16px !important;
+}
+*/
+.AccountStatusContainer img{
+	max-width:24px !important;
+	max-height:24px !important;
+	cursor:pointer;
+}
+.AccountStatusContainer.row-fluid [class*="span"]:first-child{
+	width:5.982905982905983%;
+}

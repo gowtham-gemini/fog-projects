@@ -1,0 +1,19 @@
+<div class="VPNStatusContainer"> 
+    <div class="row-fluid grind-icons">
+        <a class="span2" data-dojo-attach-point="configVPNContainer" >              
+            <img title="${configStatus}" data-dojo-attach-point="configNode"  src="images/config.png"/>
+        </a>        
+        <a class="span2" data-dojo-attach-point="rebootInstanceContainer">
+            <img title="${rebootStatus}" data-dojo-attach-point="rebootInstanceNode" src="js/dojo-1.8/FogPanel/themes/InstanceStatus/images/vm_reboot_icon.png"/>
+        </a>
+        <a class="span2" data-dojo-attach-point="vpnEditContainer">
+            <img title="${editStatus}" data-dojo-attach-point="editVpnNode" src="images/edit.png"/>
+        </a>
+        <a class="span2" data-dojo-attach-point="vpnDeleteContainer">
+            <img title="${deleteItemStatus}" data-dojo-attach-point="deleteVpnNode" src="js/dojo-1.8/FogPanel/themes/InstanceStatus/images/vm_delete_icon.png">
+        </a> 
+        <a class="span2 hide_text" data-dojo-attach-point="vpnAclContainer">
+            <img data-dojo-attach-point="changeACLNode" src="images/network_acl_icon.png">
+        </a> 
+    </div>    
+</div>

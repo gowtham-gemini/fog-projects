@@ -1,0 +1,13 @@
+    This section contain payment summary.Users payments are listed in the grid. 
+Also this page contains statics of  payments.
+
+ statics box contain following stat:
+
+ Current day payment:  This stat contain accumulated payments made for a day of 
+all of users in cloud.
+ Current month billing payment: This stat contain accumulated payments made for
+a current month of all of users in cloud.
+ Current year payment: This stat contain accumulated payments made for a current
+ year of all of users in cloud.
+
+!adminguide/billing/4.png!

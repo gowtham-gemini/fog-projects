@@ -1,0 +1,68 @@
+A volume is a unit of storage available to instance. Volumes are either root 
+disk or data disk. The root disk contain operating system. Data disks provide 
+additional storage for instance. Every Instance have a root disk, and optionally 
+have data disks too.User can create upto 5 data disks for a Instance. At the time of
+operating system installation root disk are created automatically. It get disk
+size capacity from template configuration.
+
+ !userguide/cloud-user/storage/1.png!
+
+*Creating Data-Disk*
+ 
+  !userguide/cloud-user/storage/2.png!
+
+* Log in to the FogPanel UI as a user.
+* In the menu, click cloud--> then click Storage.
+* Then Click Add disk. It provide the following details, and click OK.
+Name: A unique name for volume. You wish to create.
+Instance: Select Instance to attach this disk
+Disk offering: Choose the characteristics of the storage like size.
+
+The new volume appears in the list volumes with the state “Ready and attached 
+to vm.”
+ 
+(Note:- In create disk option is selected. if instance root disk type is shared.
+It load shared disk offering plans in create disk. It not load local disk 
+offering plan,because it is not possible to run the instance with root disk 
+as shared technology type and data disk as local technology type. You must run 
+both root and data disk as same storage technology type.)
+
+*Manage Datadisk*
+
+   User can perform following actions to manage the created data disks. Those
+action are given below:
+
+* Attach Disk: User can attach a volume to a guest VM to increase instance disk 
+space. Before that attached volumes must be not attached to any vms.
+To attach volumes:
+* Log in to the FogPanel UI.
+* In the menu, click Cloud/Storage.
+* In List View, select Volume and selected volume Action Attach disk button.
+* Instances list popup is appearing, choose VM to which you want to attach the 
+volume.
+* When the volume has been attached,In volume-list attached vm option have your 
+Instance name otherwise name Instance filed is empty.It means disk is in 
+detached state.
+
+  *Detach Disk*
+  
+
+A volume can be detached from a Instance and attached to another Instance. 
+To detach volume:
+
+* Log in to the FogPanel UI.
+* In the left menu, click cloud/Storage, and choose Volumes in Select View. 
+* Click the name of the volume you want to detach, 
+then click the Detach Disk button to detach it.
+
+  *Delete Disk*
+
+  When a Instance is destroyed, data disk volumes that are attached to the VM 
+are not deleted.
+
+ To delete a Volume:
+ 
+* Log in to the FogPanel UI.
+* In the left menu. click Cloud/Storage.
+* In List View, select Volume and selected volume Action delete disk button 
+to delete it.

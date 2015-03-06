@@ -1,0 +1,267 @@
+/* font face */
+@font-face {
+    font-family: 'UbuntuLight';
+    src: url('../fonts/ubuntu-l.eot');
+    src: url('../fonts/ubuntu-l.eot') format('embedded-opentype'),
+         url('../fonts/ubuntu-l.woff') format('woff'),
+         url('../fonts/ubuntu-l.ttf') format('truetype'),
+         url('../fonts/ubuntu-l.svg#UbuntuLight') format('svg');
+}
+
+
+
+/* globle properties */
+body{
+	font-family: 'UbuntuLight';
+	font-size:12px;
+	line-height:20px;
+	color:#7b7f8d;
+	background:#243748;
+	
+	
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul, ol{
+	list-style:none;
+}
+img{
+	border:none;
+	vertical-align:top;
+	max-width:100%;
+}
+a{text-decoration:none;}
+
+/* log in page start here */
+
+/* wrapper start here */
+#logIn{
+	text-align:center;
+}
+
+/* header start here */
+#logIn header{
+	padding:50px 0 20px 0;
+	border-bottom:1px solid #7b7f8d;
+}
+
+/* content section start here */
+#logIn #contentHolder{
+	padding:50px 0;
+	min-height:590px;
+}
+
+/* log in form start here */
+#loginForm{
+	margin:45px auto 0 auto;
+	width:370px;
+}
+#loginForm label{
+	color:#fff;
+	margin:0;
+	text-align:left;
+	font-weight:normal;
+	width:90px;
+}
+#loginForm .form-control{
+	display:inline-block;
+	width:275px;
+	height:20px;
+	line-height:20px;
+	border-radius:0;
+	color:#fff;
+	color:#333;
+	font-size:12px;
+	padding:0 5px;
+}
+#loginForm .form-btn{
+	width:275px;
+	float:right;
+}
+#loginForm .form-btn button{
+	height:20px;
+	width:100px;
+	line-height:20px;
+	padding:0;
+	border-radius:0;
+	background:#92a336;
+	color:#fff;
+	font-size:12px;
+	border:none;
+	margin:30px 0 10px 0;
+}
+#loginForm .form-btn button:hover{
+	background:#f04e23;
+}
+#loginForm .form-btn a{
+	display:block;
+	color:#616e5f;
+}
+#loginForm .form-btn a:hover{
+	color:#f04e23;
+}
+
+/* footer start here */
+footer{
+	border-top:1px solid #7b7f8d;
+	padding:10px 0;
+	text-align:center;
+}
+#logIn footer p{
+	padding-left:90px;
+}
+
+/* log in page end here */
+
+/* index page start here */
+
+/* header */
+header{
+	padding:25px 0;
+}
+#main .logo{
+	float:left;
+}
+#main .nav{
+	position:absolute;
+	left:50%;
+	width:320px;
+	margin-left:-160px;
+	top:40px;
+	text-align:center;
+}
+#main .nav li{
+	border-right:2px solid #7c8282;
+	line-height:normal;
+}
+#main .nav li:last-child{
+	border:none;
+}
+#main .nav li a{ 
+	font-size:14px;
+	color:#7c8282;
+	padding:0 8px;
+	display:inline-block;
+	
+	line-height:normal;
+	font-weight:bold;
+}
+#main .nav li a:hover{
+	background:none;
+	color:#92a336;
+}
+#main .nav li{
+	float:left;
+}
+
+/* user log out */
+#main header .userLogout{
+	float:right;
+	margin-top:15px;
+}
+#main header .userLogout .email{
+	color:#fff;
+}
+#main header .userLogout a{
+	color:#7c8282;
+	border-left:1px solid #7c8282;
+	padding-left:6px;
+	margin-left:6px;
+}
+
+/* article start */
+#main h1{
+	text-align:center;
+	color:#f04e23;
+	font-size:30px;
+	margin:0;
+	border-bottom:1px solid #7b7f8d;
+	padding-bottom:15px;
+}
+.colHolder{
+	text-align:center;
+	width:85%;
+	margin:0 auto;
+	color:#fff;
+	font-size:14px;
+	margin:50px auto;
+}
+.colHolder h2{
+	font-size:16px;
+	margin:30px 0 0 0;
+}
+.colHolder h3{
+	font-size:28px;
+	color:#f04e23;
+	font-weight:bold;
+	margin:10px 0 0 0;
+	border-bottom:1px solid #7b7f8d;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+.colHolder h3 span{
+	cursor:pointer;
+}
+.colHolder h3 a:hover{
+	text-decoration:none;
+}
+.colHolder p{
+	margin:0;
+}
+#contentHolder .startNow{
+	background:#92a336;
+	font-size:20px;
+	padding:15px 30px;
+	color:#243748;
+	display:inline-block;
+	font-weight:bold;
+	margin-top:50px;	
+}
+#contentHolder .startNow:hover{
+	text-decoration:none;
+	background:#f04e23;
+}
+/* index page end here */
+
+/* model window */
+
+/* add cloud model window */
+.modal-content{
+	border-radius:10px;
+}
+.modal-title{
+	color:#f04e23;
+	font-size:24px;
+	text-align:center;
+}
+.modal-header{
+	border:none;
+}
+.modal form label{
+	width:110px;
+	font-weight:600;
+	margin:0;
+}
+.modal form .form-control{
+	display:inline;
+	height:20px;
+	border-radius:0;
+	line-height:20px;
+	padding:0 5px;
+	font-size:12px;
+	border:1px solid #9497a2;
+	width:275px;
+}
+.modal-body{
+	padding:15px 50px;
+}
+.modal .form-btn{
+	float:right;
+	width:275px;
+	text-align:center;
+}
+.modal .modal-footer{
+	display:none;
+}

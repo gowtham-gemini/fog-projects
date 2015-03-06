@@ -1,0 +1,35 @@
+   FogPanel tracks the account resources and their usages then 
+calculate the amount owed for used resources.It generate invoice for that 
+resource consumption on every 30 days. 
+You can make payments manually for that generated invoice through credit card.
+The information of credit cards are stored by gateway providers.
+ 
+ *Two types of methods are used to bill customer:*
+
+    *Hourly billing (Aws-style billing)
+    *Monthly billing (Dedicated/vps style billing)
+
+ 
+ *Hourly billing*
+
+     Services billed in hour increments, add services to your account 
+without needing to pre-pay, and be invoiced is generated at the end of each 
+month only for the hours you used or invoice is generated after 30 days from
+sign-up.
+
+ *Monthly billing*
+   
+   Services billed based on subscription. You subscribe resource for monthly
+mode, Bill are not based on resource usage.You use or not you need to pay the
+monthly fee. This billing type is mostly used in datacenter to bill their 
+dedicated servers.
+
+                      !userguide/billing/1.png!
+
+ User billing section have following items:
+
+  *Current Usage
+  *Invoice
+  *Payments
+  *Add card
+  *Cancel account

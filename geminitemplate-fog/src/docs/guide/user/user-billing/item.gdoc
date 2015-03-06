@@ -1,0 +1,28 @@
+  This items are bill base on life cycle. You can contact admin to purchase 
+items like hardware firewall,support etc.. 
+
+ In fogpanel items are classified into two types.
+
+  *Recurring Item*
+  *Custom Item*
+
+ Recurring item: Items to bill on more than a life cycle. (e.g) You want 
+support for your virtual machine for next 6 months. Each month cost of support
+is USD 100. Admin add this support item as recurring item for next 6 month.
+Each month USD 100 is added in your invoice.
+ 
+ Custom item:Items to bill a current month life cycle only.(e.g) You want 
+support for your virtual machine for next current month only. Current month 
+cost of support is USD 100. Admin add this support item as custom item for
+ this current month. In current month invoice USD 100 is added.
+
+!userguide/billing/item/1.png!
+!userguide/billing/item/2.png!
+
+To see items in your panel go to  menu then click billing/item to see your 
+current and previous months recurring and custom items list. 
+In statics box current month recurring and custom items are highlighted.
+
+
+
+

@@ -1,0 +1,1 @@
+UPDATE account set account_identifier = "admin" where id = 10001;

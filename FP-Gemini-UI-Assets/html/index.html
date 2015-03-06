@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEMINI</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/jquery.selectbox.css">
+    <link rel="stylesheet" href="css/futurico.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+  </head>
+  <body>
+  	<!-- WRAPPER START HERE -->
+    <div id="main" class="container">
+    	<!-- HEADER START HERE -->
+    	<header>
+        	<a href="index.html" title="Gemini" class="logo"><img src="images/logo.png" alt="Gemini" title="Gemini" /></a>
+            <ul class="nav">
+            	<li><a href="javascript:void(0)" title="">MY APPLICATIONS</a></li>
+                <li><a href="javascript:void(0)" title="">MY CLOUDS</a></li>
+                <li><a href="javascript:void(0)" title="">USERS</a></li>
+            </ul>
+            <div class="userLogout">
+            	<span class="email">user@account.com</span>
+                <a href="javascript:void(0)" title="">Log Out</a>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <!-- HEADE END HERE -->
+        
+        <!-- CONTAINER START HERE -->
+        <section id="contentHolder">
+        	<h1>How It Works</h1>
+        	<div class="colHolder">
+            	<div class="row">
+                	<div class="col-sm-4">
+                    	<div class="figure">
+                        	<a href="javascript:void(0)" data-toggle="modal" data-target="#addCloud"><img src="images/add-cloud.png" alt="" title="" /></a>
+                        </div>
+                        <h2>STEP 1:</h2>
+                        <h3><span data-toggle="modal" data-target="#addCloud">Add a Cloud</span></h3>
+                        <p>
+                        	Add a cloud to be managed by Gemini. 
+							Admin credentials needed.
+						</p>
+                    </div>
+                    <div class="col-sm-4">
+                    	<div class="figure">
+                        	<a href="javascript:void(0)" data-toggle="modal" data-target="#scanCloud"><img src="images/scan-cloud.png" alt="" title="" /></a>
+                        </div>
+                        <h2>STEP 2:</h2>
+                        <h3><span data-toggle="modal" data-target="#scanCloud">Scan a Cloud</span></h3>
+                        <p>
+                        	Scan a cloud for applications to encapsulate into a Gemini Container. 
+                            Choose applications from Gemini Application Dictionary or create rules for custom applications.
+						</p>
+                    </div>
+                    <div class="col-sm-4">
+                    	<div class="figure">
+                        	<a href="javascript:void(0)" data-toggle="modal" data-target="#nextStep"><img src="images/get-work.png" alt="" title="" /></a>
+                        </div>
+                        <h2>STEP 3:</h2>
+                        <h3><span data-toggle="modal" data-target="#nextStep">Get to Work!</span></h3>
+                        <p>	
+                            Gemini Containers can be seamlessly 
+                            moved, cloned, replicated into and restored from any target cloud.
+						</p>
+                    </div>
+                	<div class="clearfix"></div>
+                </div>
+                <a href="javascript:void(0)" title="" class="startNow">START NOW: Add a Cloud</a>
+            </div>
+            
+        </section>	
+        <!-- CONTAINER END HERE -->
+        
+        <!-- FOOTER START HERE -->
+        <footer>
+        	<p>Footer info</p>
+        </footer>
+        <!-- FOOTER END HERE -->
+    </div>
+    <!-- WRAPPER END HERE -->
+    
+    
+    
+    <!-- MODAL WINDOW START HERE -->
+    
+        <!-- ADD CLOUD Modal WINDOW -->
+        <div class="modal fade" id="addCloud" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Add a Cloud</h4>
+              </div>
+              <div class="modal-body">
+               <form role="form">
+              <div class="form-group select">
+                <label for="cloudTpye">Cloud Type</label>
+                <select class="form-control custom-select">
+                	<option>Type 1</option>
+                    <option>Type 2</option>
+                </select>
+                
+                <div class="clearfix"></div>
+              </div>
+              <div class="form-group select">
+                <label for="centerServer">vCenter Server</label>
+                <select class="form-control custom-select-server">
+                	<option>Type 1</option>
+                    <option>Type 2</option>
+                </select>
+                <div class="clearfix"></div>
+              </div>
+              <div class="form-group">
+                <label for="adminName">Admin Name</label>
+                <input type="text" class="form-control" id="adminName" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="adminPassword">Admin Password</label>
+                <input type="text" class="form-control" id="adminPassword" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="cloudName">Cloud Name</label>
+                <input type="text" class="form-control" id="cloudName" value="" placeholder="">
+              </div>
+              <div class="form-group form-btn">
+                <a href="javascript:void(0)" title="" class="btn">Add a Cloud</a>
+                <a href="javascript:void(0" title="" class="cancel">Cancel</a>
+                
+             </div>
+             <div class="error">
+             	! Error message can go here if necessary. Otherwise goes to step 2.
+             </div>
+             <div class="clearfix"></div>
+              
+            </form>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+         <!-- SCAN FOR CLOUD Modal WINDOW -->
+        <div class="modal fade" id="scanCloud" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Scan for Applications</h4>
+                
+              </div>
+              <div class="modal-body">
+              <div class="head">
+              	Your cloud, &lt;Cloud Name&gt;, has been created.
+                <strong>Scan &lt;Cloud Name&gt; for these applications:</strong>
+                </div>
+               <form>
+ 					<label><input type="checkbox" value=""  class="radio-setting">Application A</label>
+                    <label><input type="checkbox" value=""  class="radio-setting">Application B</label>
+                    <label><input type="checkbox" value=""  class="radio-setting">Application C</label>
+                    <label><input type="checkbox" value=""  class="radio-setting">Application D</label>
+                    <label><input type="checkbox" value=""  class="radio-setting">Application E</label>	
+                    <label><input type="checkbox" value=""  class="radio-setting">Application F</label>
+                    <label><input type="checkbox" value=""  class="radio-setting">Application G</label>
+                    <label><input type="checkbox" value=""  class="radio-setting">Application H</label>	
+                     <div class="form-group form-btn">
+                        <a href="javascript:void(0)" title="" class="btn">Scan for Applications</a>
+                         <a href="javascript:void(0)" title="" class="cancel">Cancel</a>
+                        
+                     </div>
+                     <div class="seekBar">
+                     	<div class="progressBar">
+                        	Finding Apps: 51%
+                        </div>
+                     </div>
+            	</form>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    	<!-- NEXT STEP Modal WINDOW -->
+        <div class="modal fade" id="nextStep" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Next Steps:</h4>
+              </div>
+              <div class="modal-body nextStep">
+               	<strong>Success!</strong>
+                X applications have been found. 
+                <div><a href="#" title="" class="btn">View Applications</a></div>
+                Done
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.selectbox-0.2.min.js"></script>
+    <script src="js/icheck.js"></script>
+  	
+    <script>
+	$(document).ready(function(){
+	
+		/* rediao and checkbox buton skin for settings*/
+		 $('.radio-setting').iCheck({
+    		checkboxClass: 'icheckbox_setting',
+   			radioClass: 'iradio_futurico',
+    		increaseArea: '20%' // optional
+  		});
+		
+		// Custome Select
+		
+		$(".custom-select").selectbox();	
+	})
+	
+	$(".custom-select-server").selectbox();	
+	</script>
+  </body>
+</html>

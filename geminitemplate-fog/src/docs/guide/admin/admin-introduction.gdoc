@@ -1,0 +1,45 @@
+  Fogpanel provides billing provision for cloudstack IAAS. You build 
+your own cloudstack IAAS infrastructure on top of that infrastructure you install 
+and configure fogpanel. Fogpanel uses cloudstack api`s to connect cloudstack
+to do tasks. Admin user in fogpanel are able to manage  underlying cloudstack 
+IAAS cloud without login to cloudstack. Currently limited cloudstack management 
+features are support in fogpanel admin user. In future, we increase those 
+features. In cloudstack three types of network model is avaliable those are
+
+*Basic network*
+*Advance network*
+*Advance network with VPC*    
+
+ {note}
+
+ Basic network is mainly use in webhosting industry, Advance network and Advance
+network with vpc is mainly use in enterprises. Currently Fogpanel support
+Basic network, we are developing Advance network and Advance network with vpc.
+
+ {note}
+ 
+  *Few of Features in Fogpanel are listed below:*
+
+ *Hourly / Monthly Billing Modes*
+ *Credits / Promotion System*
+ *Invoice Management*
+ *Tax Support*
+ *Payment Gateway Integration*
+ *Discount management*
+ *Payment Reminders*
+ *Late Fee Management*
+ *Email Templates*
+ *API Integration With Any Billing Apps*
+ *Handy cloudstack management*
+ *Easy client management*
+ *Ticketing system*
+ *Cloudstack resource monitoring*
+ *Template store*
+ *Manually add items for customers*
+ *Login as client option*
+ *Analysis tools*
+ *Alerts/event management*
+ *Bandwidth control management* 
+  
+
+    

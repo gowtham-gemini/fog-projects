@@ -1,0 +1,14 @@
+ In fogpanel every chargeable resource is a billable item. Fogpanel contain 
+pre-built billable item by default for cloud purpose. Admin have option to 
+enable and disable it only. If admin want to provide some extra service for
+users on month basics. In fogpanel admin use this items option to add the items
+for users to provide extra service. In this section contain users recurring and 
+custom items for current billing month cycle are listed in grid. Recurring items 
+is charged for more than one billing cycle.Custom item is charged for a current month.
+
+!adminguide/billing/5.png!
+
+custom items is charged for a billing cycle. Item stats box contain stat for
+current month recurring and custom items for all users.
+
+!adminguide/billing/6.png!

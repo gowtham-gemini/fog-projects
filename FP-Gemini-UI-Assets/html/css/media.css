@@ -1,0 +1,169 @@
+@media only screen and (max-width:768px) {
+.actionBtn_row a{
+	margin-left:1px;
+}
+}
+
+@media only screen and (max-width:767px) {
+.modal-body{
+	padding:15px;
+}
+.sbHolder{
+	float:left;
+}
+.modal .form-btn{
+	float:none;
+	width:auto;
+}
+#main .logo{
+	width:100%;
+	text-align:center;
+	display:block;
+	float:none;
+}
+#main  .nav{
+	top:130px;
+}
+#main header .userLogout{
+	float:none;
+	text-align:center;
+	margin:20px 0;
+}
+.modal form{
+	width:385px;
+	margin:0 auto;
+}
+.modal form .form-control, .sbHolder{
+	width:100%;
+}
+.colHolder .row > div{
+	margin-bottom:20px;
+}
+.application-content .row > div{
+	margin-bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.application-content{
+	width:auto;
+	padding:0 15px;
+}
+.actionBtn_row .quickLinks{
+	text-align:center;
+	float:none;
+}
+.application-content .actionBtn_row h2{
+	margin:0;
+	text-align:center;
+}
+.actionBtn_row{
+	text-align:center;
+	padding-left:0;
+}
+.actionBtn_row >  div{
+	float:none;
+}
+.actionBtn_row .quickLinks{
+	float:none;
+	padding-top:15px;
+}
+.title .progressBar{
+	width:175px;
+}
+.emailId{
+	font-size:10px;
+}
+.myApp .iconBtn{
+	text-align:left;
+	padding-left:50px !important;
+}
+.table .progressBar{
+	margin:5px 0 0 35px;
+}
+
+.app-status span{
+	width:auto;
+	padding-left:0 !important;
+	display:block;
+}
+.app-status  p{
+	padding-left:35px;
+}
+.app-status a{
+	margin-left:35px;
+}
+.hide{
+	display:none;
+}
+.app-status{
+	padding-left:0;
+}
+.application-content .app-type, .app-item{
+	padding-left:35px;
+}
+.searchApp{
+	float:none;
+	margin:15px auto !important;
+}
+}
+
+@media only screen and (max-width:479px) {
+footer p{
+	padding-left:0;
+}
+#loginForm, #loginForm .form-control{
+	width:100%;
+}
+#loginForm label{
+	display:block;
+}
+#loginForm .form-btn{
+	float:none;
+	width:100%;
+}
+.modal form{
+	width:auto;
+}
+#contentHolder .startNow{
+	font-size:14px;
+}
+
+
+
+
+
+
+
+.emailId .addUser{
+	padding:10px;
+}
+.emailId .addUser input{
+	display:block;
+	margin:0;
+	width:100%;
+}
+.emailId .addUser button{
+	margin:5px 0 0 0;
+}
+.emailId .row > div{
+	margin:0;
+}
+.actionBtn_row a{
+	margin:3px 2px;
+}
+.title .progressBar{
+	display:none;
+}
+.emailId{
+	font-size:9px;
+}
+}

@@ -1,0 +1,287 @@
+1.1 What is FogPanel?
+Fogpanel enables cloud builders to move towards an IAAS model by managing and delivering
+multiple cloud deployment services through a single and flexible cloud services portal. Organizations
+can aggregate any infrastructure, cloud, IT or value added services and enabling users to manage their
+accounts through a simple and a self-service portal.
+
+!installguide/1.jpg!
+
+Fogpanel Provides a customized cloudstack billing solutions and development services based on
+customer’s Requirements. Thus the billing software has been fashioned to take care of all the
+administrative needs.
+
+h3. 1.2 Deployment Architecture Overview
+
+A FogPanel billing software needs atleast minimum cloudstack infrastructure setup. Cloudstack
+API key and Secret Key used to integrate with Fogpanel. When you install and setup cloudstack, make
+sure high configuration setup for Fogpanel / Management server meets the following minimum
+requirements.
+You can install both Fogpanel and Cloudstack Management on single server.
+
+*Operating system:*
+* Preferred: CentOS/RHEL 6.3+ or Ubuntu 12.04(.1)
+* 64-bit x86 CPU (more cores results in better performance)
+* 4 GB of memory
+* 250 GB of local disk
+* At least 1 NIC
+* Statically allocated IP address
+* Fully qualified domain name as returned by the hostname command.
+* Atlest one host hypervisor server which meets the following Minimum requirements:
+* Must support HVM (Intel-VT or AMD-V enabled).
+* 64-bit x86 CPU (more cores results in better performance)
+* Hardware virtualization support required
+* 4 GB of memory
+* 36 GB of local disk
+* At least 1 NIC
+* Latest hotfixes applied to hypervisor software
+* When you deploy CloudStack, the hypervisor host must not have any VMs already running
+* All hosts within a cluster must be homogeneous. The CPUs must be of the same type, count, 
+* and feature flags.
+
+*Primary Storage / Secondary Storage requirements.*
+
+    Primary Storage the disk volumes for all of the VMs running on hosts in that cluster. You can add
+    multiple primary storage servers to a Zone in future. Secondary storage stores Templates, ISO images
+    and Disk volume snapshots. Its available all the hosts in your zone or region.
+    Minimum 500G Disk Size Required.
+    Mostly these storage connects through iSCSI, NFS servers and Amazon Simple Storage Service (S3)
+    object storage that are supported by the underlying hypervisor.
+
+*Network Traffic Types*
+
+    Currently Fogpanel 1.0 Supports Basic zone network Traffic types. Your physical network carries
+    Management and Guest Traffic in your Basic Network Types. You must add a Direct IP range on the
+    pod and make sure IPs are in the same VLAN as the hosts to avoid network conflicts.
+    Please refer with cloudstack physical network setup documentation for more information.
+
+*Configure separate server for Fogpanel and Cloudstack Management ( Recommended)*
+
+!installguide/2.jpg!
+
+*Fogpanel billing software and Cloudstack Management on Single server*
+
+!installguide/3.jpg!
+
+*Cloudstack Usage Server*
+
+ Install Cloudstack Usage server once the Management Server is configured properly. The
+Cloudstack Usage Server takes data from the events in the system and enables usage-based billing for
+accounts.
+In order to install cloudstack usage, please use the following command in your cloudstack
+management server
+yum install cloudstack-usage
+service cloudstack-usage start
+
+h3. 2 System Requirments*
+    *2.1 FogPanel Minimum H/W Requirments?*
+
+* CentOS 6.x and Latest / Ubuntu 12.x and Latest
+* Minimum 4G RAM
+* Minimum 4 Core CPU
+* Minimum 50G Disk
+
+*2.2 FogPanel Server, Database, and System Application Requirements*
+
+    Apache 2.2.x and above or Nginx 1.4.x and above
+    Your fogpanel accessible domain should be need to install SSL certificate for secure
+    access. Fogpanel installation script will automatically install Apache or Nginx Webserver.
+    MySQL Version 5.1.x and above
+    Fogpanel installation script will automatically install MySQL.
+
+*Install JDK*
+ 
+        Install JDK and configure home envirenment JAVA_HOME. Download JAVA JDK7
+        (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
+*For Example*
+
+* CentOS server:-
+* Install from Source
+* cd /usr/local/
+* Download jdk-7u55-linux-x64.tar.gz
+* https://download.oracle.com/otn-pub/java/jdk/7u55-b13/jdk-7u55-linux-x64.tar.gz
+* tar -zxvf jdk-7u55-linux-x64.tar.gz
+* export JAVA_HOME=/usr/local/jdk1.7.0_55/bin
+* export PATH=$PATH:/usr/local/jdk1.7.0_55/bin
+* Install from RPM
+* Download jdk-8u5-linux-x64.rpm
+* https://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.rpm 
+* rpm -ivh jdk-8u5-linux-x64.rpm
+* export JAVA_HOME=/usr/java/jdk1.8.0_05/bin
+* export PATH=$PATH:/usr/java/jdk1.8.0_05/bin
+* Firewall Ports
+* Enable port's *8089* , *8005*, *443*, *5672*
+
+*Install RabbitMQ*
+
+    RabbitMQ is open source highly reliable message broker software that implements the
+    Advanced Message Queuing Protocol. The RabbitMQ server is written in the Erlang programming
+    language and is built on the Open Telecom Platform framework for clustering and failover. We are
+    using this rabbirmq to message broker between FogPanel and Cloudstack management server.
+
+!installguide/4a.jpg!
+
+You can install RabbiMQ any of your fogpanel or cloudstack management server
+( RECOMMENDED to INSTALL ON CLOUDSTACK SERVER) with rabbitmq's dependancy Erlang.
+* For example,
+*CentOS server:-*
+* yum install rabbitmq-server
+* Configure RabbitMQ:-
+* You must configure RabbitMQ queue and binding setting to share messages between
+* FogPanel Server. Login your RabbitMQ Control panel and add the following 4 queues.
+* http://localhost:15672/ ,User : Guest,Pass : Guest
+
+h3. Groovy
+
+    Groovy is an object-oriented programming language for the Java platform. It is a dynamic language with features similar to those of Python, Ruby, Perl, and Smalltalk. FogPanel using this groovy langurage for the java. Fogpanel installation script will automatically install groovy.
+    Apache Tomcat Apache Tomcat is an open source software implementation of the Java Servlet and JavaServer Pages technologies. The Java Servlet and JavaServer Pages specifications are developed
+    under the Java Community Process. Fogpanel installation script will automatically install Apache Tomcat.
+
+* *2.2 Browser support*
+
+    Use the following supported Browser.
+    Chrome - 34.0
+    Firefox -29.0.1
+    Opera -2.42
+
+h3. 3 Install FogPanel
+
+h3. 3.1 Integrating Cloudstack with FogPanel*
+    
+    * Fogpanel is intergrate with cloudstack through API key and Secret Key. Download and install Cloudstack 4.2 as per the installation document. Install cloudstack on NAT and avoid public direct access is recommended.http://cloudstack.apache.org/docs/en-US/Apache_CloudStack/4.2.0/html/Installation_Guide/index.html
+h4. Recommended settings in cloudstack global configuration:
+    * *Page size settings*:
+    ** default.page.size:5000
+    ** detail.batch.query.size:50000
+    ** Usage server settings:
+    ** enable.usage.server: True
+    ** usage.aggregation.timezone:GMT
+    ** usage.execution.timezone : CST
+    ** usage.sanity.check.interval: 10
+    ** usage.stats.job.aggregation.range:1440
+    ** usage.stats.job.exec.time: 00:30
+    
+h3. Api port:
+    port Port to listen on for agent connection.8250
+    Restart Cloud Stack
+    /etc/init.d/cloudstack-management restart
+    Once the cloudstack setup and configuration of Zone,Cluster, Host, Primary, Secondary
+    completed, please review the Virtual Machine creation.
+
+h3. Configure RabbitMQ settings
+    * The following one-time RabbitMQ configuration to enable event notification in Cloudstack.
+    * cd /usr/share/cloudstack-management/webapps/client/WEB-INF/classes/
+    * Open 'applicationContext.xml'.
+    * Define a bean named eventNotificationBus as follows:
+    * server : The name or the IP address of the RabbitMQ AMQP server.
+    * port : The port on which RabbitMQ server is running.
+    * username : The username associated with the account to access the RabbitMQ server.
+    * password : The password associated with the username of the account to access the RabbitMQ server.
+h3. A sample bean is given below:
+    {code}
+        <bean id="eventNotificationBus"
+        class="org.apache.cloudstack.mom.rabbitmq.RabbitMQEventBus">
+        <property name="name" value="eventNotificationBus"/>
+        <property name="server" value="127.0.0.1"/>
+        <property name="port" value="5672"/>
+        <property name="username" value="guest"/>
+        <property name="password" value="guest"/>
+        <property name="exchange" value="cloudstack-events"/>
+        </bean>
+    {code}
+    * The eventNotificationBus bean represents the org.apache.cloudstack.mom.rabbitmq.RabbitMQEventBus class.
+    * Restart the Cloudstack Management Server.
+    * Update Keys You should generate API key and Secret Key. In order to generate API key,CloudStack - > Accouns -> admin -> Users -> admin -> Click Generate Keys option.
+
+h3. 3.2 Prepare required details.
+
+Fogpanel is successfully tested with cloudstack 4.2 version. Before proceed to run
+fogpanel installation script, prepare the following details.
+* CloudStack API Key
+* CloudStack Secret Key
+* Cloudstack Accessible Url ( http://localhost:8080/client )
+* FogPanel Application Url ( https://yourdomain.com/portal )
+* DefaultCurrency
+* Rabbitmq server IP
+* Rabbitmq username (Default : guest)
+* Rabbitmq password (Default : guest)
+* SMTP Email Hostname
+* SMTP Email Port No
+* SMTP Email username
+* SMTP Email password
+
+h3. 3.3 Download and Install fogPanel
+    * Login your fogpanel server and download fogpanel installation script as a root user and run the following commands.
+    * cd /usr/local/
+    * tar -xvf fogpanel.tar
+    * cd fogpanel
+    * ./install.sh
+    * Once the fogpanel installation completed, you will receive the fogpanel login URLs.
+    * Login your FogPanel Portal on https://yourdomain.com/portal
+    * Login your FogPanel Client on http://clouddomain:8080/client
+h3. 3.4 Reboot ( Recommended )
+    Once all the fogpanel installation completed, please reboot the server. Restart fogpanel service*  service fogpanel restart
+h3. 4 Basic Fogpanel Configuration Setup
+    * For your reference, please refer the following basic fogpanel configuration details. Once the cloudstack and fogpanel instalation completed.
+    * Login your fogpanel as admin user.
+    https://yourdomain.com/portal
+    Default user : admin
+    Default Pass : password
+
+h3. 4.1 Setup Billing details
+    * Update organization address, Logo, Terms and Conditions, etc.,
+    * Go to Configuration → General → Organization Billing Settings
+    * Enable Credit card processing, verification and Payment Gateway settings processing fee settings, etc.,
+    * Go to Configuration → Billing → Payment Settings
+    * Go to Configuration → Billing → Payment Gateway
+
+!installguide/4.jpg!
+
+h3. 4.2 Setup Computer Offering
+    In order to create VM, You should create computer offering which is available VM CPU,
+    RAM, Network speed etc., with billing information.
+    Go to Service → Computation → Add
+
+!installguide/5.jpg!
+
+h3. 4.3 Template Store
+    Add and upload your favorite OS template file which is VHD extension or use our
+    template store pre uploaded templates.
+    Go to Services → Template Store → Add
+
+!installguide/6.jpg!
+
+h3. 4.4 Enable Firewall
+    You can set firewall rules to allow specific traffic, and the remaining traffic is blocked.
+    When you remove all the rules, the default policy blocked is applied.
+    Go to Cloud → Firewall → Add
+
+    Once created firewall, you must click Manage Port and add Inbound or Outbound ports. Allow
+    Service: TCP/UDP/ICMP/All Protocols
+    For example: TCP port 22. To allow all CIDRs, set to 0.0.0.0/0.
+
+!installguide/7.jpg!
+
+h3. 4.5 Login user account
+
+    Once the admin panel Basic configuration setup is completed. Go to fogpanel URL
+    https://yourdomain.com/portal and signup as the customer portal.
+    Go to Cloud → Instance and create your Virtual Machine.
+
+h3. 5 Upgrading FogPanel*
+
+h3. 5.1 System Preparation
+    * Backup your fogpanel database
+    * Stop fogpanel service
+
+h3. 5.2 Upgrading FogPanel
+    In order to upgrade your Fogpanel, you should download the upgrade script and run as a
+    root user.
+    Once upgrade process completed restart mysql server and fogpanel.
+
+h3. Troubleshooting FogPanel Installation
+
+    * JDK is not installed in your server, Install Oracle Java Platform (JDK) and setup home environment JAVA_HOME path and then run script again. Fogpanel billing software needs JDK to execute java process. You should install jdk from source file or RPM and configure JAVA_HOME. Please check JDK installation steps in this document.
+    * The connection with the server was terminated! please provide correct configuration,If you receive this error in your Fogpanel portal, then make sure your cloudstack management service is running properly. Check your cloudstack management server and restart service. /etc/init.d/cloudstack-management restart
+    * Fogpanel Blank page or “Please contact admin” error page, then check your database connection on  /usr/local/tomcat/conf/context.xml <Resource name="jdbc/FogPanelDataSource" auth="Container" type="javax.sql.DataSource" maxActive="100" maxIdle="30" maxWait="10000" username="DBUSER" password="DBPASS" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/DBNAME"/> Once the database connection fixed, restart mysql service and fogpanel.Fogpanel SSL secure connection Errors. Please check your fogpanel accessible domain SSL virtual host entries and make sure SSL port 443 is enabled in Firewall.
+    * Unable to Connect New VM or Ping. This problem should be caused Firewall Rules which is blocked default. Login Fogpanel → Cloud → Firewall → click manage ports and allow ports which you want.

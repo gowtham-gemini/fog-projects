@@ -1,0 +1,103 @@
+*User panel faq:*
+
+1. *How you charge my resources like instance,storage,sanpshot etc..?*
+    
+        By default fogpanel charges resources in hourly metering. 
+
+2. *what is current usage denotes?*
+    
+        It denotes current month consumed service usage on as on date.
+
+
+3.  *what is zone and non zone(misc) items?*
+
+        zone based item relate to cloud services.
+        Non-zone base item(misc) relate to billing services.
+
+4.  *what it dentos Item name,Plan,Units,qty,charges in current usage?*
+
+        Item name: It denotes name of subscribed item
+        Plan : It denotes packages of subscribed item
+        Units: Per unit price for item
+        qty:  Number hours used for a item or an item.
+        Charges: Total charge for item
+
+5. *what is previous balance?*
+
+        Previous month unpaid amount. 
+
+6. *what is current charges?*
+
+    The charges payable by a consumer for supply of items.
+
+7. *what is Total payable?*
+
+        Total bill amount.
+
+8. *what is credit?*
+
+        Nothing but discount
+
+9. *what is current due?*
+
+        Total bill amount. It include previous balance-payments+current usage.
+
+10. *what is usage cost?*
+
+        Daily resource charges
+
+11. *where i see my bandwidth usage?*
+
+        Go to service menu under bandwidth option. It list bandwidth usage with charges.
+
+12. *what is billiable item report?*
+
+        Option use to analyisis your past & present billing usage.
+
+13. *How each resource are charges is calculate for users?*
+
+    Computation  -- per cpu/ram/ghz -- per hour/per month
+    Storage --  per gb/perhour/permonth
+    Snapshot-    pergb/perhour
+    Templates - per templates/per instance
+    Vmsnapshot - per hour
+    IP - per ip/permonth
+
+14. *How tax is apply?*
+
+    Tax is apply for each service. It mention in current usage as well your invoice have the tax details.
+
+15. *How discount is apply?*
+
+    Discount is apply for sum amount of your service charges.
+
+16. *how promo code is apply?*
+
+    It nothing but discount provide for user.
+
+17. *what is custom disk? how you charge it?*
+
+    In fogpanel storage is plan based. custom disk is non-lan based disk. Using this custom disk 
+    option user want to choose their desired disk space by themselfwe charge disk based on  usage per gb/per 
+    hour.
+
+18. *can i create volume from root disk snapshot? how you charge it?*
+
+    You can create volume from root disk sanpshot. That created volume is treated as custom disk. 
+    we charge custom disk beased on usage  per gb/per hour.
+
+19. *what is storage type?*
+
+    Storage type is a technology based. There are two type of storage type is avaliable
+    1. Local 2. shared.
+    1. Local type- Hard disk are attached to hypervisor host.
+    2. Shared type stand for san based storage technology type disks.
+
+20. *why you provide hypervisor type in create vm?*
+
+    Fogpanel support xenserver and kvm. Plans are created based hypervisor. Because cost of each 
+    hypervisor is different.
+ 
+
+
+

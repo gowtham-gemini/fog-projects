@@ -1,0 +1,9 @@
+  IP-Manager is built-in product service for service providers. It provide
+additional Ipaddress for virtual machine. In fogpanel, we denotes this addition 
+ip as secondary ip.User use option aquire ip to aquire ip address for their
+Instance. Aquire IP option need to know your instance name, then after it aquire 
+ip work other wise otherwise it`s not. Release secondary ip have the same 
+procedure too. Manually you need to add and remove aquired/released ips in VM.
+
+
+ !userguide/services/ipmanager/1.png!

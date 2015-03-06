@@ -1,0 +1,99 @@
+*Instance-management*
+   
+       Fogpanel provides instance management operations for users. Instance may 
+be stop, start, reboot, destroy,restore etc..
+
+!userguide/cloud-user/instancemanagement/2.png!
+ 
+In fogpanel instances are in following state:
+ 
+
+#Once a Instance is destroyed, it cannot be recovered. All the resources used by 
+the Instance will be reclaimed by the fogpanel. 
+#A stop action will attempt to gracefully shutdown the operating system, 
+which typically involves terminating all the running applications.
+#Using force stop option to stopped vm. Use this option the operation system 
+cannot be stopped, it will be forcefully terminated.This has the same effect as 
+pulling the power card to a physical machine.This may cause harddisk to
+corrputed.
+#A reboot is a stop followed by a start.
+ 
+#User delete instance. That delete instance status is changed to destroyed. 
+If user want back that deleted Instance.It use option restored, To back 
+instance without loss of any data. Because user do delete option instance 
+is go to destroyed state. Normally it not destroyed. At period of time it is in 
+destroyed state. This time is setup in cloudstack. If that time expire.
+It automatically expunged.
+
+*Create Instance*
+
+   Instance are usually created from a template. Template is a file that contain
+operating system image also you need to select Instance hostname,computation,
+firewall and optionally you can choose secondary harddisk. Computation plan  are 
+classified into differenet types based on cpu and memory capacity.
+
+ !userguide/cloud-user/instancemanagement/1.png!
+
+ To create a instance:
+* Log in to the Fogpanel UI.
+* In menu, click cloud then Instance.
+* then Click create Vm.
+* select Displayname(Hostname),Hypervisor type,computation-plan,template etc.then Click Submit 
+and your Instance will be created and started.
+ (Note:- You need to setup Display name manually in virtual machine also
+Storage type contains two technology shared SAN like storage, Local Disk
+attach to hypervisor server also computation plans are load based on your OS
+minimal system requirement)
+
+*Accessing Instance*
+ 
+To access created Instance or VM through the FogPanel UI:
+
+ * Log in to the Fogpanel UI.
+ * Click cloud menu then Instances, then click the name of a running VM.
+ * It redirect to instance management page, from that page you click 
+the start Console button to access the virtual machine or you can use virtual 
+machine primary ip to access virtual machine.
+
+*Instance Actions*
+
+User can perform following action in their Instance:
+    
+  * Stop,start,restart,restore,delete,attach/detach-iso`s,start console( use to
+connect vm)
+   
+  * To change Computation Plan for instance. User must stop  instance to 
+upgrade/downgrade their instance computation plan.
+   
+  * Show password - To show running vm password,
+    
+  * Reset password - Instance must be stopped to reset Instance password. 
+After password is reset user click show password to view the reset password.
+       
+  * Change Hostname -  After hostname is changed user must reboot instance,
+ so that new hostname to take effect.
+         
+  * Firewall - Option to open/close (tcp,udp,icmp) inbound and outbound ports 
+for instance traffic. This enhance security of virtual machine.
+        
+  * Vmstatics- show instance current usage of cpu,Bandwidth,disk-i/o etc..
+    
+  * Addvolume - Option to add secondary disk for Instance.
+    
+  * Aquireip/release ip - Option to aquire/release secondary ips for a Instance. 
+User must add those aquired ip in their instance manually.
+        
+  * Ssh-key Manager- Use to regenerate ssh key for virtual machine.
+     
+  * Vm-snapshot - Option to snapshot Instance. This snapshot include both root 
+and data disks datas. Once vm snapshot is created user is unable to perform 
+any disk action like create disk,attack disk,detach disk. User may delete vm,
+their vm-snapshot is delete automatically.
+
+  * Snapshot -User perform snapshot for both root disk and data disk separately.
+ 
+  * Attach/detach iso-  If user vm may crash. User attach live cd iso to their 
+vm using this option to recover the crash vm.
+
+
+

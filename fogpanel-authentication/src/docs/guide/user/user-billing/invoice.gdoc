@@ -1,0 +1,14 @@
+An invoice is a document that is issued by a seller to the buyer. 
+An invoice indicates the quantities and costs of the goods or services rendered.
+The Invoices page shows a list of your invoices for previous months. 
+Select an invoice and use option pdf to download invoice and view the details. 
+Your invoice number,previous balance etc.. is displayed in the Invoices list.
+In billing term this invoice is called as final invoice.User pay payments for
+this invoices. If users paid excess amount for final invoice. That excess amount
+is marked as previous balance with -amount (eg) Final invoice amount is for 
+previous month is USD 500 for account sam. If sam pay USD 1000. The excess
+USD 500 is go to previous balance in current invoice (Draft invoice) as -500 USD.
+if sam pay USD 250 for final voice the remaining due is also sent to 
+previous balance in current invoice (Draft invoice) as +250 USD. 
+
+!userguide/billing/invoice/1.png!

@@ -1,0 +1,14 @@
+ It provide analysis of Credit limit exceed accounts list.Admin users choose 
+Date Range to generate analysis report
+
+ *Analysis report Include following elements:*
+  *Account no:*
+  *Account Name:*
+  *Exceed Amount:*
+ {note}
+
+ Admin users have download generated analysis report as csv and pdf.
+
+ {note}
+
+!adminguide/reports/7.png!

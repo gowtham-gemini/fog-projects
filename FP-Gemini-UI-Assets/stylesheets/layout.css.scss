@@ -1,0 +1,202 @@
+body {
+  padding_top: 20px;
+}
+.container {
+  width: 1000px;
+}
+div.hline {
+  border-bottom: 2px solid #000000;
+  margin-bottom: 10px;
+}
+
+#flash_notice {
+  @extend .alert;
+  @extend .alert-success;
+}
+#flash_error, #flash_alert {
+  @extend .alert;
+  @extend .alert-danger;
+}
+#flash_warning {
+  @extend .alert;
+  @extend .alert-warning;
+}
+
+.navbar .right-buttons {
+  margin-right: 15px;
+}
+
+.jumbotron h1 {
+  @extend bootstrap;
+  font-size: 43px;
+}
+
+.desc-label {
+  @extend bootstrap;
+  font-size: 10px;
+  display: block;
+  font-style: italic;
+}
+
+.form-group {
+  margin-bottom: 0px;
+}
+
+.progress-bar {
+  overflow-x: visible;
+  background: none repeat scroll 0 0 #92a336;
+  color: #333;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.progress-value {
+  position: absolute;
+  color: #333;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.status-msg {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* over-ride style settings in style.css.scss */
+.table .progressBar .progress {
+  width: auto;
+  padding: 0;
+}
+
+.table .progressBar {
+  width: auto;
+}
+
+.colHolder h3 a {
+  color:#f04e23;
+}
+
+.colHolder h3 a:hover {
+  color:#92a336;
+}
+
+/* registration page start here */
+
+#register {
+  text-align: center;
+}
+
+#register header{
+  padding:50px 0 20px 0;
+  border-bottom:1px solid #7b7f8d;
+}
+
+/* content section start here */
+#register #contentHolder{
+  padding:50px 0;
+  min-height:590px;
+}
+
+/* registration form start here */
+#registerForm{
+  margin:45px auto 0 auto;
+  width:670px;
+}
+#registerForm label{
+  color:#fff;
+  margin-right:5px;
+  text-align:right;
+  font-weight:normal;
+  width:180px;
+}
+#registerForm .form-control{
+  display:inline-block;
+  width:275px;
+  height:20px;
+  line-height:20px;
+  border-radius:0;
+  color:#fff;
+  color:#333;
+  font-size:12px;
+  padding:0 5px;
+}
+#registerForm .form-btn{
+  text-align: center;
+}
+#registerForm .form-btn button{
+  height:20px;
+  width:100px;
+  line-height:20px;
+  padding:0;
+  border-radius:0;
+  background:#92a336;
+  color:#fff;
+  font-size:12px;
+  border:none;
+  margin:30px auto 10px auto;
+  display:block;
+}
+#registerForm .form-btn button:hover{
+  background:#f04e23;
+}
+#registerForm .form-btn a{
+  text-decoration:underline;
+  color:#616e5f;
+  margin:0 10px;
+}
+#registerForm .form-btn a:hover{
+  color:#f04e23;
+  
+}
+#registerForm .checkbox{
+  text-align:left;
+  vertical-align:middle;
+  color:#fff;
+}
+#registerForm .checkbox input[type=checkbox]{
+  margin:0 5px 0 0;
+  vertical-align:middle;
+  position:static;  
+}
+#registerForm .field_with_errors {
+  display: inline-block;
+}
+
+#registerForm .form-group {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#registerForm .help-block {
+  margin: 0px 5px;
+  display: inline;
+}
+
+.progressBar .progress.failed {
+  background-color: #f00;
+}
+
+.progressBar .workflow-progress-text.failed {
+  color: #f00;
+}
+
+.progressBar .workflow-progress-value.failed {
+  color: #f00;
+}
+
+.status-msg.failed {
+  color: #f00;
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'UbuntuLight';
+    src: url('ubuntu-l.eot');
+    src: url('ubuntu-l.eot') format('embedded-opentype'),
+         url('ubuntu-l.woff') format('woff'),
+         url('ubuntu-l.ttf') format('truetype'),
+         url('ubuntu-l.svg#UbuntuLight') format('svg');
+}

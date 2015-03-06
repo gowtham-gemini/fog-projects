@@ -1,0 +1,59 @@
+  Template is a file that contain os images. When users launch VMs they choose template. 
+Fogpanel category templates into two types. Those types are:
+
+ *Core-os-Templates
+ *Os-App-Templates
+ 
+!adminguide/services/9.png!
+
+h3. Core-os-template:
+    Core-Os-template is a virtual disk image that includes one of a variety of operating systems. 
+In In order to present more choices to users, Fog administrators can create os templates and add them to Fogpanel.Admin user
+have code price for templates while upload. If user use price code templates to launch vms the fogpanel charges automatically. Templates are billed monthly
+once. 
+h3. OS-App-template:
+   Os-App template is a virtual disk image that includes one of a variety of operating systems, optional additional software such as office applications,joomala,cpanel,plesk and other 3rd party applications are installed in that images. On the fly users use this templates to launch application easily. 
+In In order to present more choices to users, Fog administrators can create app templates and add them to Fogpanel. Admin user
+have code price for templates while upload. If user use price code templates to launch vms the fogpanel charges automatically. Templates are billed monthly
+once. 
+
+h3. Upload os and app template:
+    Templates are uploaded based on a URL. HTTP is the supported access protocol. Templates are frequently large files. You can optionally gzip them to decrease upload times.
+Admin must choose hypervisor type to upload the templates. Fogpanel auto-detect hypervisor type in cloud Infrastructure.
+ 
+   !adminguide/services/10.png!
+
+*Elements in upload screen:*
+ 
+        Name and Description. These will be shown in the UI, so choose something descriptive.
+        URL. The Management Server will download the file from the specified URL, such as http://my.web.server/filename.vhd.gz.
+        Zone. Choose the zone where you want the template to be available, or All Zones to make it available.
+        Hypervisor: Choose xen or kvm hypervisor type. xenserver support vhd file type and kvm support qcow2 type. 
+        OS Type: This helps CloudStack and the hypervisor perform certain operations and make assumptions that improve the performance of the Instance.
+        Arch: which arch type of template you upload. currently it have 32 bit and 64 bit type.
+        Oscategory: Upload template category
+        Cost: Cost for templates. This can be applied for monthly
+        Minimum core: Minimum core need to run this template
+        Minimum memory: Minimum memory need to run this template
+        One time chargeable: If this option is choose. User use this templates
+       is charged once. if not monthly chargeable is applied.
+        Hourly chargeable: If this option is choose. User use this templates is
+        charged hourly. 
+        Note:- We suggest you to include license cost in template charges.   
+        Password Enabled:Choose Yes if your template has the CloudStack password change script installed.
+        Extractable:Choose Yes if the template is available for extraction. If this option is selected, end users can download a full image of a template.
+        Public:Choose Yes to make this template accessible to all users.  
+        Featured:Choose Yes if you would like this template to be more prominent for users to select. 
+                 The template will appear in the Featured Templates list.
+        Detail description: Admin must provide detail description about upload template. Because this
+        information is use for user.
+
+* To edit template you are able to change following items only*
+
+    Name and Description. These will be shown in the UI, so choose something descriptive.
+    Cost:  Monthly cost for template
+    Password Enabled: Choose Yes if your template has the CloudStack password change script installed.
+    Extractable: Choose Yes if the template is available for extraction. 
+    Public:Choose Yes to make this template accessible to all users of this CloudStack installation.
+    Featured:Choose Yes if you would like this template to be more prominent for users to select. 
+                    The template will appear in the Featured Templates list.

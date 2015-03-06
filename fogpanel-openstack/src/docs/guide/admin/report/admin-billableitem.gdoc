@@ -1,0 +1,38 @@
+  It provide option to analysis of billable items used in cloud. In fogpanel 
+billable items are classified into two types those are:
+ 
+ *Zone based billable item*
+ *Non-Zone based billable item*
+
+ h3. Zone based billable item
+
+       Zone based billable item contains analysis of cloud based following 
+billable items:
+  # Computing offer
+  # Disk offer
+  # Snapshot
+  # Templates
+  # Bandwidth
+  # Discount
+  # stopped Instance
+  # Setup cost for Instance
+
+!adminguide/reports/3.png!
+
+ h3. Non-Zone based billable item
+
+       Items are not charged based on zone. Those items are added by admin users.
+
+Those none-zone based billable items are:
+
+  *Recurring item*
+  *Custom item*
+
+
+Admin users choose Date Range, Billable item type to generate analysis report.
+It include several elements.
+
+  Admin users have download their generated analysis report as csv and pdf also 
+fogpanel provide option chart report for admin users.
+
+!adminguide/reports/5.png!

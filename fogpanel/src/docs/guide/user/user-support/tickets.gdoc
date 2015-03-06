@@ -1,0 +1,37 @@
+h3. Departments 
+
+    Based on services the service provider have created departments in 
+support.User choose department while post the ticket. Department option is
+flexible for user to manage their tickets.
+    
+  Basic departments are support,billing and sales etc..
+
+h3. Ticket List 
+
+    In support, tickets are listed with the status. Tickets status are open,
+in-progress,on-hold and closed.
+
+    Users use filter option to search their tickets by department and status
+wise
+
+    !userguide/support/support/1.png! 
+
+h3. Create Ticket
+
+    Option is use to post ticket to departments for service provider support. 
+This option contain Ticket subject,content,department,server information etc...
+
+    !userguide/support/support/2.png! 
+
+h3. Reply ticket
+
+      Created tickets are replied  by support team staffs. Those replied tickets 
+are show in ticket list. User can click ticket number to re-open the ticket 
+again or user have option to close the ticket.
+
+h3. Close ticket
+ 
+      Option is use to close the existing tickets. During close action service 
+ provider need feed back for this ticket. This feed back is not mandatory.
+
+   !userguide/support/support/3.png! 

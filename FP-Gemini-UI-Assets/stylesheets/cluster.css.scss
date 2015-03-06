@@ -1,0 +1,75 @@
+div#add-cluster-btn {
+  display: block;
+  position: relative;
+}
+
+.myApp .row div:first-child span {
+  font-size: inherit;
+}
+
+div#cluster-modal div.hline {
+  margin: 2px 0px;
+  border-bottom: 2px solid #ccc;
+}
+
+div.resource-pool {
+  display: inline;
+}
+
+div.resource-pool label {
+  width: 70px;
+}
+
+div.resource-pool .form-control {
+  width: 100px;
+  margin-right: 5px;
+}
+
+div.resource-pool input.others {
+  width: 150px;
+}
+
+div.resource-pool input[type='number'] {
+  width: 40px;
+  height: 14px;
+}
+
+span.cluster-progress-text {
+  left: 2%;
+  right: 0%;
+  font-weight: normal;
+}
+
+span.cluster-progress-value {
+  left: 85%;
+  right: 0%;
+}
+
+div.deploy-dialog {
+  width: 700px;
+}
+
+div.deploy-body {
+  text-align: center;
+  font-size: 14px;
+}
+
+div.deploy-body .row {
+  text-align: left;
+  font-size: inherit;
+}
+
+div.deploy-body .row.header {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#cluster-modal .modal-dialog {
+  width: 600px;
+}
+
+#cluster-modal .modal-body {
+  padding: 5px 20px 10px;
+}
+  

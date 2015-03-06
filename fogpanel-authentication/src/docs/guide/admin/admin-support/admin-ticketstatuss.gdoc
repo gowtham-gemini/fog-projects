@@ -1,0 +1,20 @@
+Ticket status allow admin to better organize support staff work-flow.Ticket system 
+has 4 core status. 
+{note}
+Ticket status are Open, OnHold,Inprogress & Closed. 
+{note}
+Core system status for tickets are set to them automatically by the fogpanel ticket
+system manager. 
+{code}
+
+For example when a customer replied to ticket it is set to "Open", and when admin 
+replied to that ticket. That is ticket status is changed to "Answered" status. 
+There are 2 additional default status for tickets those are: On Hold & 
+In-Progress.
+Note:  Active status display all open,onhold,inprogess tickets.
+
+{code}
+
+
+
+

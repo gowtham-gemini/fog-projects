@@ -1,0 +1,2 @@
+//>>built
+define("FogPanel/themes/StorageAction/nls/es/StorageActionTranslator",{diskDelete:"borrar",diskUpdate:"actualizaci\u00f3n",diskNameTag:"nombre",diskDeleteTagName:"borrar disco",diskAttachTagName:"Conectar unidad de disco",diskDetachTagName:"Separe disco",diskCreatevolumeTagName:"Crear volumen",diskResize:"Cambiar el tama\u00f1o de volumen",diskDeleteSnapshot:"Eliminar instant\u00e1nea"});

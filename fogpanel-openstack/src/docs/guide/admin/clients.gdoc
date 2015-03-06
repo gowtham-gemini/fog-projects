@@ -1,0 +1,38 @@
+   Fogpanel has two types of account:
+
+  *Retail Account*
+  *Trial Account*
+
+  h3. Account Action
+  
+   Fog-panel account management have following action performed by admin 
+manually.Few of action are perform by fogpanel automatically. (e.g) if user 
+reached his credit limit his account is disable automatically. if user logged-in,
+it redirect to account disable page. The account disable page have option of
+current usage and make payment. if user see the current usage and made 
+payment his account is enabled automatically. This action is performed by 
+fogpanel automatically.  
+
+ *Action performed by manually are:-*
+
+     1.Suspend account 
+          
+                Cloud admin use this option to suspend abuse accounts.  
+     2. Refund account
+  
+                Cloud admin use this option to refund accounts.
+     3. Cancel account
+
+               Cloud admin use this option to cancel accounts.
+
+     4. Password reset
+
+              Cloud admin use this option to reset account passwords.
+     5. Login as client
+
+              This option is use to login the client control panel from admin
+             user. It is very usefull option for support persons and admin to
+             do client tasks.
+
+
+     

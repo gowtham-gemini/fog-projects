@@ -1,0 +1,22 @@
+ The billable item represents an item that is to be billed.Billable item 
+analysis is based on two category those are
+
+ * Zone based
+
+     Zone base Billable item analysis contains items of computation,storage,
+ snapshot etc ..
+
+ * Non-zone based
+
+     Non-zone base billable item contain items of recurring item and custom,
+discount etc..
+
+ Select desired from date and to date to get analysis report.
+
+ 
+ Reports are viewed in text format and graphs formats.
+User can download analysis report as text format report as xml and pdf to 
+view it.
+
+!userguide/stat/billiableitem/1.png! 
+!userguide/stat/billiableitem/2.png! 

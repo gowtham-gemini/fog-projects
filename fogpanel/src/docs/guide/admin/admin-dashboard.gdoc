@@ -1,0 +1,20 @@
+  Admin user login into fogpanel. They landing on dashboard page.  
+ It contain glances of current month charges applied for users in cloud. 
+Those charges are displayed based on billable items used by users in cloud.
+Dashboard contain following summary with graphical and text representations. 
+Those summary are generated based on billable items used on current month by
+cloud users.
+
+ 
+  * Usage cost *
+  *Current month cost*
+  *Current month payment*
+  *Cloud Accounts status summary* 
+  *Current month income*
+  *Daily usage cost*
+  *Credit limit exceed account for current billing cycle*
+  *Current Month payment pending*
+  *Income forecast*
+  *System overview*
+
+ 

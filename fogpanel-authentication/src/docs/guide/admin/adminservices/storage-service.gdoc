@@ -1,0 +1,84 @@
+It provide data disk service for virtual machine.Users choose this storage 
+offerings to create data-disks.
+
+!adminguide/services/4.png!
+
+h3. Create storage plans
+
+ Login into Fogpanel as admin user in menu select services 
+then click storage and use add offering to create storage plans. 
+ 
+
+ A storage plans include two elements:
+
+     * Technical info*
+     * Billing info*
+  
+!adminguide/services/5.png!
+
+* Technical info:*
+
+  It allow admin users to choose storage capacity in cloud
+infra. It contain the following options:
+   Zone: In Listing select zone you want to create this offering  
+   Pod: In Listing select pod you want to create this offering  
+   Cluster:In Listing select cluster you want to create this offering  
+   Name: Any desired name for the system offering.
+   Description. A short description of the offering that can be displayed to users
+   Storage type:The type of disk that should be allocated.It contain two types. 
+    Local - It allocates from storage attached directly to the host. 
+   Shared - It allocates from storage accessible shared storage.
+   QoS Type. Three options: Empty (no Quality of Service), hypervisor (rate limiting enforced on the hypervisor side), 
+and storage (guaranteed minimum and maximum IOPS enforced on the storage side). 
+If leveraging QoS, make sure that the hypervisor or storage system supports this feature.
+  Custom IOPS. If checked, the user can set their own IOPS. If not checked, 
+the root administrator can define values. If the root admin does not set values when 
+using storage QoS, default values are used (the defauls can be overridden if the 
+proper parameters are passed into CloudStack when creating the primary storage in question).
+   Min IOPS. Appears only if storage QoS is to be used. Set a guaranteed minimum number of IOPS to be 
+enforced on the storage side.
+   Max IOPS. Appears only if storage QoS is to be used. Set a maximum number of IOPS 
+to be enforced on the storage side (the system may go above this limit in certain circumstances 
+for short intervals).
+   Custom Disk Size:If checked, the user can set their own disk size. If not checked, 
+the root administrator must define a value in Disk Size.
+    Disk Size: Appears only if Custom Disk Size is not selected. Define the volume size in GB.
+    Storage Tags: The tags that should be associated with the primary storage for this disk.
+  Tags are a comma separated list of attributes of the storage. For example "ssd,blue". 
+  Tags are also added on Primary Storage. CloudStack matches tags on a disk offering to tags on the storage. If a tag is present on a disk offering that tag (or tags) must also be present on Primary Storage for the volume to be provisioned. If no such primary storage exists, allocation from the disk offering will fail..
+  Ok/Cancel: To add compute for cluster.
+
+  {note}
+ Each cluster in storage have only one custom disk plan. 
+If tag is configured,each tag have a custom disk plan.
+ {note}
+
+ *Billing info:*
+ 
+   It allow admin users to code price for storage choose. It contain
+following elements:
+ 
+ storage cost/per month: Cost for datadisk plan per hour
+
+ h3. Manage storage Plan
+    Admin user have option to enable,disable and delete plans in storage.
+Disable plan is not show in Userpanel.In List page it shown status of plans.Also
+it include overall stat for created plans.
+
+  static page contain following stats:
+
+  Total disk offering: Total created disk offering for all zones.
+  Enabled disk offering: Enabled disk offering stat for all zones.
+  disabled disk offering: Disabled disk offering for all zones
+
+ h3. Edit/Delete storage plans
+
+   To edit existing offerings. Admin user can change storage plan name,desc and 
+billing cost of items. The updated cost will affect in next billing cycle for 
+all users.
+admin users are not unable to edit Technical info elements.
+
+view: Use option view to edit storage plan.
+Disable/Enable: Use this option to enable/disable storage offering.
+You can disable offerings. That disable offerings not list for users.
+Delete: Option to delete offering.

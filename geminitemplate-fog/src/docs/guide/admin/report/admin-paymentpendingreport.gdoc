@@ -1,0 +1,16 @@
+ It provide analysis of list of users payment pending. Admin users choose 
+Date Range to generate analysis report.
+
+ Analysis Report Include following elements:
+
+  * Account no:*
+  * Account name:*
+  * Exceed Amount:*
+
+ {note}
+ 
+ Admin users have download generated analysis report as csv and pdf.
+
+ {note}
+
+!adminguide/reports/8.png!

@@ -1,0 +1,9 @@
+   Core-templates contain operating system only not include any pre-built 
+additional software like office,cpanel,joomla,wordpress etc.. You can use filtering 
+in template store to filter your desired template and launch vm.Template list contain oscatgeory 
+(Operating system name),templatename, 
+zone(which zone this template work),description for template,Cost and 
+finally have action of Createvm.You can use this createvm action to create 
+Instance from select template.
+
+!userguide/cloud-user/Templates/2.png!

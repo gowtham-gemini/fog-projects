@@ -1,0 +1,97 @@
+It contain following api:
+
+h3. Create Account
+
+Creates an account with provided information, does not allow duplicates.
+
+*Arguments*
+    
+* *userName* (Required) : unique username for the account (email format)
+* *password* (Required) : password for the account(min:4 , max:20)
+* *firstName* (Required) : (min: 1 char)
+* *lastName* (Required) : lastname (min: 1 char)
+* *phoneNumber* (Required) : phonenumber for the account(min:6 , max:15)
+* *streetAddress* (Required) : street address  for the account
+* *extendedAddress* (Optional) : An Extra information about the street (eg: landmark)
+* *city* (Required) : City for the account
+* *state* (Required) : State  for the account (use static data to pick supported states)
+* *country* (Required) : Country for the account (use static data to pick supported country)
+* *zip* (Required) : zip for the account( min:1 , max:10 )
+
+
+*Request URL* 
+
+    https://demo.fogpanel.com/api/admin/account/createAccount?userName=john@example.com&password=xxxxxxx&firstName=john&lastName=smith&streetAddress=2101%20MASSACHUSETTS%20AVE%20NW&city=WASHINGTON%20DC&country=UNITED%20STATES&phoneNumber=1234567890&state=NEW%20YORK&zip=10128&apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=ac3bf31fa38253a481002915e0de25b8    
+
+*Example Response*
+
+{code}
+   
+[ 
+  {
+    "result":"success",
+    "userName":"john8@example.com",
+    "accountId":10007
+  }
+]
+{code}
+
+h3. List Account
+
+    Lists all the accounts available with pagination and by the filters specified.
+
+*Arguments*
+
+* *status* (Optional)  : Filtering option for account status, the status should be one among the following(ACTIVE, BLOCKED, LOCKED, DISABLED, NOT_VERIFIED, SUSPENDED, CANCELED,CLOSED)
+* *fromDate* (Optional)  : This option gives the list of accounts, which all signed up after the given date(fromDate)
+* *toDate* (Optional)  : This option gives the list of accounts, which all signed up before the given date(toDate)
+* *page* (Optional)  : The list of account result will be in  pagination option. the result will shows only the give pageNo. by default the page no wil be 1.
+* *recordPerPage* (Optional)  : The list of account result will be in  pagination option. this is a option that how much record you want to show per page. by default 100 record per page.
+
+*Request URL* 
+
+     http://demo.fogpanel.com/FogPanel/api/admin/account/listAccount?apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=a6c93c0aa69c7cdecb493d5dee2e19d4
+
+*Example Response*
+{code}   
+[
+    {
+        "accounts": [
+            {
+                "streetAddress":"2101 MASSACHUSETTS AVE NW",        
+                "extendedAddress":"",
+                "city":"WASHINGTON DC",
+                "state":"NEW YORK",
+                "zip":"10128",
+                "country":"UNITED STATES",
+                "creditLimit":2000,
+                "billingAddress":"2101 MASSACHUSETTS AVE NW", 
+                "billingCity":"WASHINGTON DC",    
+                "billingState":"NEW YORK",
+                "billingCountry":"UNITED STATES",
+                "billingZip":"10128"
+                "currency":"EUR",
+                "id":10009,
+                "billingPhoneNumber":"909090",
+                "cardVerified":false,
+                "signupDate":"2014-02-28T11:11:26Z",
+                "totalPayable":0,
+                "phoneNumber":"909090",
+                "userName":"john@example.com",
+                "firstName":"john",
+                "lastName":"mark",
+                "status":"ACTIVE",
+                "companyName":"",
+                "email":"nandhini_az@gmail.com",
+                "accountType":"RETAIL",
+                "totalPaid":0,
+            },
+            ...
+        ],
+        "totalPages":3,
+        "page":3,
+        "recordPerPage":3,
+        "totalRecords":39
+    }
+]
+{code}

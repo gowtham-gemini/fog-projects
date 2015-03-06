@@ -1,0 +1,107 @@
+/* iCheck plugin Futurico skin
+----------------------------------- */
+.icheckbox_futurico,
+.iradio_futurico {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../images/futurico.png) no-repeat;
+    border: none;
+    cursor: pointer;
+	
+}
+
+
+.iradio_upload {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 20px;
+    background: url(../images/futurico.png) no-repeat;
+    border: none;
+    cursor: pointer;
+				margin-right:5px;
+	
+}
+
+.icheckbox_setting {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 13px;
+	margin-right:5px;
+    background: url(../images/checkbox-image.png) no-repeat;
+    border: none;
+    cursor: pointer;
+	 background-position: 0 0;
+	
+}
+
+.icheckbox_futurico {
+    background-position: 0 0;
+}
+    .icheckbox_futurico.checked {
+        background-position: -18px 0;
+    }
+    .icheckbox_futurico.disabled {
+        background-position: -36px 0;
+        cursor: default;
+    }	
+    .icheckbox_futurico.checked.disabled {
+        background-position: -54px 0;
+    }
+	
+
+    .icheckbox_setting.checked {
+        background-position: -18px 0;
+    }
+   
+	
+
+.iradio_futurico {
+    background-position: -40px 0;
+}
+    .iradio_futurico.checked {
+        background-position: -63px 0;
+    }
+    .iradio_futurico.disabled {
+        background-position: -108px 0;
+        cursor: default;
+    }
+    .iradio_futurico.checked.disabled {
+        background-position: -126px 0;
+    }
+
+.iradio_upload {
+    background-position: 0px 0;
+}
+    .iradio_upload.checked {
+        background-position: -19px 0;
+    }
+    .iradio_upload.disabled {
+        background-position: -108px 0;
+        cursor: default;
+    }
+    .iradio_upload.checked.disabled {
+        background-position: -126px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox_futurico,
+    .iradio_futurico {
+        background-image: url(../images/futurico@2x.png);
+        -webkit-background-size: 144px 19px;
+        background-size: 144px 19px;
+    }
+}

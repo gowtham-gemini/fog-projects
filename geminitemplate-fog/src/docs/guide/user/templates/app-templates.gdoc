@@ -1,0 +1,8 @@
+  App template contain pre-built operating system from that addition software 
+like office,cpanel,plesk,wordress etc.. software are built in.  You can use template
+store filtering option to filter your desired templates. Template list contain os-category 
+(Operating system name),template-name, zone(which zone this template will work)
+,description for template,Cost and finally have action of Create-vm.
+You can use this create-vm action to create Instance from selected template.
+
+  !userguide/cloud-user/Templates/3.png!

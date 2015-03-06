@@ -1,0 +1,4 @@
+define({       
+    optionMore : "más"               
+});
+

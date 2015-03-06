@@ -1,0 +1,15 @@
+*Events*
+
+ User event have following stat of log record.
+
+
+!userguide/event/event/1.png! 
+
+The events log records three types of standard events.
+
+INFO. This event is generated when an operation has been successfully performed.
+WARN. This event is generated in the following circumstances.
+When a network is disconnected while monitoring a template download.
+When a template download is abandoned.
+When an issue on the storage server causes the volumes to fail over to the mirror storage server.
+ERROR. This event is generated when an operation has not been successfully performed

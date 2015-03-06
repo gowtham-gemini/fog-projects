@@ -1,0 +1,55 @@
+   It contain current month resource usages and charges applied for used 
+resources as on date are show in details. In billing term it is called as 
+draft invoice. You can download this draft invoice as pdf.
+This page also contain your account bill in details also your bill have the
+terms of  previous balance,payment,credit,refund and current charges. Those 
+terms are explained in following.
+
+  Current Usage contain two following sections:
+
+ # Current Usage billing summary
+ # Resource usage summary
+
+!userguide/billing/currentusage/1.png!
+
+ *Current usage billing summary*
+
+   It contain current month consumed resource usage and charge applied for that
+usage also contain payments information and balance,due payments etc..
+
+  Current usage billing summary is calculated based on below formula:
+
+ Total Payable = Previous balance(-)Payments(+)Refund/Credit(+)Currentcharge
+
+   Previous balance = Previous month balance amount.
+   Payments  = Payment made for current month.
+   Refund = Refund provided for current month.
+   Credit = Credit provided by admin.
+   Current charge = Current month resource usage as on date.
+   Total Payable = Current month bill.
+
+ Next invoice generate date and currency details are showed too.
+
+ *Resource Usage summary*
+
+        It contain as on date account resource usage and charge applied for used 
+resource are shown in details. Resource usage and charge are updated 24 hours 
+once.
+This resource summary report is based on two types
+
+  # Zone based item
+  # non-zone based item
+
+*Zone based item*
+   
+            It contain account use summary of resources items 
+items  like Instance,storage,snapshot,template and setup-cost etc..with charges.
+
+
+*Non-zone based item*
+
+       It contain account summary of recurring and custom item with charges.
+
+
+      
+

@@ -1,0 +1,47 @@
+div.server-target {
+  margin: 8px;
+}
+div#server-modal div.hline {
+  margin: 15px 0px;
+  border-bottom: 2px solid #ccc;
+}
+input.is-dhcp {
+  margin: 5px;
+}
+div.activity-label {
+  color: #f89e5d;
+  font-weight: bold;
+}
+
+div.finalize-msg {
+  border: 2px solid red;
+  padding: 5px;
+  color: #f47920;
+  font-weight: bold;
+}
+
+div.finalize-msg div.note {
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+div.finalize-msg div.text {
+  font-size: 12px;
+}
+
+div.finalize-msg span.underline {
+  text-decoration: underline;
+}
+
+span.mpoint {
+  font-weight: bold;
+}
+
+table.volumes-tbl td {
+  min-width: 60px;
+}
+
+table.volumes-tbl th, td {
+  border: none;
+}

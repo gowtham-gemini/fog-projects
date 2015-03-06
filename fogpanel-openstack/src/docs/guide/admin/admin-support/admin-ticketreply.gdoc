@@ -1,0 +1,30 @@
+   
+ h3. Inside a ticket
+
+   Admin must clicked tickets to view the content of it, Just simply click  
+subject in the ticket list. It redirect to ticket view page. The clients messages 
+& staff replies are display along with posted time.The most common task when 
+viewing a ticket is making a reply for that ticket, when entering a ticket, It provide large text 
+area to answered the ticket. Support ticket replies allow you to use predefined replies.
+Predefined ticket replies are useful if client asked same questions repeatedly via support tickets. 
+Support staff use predefined reply option to answered the repeated questions, this 
+can be loaded into the reply box when replying to user tickets.
+
+  !adminguide/support/2.png!
+
+ *Adding a Predefined Reply*
+
+To setup a predefined reply, go to configuration> general> support> click Predefined Replies. 
+You will need to choose department,subject and  predefined replies content then click add to add predefined 
+reply for that department.Predefined reply is department base.
+
+
+
+
+
+
+
+
+
+
+

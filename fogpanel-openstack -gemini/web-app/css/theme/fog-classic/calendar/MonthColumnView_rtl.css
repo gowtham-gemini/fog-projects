@@ -1,0 +1,43 @@
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarGridTable td {
+  border-right: none;
+  border-left: 1px solid #cccccc;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarGridTable td span {
+  padding-right: 3px;
+  paddint-left: 0px;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarGridTable .dojoxCalendarHiddenEvents {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAICAYAAADTLS5CAAAAFElEQVQImWP4z8Dw/1dU1H8GyhgANcclWWHC27gAAAAASUVORK5CYII=) repeat-y right top;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable .dojoxCalendarToday.dojoxCalendarHiddenEvents {
+  background: #fff0b4 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAICAYAAADTLS5CAAAAFElEQVQImWP4z8Dw/1dU1H8GyhgANcclWWHC27gAAAAASUVORK5CYII=) repeat-y right top;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarGridTable tr td.last-child {
+  border-left: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarGridTable tr td.first-child {
+  border-right: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarContainerColumn {
+  margin-left: 5px;
+  margin-right: 35px;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeaderTable td {
+  border-left: 1px solid #cccccc;
+  border-right: none;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarColumnHeaderTable td.last-child {
+  border-left: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarColumnHeaderTable td.first-child {
+  border-right: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarEvent .summary {
+  text-align: right;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarEvent .startTime {
+  text-align: right;
+}
+.fog-classic .dojoxCalendarMonthColumnViewRtl .dojoxCalendarEvent .endTime {
+  text-align: right;
+}

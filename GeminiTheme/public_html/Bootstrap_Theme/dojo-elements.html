@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail Admin - Dojo UI Elements</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+    <link href="../js/lib/dojo/dojox/mobile/themes/android/android.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- libraries -->
+    <link href="css/lib/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" />
+    <link href="../Dojo-Toolkit/dijit/themes/classic/classic.css" rel="stylesheet" type="text/css"/>
+    <link href="css/lib/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link href="css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet" />
+    <link href="../js/lib/dojo/dojox/mobile/themes/custom/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- global styles -->
+    
+    <link rel="stylesheet" type="text/css" href="css/compiled/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/compiled/elements.css" />
+    <link rel="stylesheet" type="text/css" href="css/compiled/icons.css" /> 
+    <link href="css/compiled/menu_animate.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/ui-elements.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/index.css" type="text/css" media="screen" />
+    <script>dojoConfig = {parseOnLoad: true}</script>
+        <script src="../Dojo-Toolkit/dojo/dojo.js" type="text/javascript"></script>
+        <script>
+            dojo.require("dojo.data.ItemFileWriteStore");
+            dojo.require("dojox.grid.EnhancedGrid");
+            dojo.require("dojox.grid.enhanced.plugins.Filter");
+
+            var data = {
+                identifier: 'id',
+                label: 'id',
+                items: []
+            };
+            var data_list = [
+                {"Heard": true, "Checked": "True", "Genre": "Easy Listening", "Artist": "Bette Midler", "Year": 2003, "Album": "Bette Midler Sings the Rosemary Clooney Songbook", "Name": "Hey There", "Length": "03:31", "Track": 4, "Composer": "Ross, Jerry 1926-1956 -w Adler, Richard 1921-", "Download Date": "1923/4/9", "Last Played": "04:32:49"},
+                {"Heard": true, "Checked": "True", "Genre": "Classic Rock", "Artist": "Jimi Hendrix", "Year": 1993, "Album": "Are You Experienced", "Name": "Love Or Confusion", "Length": "03:15", "Track": 4, "Composer": "Jimi Hendrix", "Download Date": "1947/12/6", "Last Played": "03:47:49"},
+                {"Heard": true, "Checked": "True", "Genre": "Jazz", "Artist": "Andy Narell", "Year": 1992, "Album": "Down the Road", "Name": "Sugar Street", "Length": "07:00", "Track": 8, "Composer": "Andy Narell", "Download Date": "1906/3/22", "Last Played": "21:56:15"},
+                {"Heard": true, "Checked": "True", "Genre": "Progressive Rock", "Artist": "Emerson, Lake & Palmer", "Year": 1992, "Album": "The Atlantic Years", "Name": "Tarkus", "Length": "20:40", "Track": 5, "Composer": "Greg Lake/Keith Emerson", "Download Date": "1994/11/29", "Last Played": "03:25:19"},
+                {"Heard": true, "Checked": "True", "Genre": "Rock", "Artist": "Blood, Sweat & Tears", "Year": 1968, "Album": "Child Is Father To The Man", "Name": "Somethin' Goin' On", "Length": "08:00", "Track": 9, "Composer": "", "Download Date": "1973/9/11", "Last Played": "19:49:41"},
+                {"Heard": true, "Checked": "True", "Genre": "Jazz", "Artist": "Andy Narell", "Year": 1989, "Album": "Little Secrets", "Name": "Armchair Psychology", "Length": "08:20", "Track": 5, "Composer": "Andy Narell", "Download Date": "2010/4/15", "Last Played": "01:13:08"},
+                {"Heard": true, "Checked": "True", "Genre": "Easy Listening", "Artist": "Frank Sinatra", "Year": 1991, "Album": "Sinatra Reprise: The Very Good Years", "Name": "Luck Be A Lady", "Length": "05:16", "Track": 4, "Composer": "F. Loesser", "Download Date": "2035/4/12", "Last Played": "06:16:53"},
+                {"Heard": true, "Checked": "True", "Genre": "Progressive Rock", "Artist": "Dixie dregs", "Year": 1977, "Album": "Free Fall", "Name": "Sleep", "Length": "01:58", "Track": 6, "Composer": "Steve Morse", "Download Date": "2032/11/21", "Last Played": "08:23:26"},
+                {"Heard": true, "Checked": "True", "Genre": "Classic Rock", "Artist": "Black Sabbath", "Year": 2004, "Album": "Master of Reality", "Name": "Sweet Leaf", "Length": "05:04", "Track": 1, "Composer": "Bill Ward/Geezer Butler/Ozzy Osbourne/Tony Iommi", "Download Date": "2036/5/26", "Last Played": "22:10:19"},
+                {"Heard": true, "Checked": "True", "Genre": "Blues", "Artist": "Buddy Guy", "Year": 1991, "Album": "Damn Right, I've Got The Blues", "Name": "Five Long Years", "Length": "08:27", "Track": 3, "Composer": "Eddie Boyd/John Lee Hooker", "Download Date": "1904/4/4", "Last Played": "18:28:08"},
+                {"Heard": true, "Checked": "True", "Genre": "Easy Listening", "Artist": "Frank Sinatra", "Year": 1991, "Album": "Sinatra Reprise: The Very Good Years", "Name": "The Way You Look Tonight", "Length": "03:23", "Track": 5, "Composer": "D. Fields/J. Kern", "Download Date": "1902/10/12", "Last Played": "23:09:23"},
+                {"Heard": true, "Checked": "True", "Genre": "World", "Artist": "Andy Statman & David Grisman", "Year": 1995, "Album": "Songs Of Our Fathers", "Name": "Chassidic Medley: Adir Hu / Moshe Emes", "Length": "04:14", "Track": 2, "Composer": "Shlomo Carlebach; Trad.", "Download Date": "2035/2/9", "Last Played": "00:11:15"},
+                {"Heard": true, "Checked": "True", "Genre": "Classic Rock", "Artist": "Jimi Hendrix", "Year": 1968, "Album": "Electric Ladyland", "Name": "Long Hot Summer Night", "Length": "03:27", "Track": 6, "Composer": "Jimi Hendrix", "Download Date": "1902/4/7", "Last Played": "16:58:08"},
+                {"Heard": true, "Checked": "True", "Genre": "Progressive Rock", "Artist": "Dixie dregs", "Year": 1978, "Album": "What if", "Name": "What if", "Length": "05:02", "Track": 3, "Composer": "Steve Morse", "Download Date": "1992/3/28", "Last Played": "00:22:30"}
+            ];
+
+            var i, len;
+            for (i = 0, len = data_list.length; i < len; ++i) {
+                data.items.push(dojo.mixin({'id': i + 1}, data_list[i % len]));
+            }
+
+            var layout = [
+                {field: "id", datatype: "number"},
+                {field: "Genre", datatype: "string"},
+                {field: "Artist", datatype: "string",
+                    // Declare that we need the ComboBox for suggestions (autoComplete by default)
+                    autoComplete: true
+                },
+                {field: "Album", datatype: "string",
+                    // Declare that we need the ComboBox for suggestions
+                    autoComplete: true,
+                    // Configure the ComboBox, so that it does not auto-complete our input
+                    dataTypeArgs: {
+                        autoComplete: false
+                    }
+                },
+                {field: "Name", datatype: "string",
+                    // Declare that we do not need the following conditions for this column
+                    disabledConditions: ["contains", "notcontains"]
+                },
+                {field: "Track", datatype: "number"},
+                {field: "Download Date", datatype: "date",
+                    // Declare how the data in store should be parsed to a Date object.
+                    dataTypeArgs: {
+                        datePattern: "yyyy/M/d"
+                    }
+                },
+                {field: "Last Played", datatype: "time",
+                    // Declare how the data in store should be parsed to a Date object.
+                    dataTypeArgs: {
+                        timePattern: "HH:mm:ss"
+                    }
+                }
+            ];
+
+// In case you've close the filter bar, here's a way to bring it up.
+            function showFilterBar() {
+                dijit.byId('grid').showFilterBar(true);
+            }
+
+            dojo.ready(function () {
+
+                var store = new dojo.data.ItemFileWriteStore({data: data});
+
+                var grid = new dojox.grid.EnhancedGrid({
+                    id: 'grid',
+                    store: store,
+                    structure: layout,
+                    plugins: {
+                        filter: {
+                            // Show the closeFilterbarButton at the filter bar
+                            closeFilterbarButton: true,
+                            // Set the maximum rule count to 5
+                            ruleCount: 5,
+                            // Set the name of the items
+                            itemsName: "songs"
+                        }
+                    }
+                });
+                grid.placeAt('gridContainer');
+                grid.startup();
+            });
+        </script>
+    
+     <style type="text/css">
+            @import "../Dojo-Toolkit/dojo/resources/dojo.css";
+            @import "../Dojo-Toolkit/dijit/themes/classic/classic.css";
+            @import "../Dojo-Toolkit/dijit/themes/classic/document.css";
+            @import "../Dojo-Toolkit/dojox/grid/enhanced/resources/classic/EnhancedGrid.css";
+            @import "../Dojo-Toolkit/dojox/grid/enhanced/resources/EnhancedGrid_rtl.css";
+        </style>
+    
+    
+    <!-- open sans font -->
+<!--    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />-->
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+ 
+
+    <script>
+     require(["dojo/parser",
+              "dijit/layout/AccordionContainer",
+              "dijit/layout/ContentPane",
+              "dijit/Calendar",
+              "dijit/TooltipDialog",
+              "dijit/form/DropDownButton",
+              "dijit/form/TextBox",
+              "dijit/form/Button",
+              "dijit/Dialog",
+              "dijit/Editor",
+              "dijit/Tooltip",
+              "dojo/store/Memory",
+              "dijit/tree/ObjectStoreModel",
+              "dijit/Tree",
+              "dijit/form/HorizontalSlider",
+              "dijit/form/HorizontalRule",
+              "dijit/form/HorizontalRuleLabels",
+              "dijit/form/VerticalSlider", 
+              "dijit/form/VerticalRule", 
+              "dijit/form/VerticalRuleLabels",
+              "dijit/layout/TabContainer",
+              "dijit/layout/ContentPane",
+              "dijit/form/TextBox",
+              "dijit/form/ValidationTextBox",
+              "dijit/form/DateTextBox",
+              "dijit/form/CheckBox",
+              "dojo/dom",
+              "dojo/ready",
+              "dojox/mobile/Switch"]);
+          
+    </script>
+    	<style type="text/css">
+            
+        @import "../Dojo-Toolkit/dojox/grid/enhanced/resources/EnhancedGrid.css";
+        @import "../Dojo-Toolkit/dojox/grid/enhanced/resources/EnhancedGrid_rtl.css";
+        
+/*Grid need a explicit width/height by default*/
+
+	</style>
+        <script>
+dojo.require("dojox.grid.EnhancedGrid");
+dojo.require("dojo.data.ItemFileWriteStore");
+
+dojo.ready(function(){
+    /*set up data store*/
+    var data = {
+      identifier: 'id',
+      items: []
+    };
+    var data_list = [
+      { col1: "normal", col2: false, col3: 'But are not followed by two hexadecimal', col4: 29.91},
+      { col1: "important", col2: false, col3: 'Because a % sign always indicates', col4: 9.33},
+      { col1: "important", col2: false, col3: 'Signs can be selectively', col4: 19.34}
+    ];
+    var rows = 60;
+    for(var i=0, l=data_list.length; i<rows; i++){
+      data.items.push(dojo.mixin({ id: i+1 }, data_list[i%l]));
+    }
+    var store = new dojo.data.ItemFileWriteStore({data: data});
+
+    /*set up layout*/
+    var layout = [[
+      {'name': 'Column 1', 'field': 'id'},
+      {'name': 'Column 2', 'field': 'col2'},
+      {'name': 'Column 3', 'field': 'col3', 'width': '230px'},
+      {'name': 'Column 4', 'field': 'col4', 'width': '230px'}
+    ]];
+
+    /*create a new grid:*/
+    var grid = new dojox.grid.EnhancedGrid({
+        id: 'grid',
+        store: store,
+        structure: layout,
+        rowSelector: '20px'},
+      document.createElement('div'));
+
+    /*append the new grid to the div*/
+    dojo.byId("gridDiv").appendChild(grid.domNode);
+
+    /*Call startup() to render the grid*/
+    grid.startup();
+});
+	</script>
+    
+    
+</head>
+<body class="classic">
+
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+            <li class="hidden-xs hidden-sm">
+                <input class="search" type="text" />
+            </li>
+            <li class="notification-dropdown hidden-xs hidden-sm">
+                <a href="#" class="trigger">
+                    <i class="icon-warning-sign"></i>
+                    <span class="count">8</span>
+                </a>
+                <div class="pop-dialog">
+                    <div class="pointer right">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <div class="body">
+                        <a href="#" class="close-icon"><i class="icon-remove-sign"></i></a>
+                        <div class="notifications">
+                            <h3>You have 6 new notifications</h3>
+                            <a href="#" class="item">
+                                <i class="icon-signin"></i> New user registration
+                                <span class="time"><i class="icon-time"></i> 13 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="icon-signin"></i> New user registration
+                                <span class="time"><i class="icon-time"></i> 18 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="icon-envelope-alt"></i> New message from Alejandra
+                                <span class="time"><i class="icon-time"></i> 28 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="icon-signin"></i> New user registration
+                                <span class="time"><i class="icon-time"></i> 49 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="icon-download-alt"></i> New order placed
+                                <span class="time"><i class="icon-time"></i> 1 day.</span>
+                            </a>
+                            <div class="footer">
+                                <a href="#" class="logout">View all notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="notification-dropdown hidden-xs hidden-sm">
+                <a href="#" class="trigger">
+                    <i class="icon-envelope"></i>
+                </a>
+                <div class="pop-dialog">
+                    <div class="pointer right">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <div class="body">
+                        <a href="#" class="close-icon"><i class="icon-remove-sign"></i></a>
+                        <div class="messages">
+                            <a href="#" class="item">
+                                <img src="img/contact-img.png" class="display" alt="user" />
+                                <div class="name">Alejandra Galván</div>
+                                <div class="msg">
+                                    There are many variations of available, but the majority have suffered alterations.
+                                </div>
+                                <span class="time"><i class="icon-time"></i> 13 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <img src="img/contact-img2.png" class="display" alt="user" />
+                                <div class="name">Alejandra Galván</div>
+                                <div class="msg">
+                                    There are many variations of available, have suffered alterations.
+                                </div>
+                                <span class="time"><i class="icon-time"></i> 26 min.</span>
+                            </a>
+                            <a href="#" class="item last">
+                                <img src="img/contact-img.png" class="display" alt="user" />
+                                <div class="name">Alejandra Galván</div>
+                                <div class="msg">
+                                    There are many variations of available, but the majority have suffered alterations.
+                                </div>
+                                <span class="time"><i class="icon-time"></i> 48 min.</span>
+                            </a>
+                            <div class="footer">
+                                <a href="#" class="logout">View all messages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown">
+                    Your account
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="personal-info.html">Personal info</a></li>
+                    <li><a href="#">Account settings</a></li>
+                    <li><a href="#">Billing</a></li>
+                    <li><a href="#">Export your data</a></li>
+                    <li><a href="#">Send feedback</a></li>
+                </ul>
+            </li>
+            <li class="settings hidden-xs hidden-sm">
+                <a href="personal-info.html" role="button">
+                    <i class="icon-cog"></i>
+                </a>
+            </li>
+            <li class="settings hidden-xs hidden-sm">
+                <a href="signin.html" role="button">
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu"  class="menu">
+            <li class="active">                
+                <a href="index.html">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>            
+            <li>
+                <a href="chart-showcase.html">                    
+                    <i class="icon-signal"></i>
+                    <span>Charts</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-group"></i>
+                    <span>Users</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu helix">
+                                    <li><a href="#">sub-One</a></li>
+                                    <li><a href="#">sub-Two</a></li>
+                                    <li><a href="#">sub-Three</a></li>
+                                    <li><a href="#">sub-Four</a></li>
+                                    <li><a href="#">sub-Five</a></li>
+                                    <li><a href="#">sub-Six</a></li>
+                                    <li><a href="#">sub-Seven</a></li>
+                                </ul>
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-edit"></i>
+                    <span>Forms</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu blind">
+                    <li><a href="#">sub-One</a></li>
+                                    <li><a href="#">sub-Two</a></li>
+                                    <li><a href="#">sub-Three</a></li>
+                                    <li><a href="#">sub-Four</a></li>
+                                    <li><a href="#">sub-Five</a></li>
+                                    <li><a href="#">sub-Six</a></li>
+                                    <li><a href="#">sub-Seven</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="gallery.html">                    
+                    <i class="icon-picture"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html">                    
+                    <i class="icon-calendar-empty"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="tables.html">
+                    <i class="icon-th-large"></i>
+                    <span>Tables</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu blind">
+                    <li><a href="tables.html">Custom </a></li>
+                    <li><a href="datatables.html">DataTables</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a class="dropdown-toggle ui-elements" href="#">
+                    <i class="icon-code-fork"></i>
+                    <span>UI Elements</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu blind">
+                    <li><a href="ui-elements.html" class="active">UI Elements</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="personal-info.html">
+                    <i class="icon-cog"></i>
+                    <span>My Info</span>
+                </a>
+            </li>
+            <li>                
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-share-alt"></i>
+                    <span>Extras</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu blind">
+                    <li><a href="code-editor.html">Code editor</a></li>
+                    <li><a href="grids.html">Grids</a></li>
+                    <li><a href="signin.html">Sign in</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+
+	<!-- main container -->
+    <div class="content">
+         <!-- settings changer -->
+        <div class="skins-nav">
+            <a href="#" class="skin first_nav selected">
+                <span class="icon"></span><span class="text">Default skin</span>
+            </a>
+            <a href="#" class="skin second_nav" data-file="css/compiled/skins/dark.css">
+                <span class="icon"></span><span class="text">Dark skin</span>
+            </a>
+        </div>
+
+        <!-- upper main stats -->
+        <div id="main-stats">
+            <div class="row stats-row">
+                <div class="col-md-3 col-sm-3 stat">
+                    <div class="data">
+                        <span class="number">2457</span>
+                        visits
+                    </div>
+                    <span class="date">Today</span>
+                </div>
+                <div class="col-md-3 col-sm-3 stat">
+                    <div class="data">
+                        <span class="number">3240</span>
+                        users
+                    </div>
+                    <span class="date">February 2013</span>
+                </div>
+                <div class="col-md-3 col-sm-3 stat">
+                    <div class="data">
+                        <span class="number">322</span>
+                        orders
+                    </div>
+                    <span class="date">This week</span>
+                </div>
+                <div class="col-md-3 col-sm-3 stat last">
+                    <div class="data">
+                        <span class="number">$2,340</span>
+                        sales
+                    </div>
+                    <span class="date">last 30 days</span>
+                </div>
+            </div>
+        </div>
+        <!-- end upper main stats -->
+                
+        <div id="pad-wrapper">
+            
+            <div class="row">
+          
+           <!-- Accordion Section :: Begins Here-->
+           <div class="col-lg-6">
+              
+               <div style="width: 90%; height: 300px">
+                   <div data-dojo-type="dijit/layout/AccordionContainer" style="height: 300px;">
+                       <div data-dojo-type="dijit/layout/ContentPane" title="Heeh, this is a content pane">
+                           Hi!
+                       </div>
+                       <div data-dojo-type="dijit/layout/ContentPane" title="This is as well" selected="true">
+                           Hi how are you?
+                       </div>
+                       <div data-dojo-type="dijit/layout/ContentPane" title="This too">
+                           Hi how are you? .....Great, thx
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- Accordion Section :: Ends Here-->
+           
+           <!-- Calender Section :: Begins Here-->
+           <div class="col-lg-3">
+              
+               <div data-dojo-type="dijit/Calendar">
+                   <script type="dojo/method" data-dojo-event="onChange" data-dojo-args="value">
+                       require(["dojo/dom", "dojo/date/locale"], function(dom, locale){
+                       dom.byId('formatted').innerHTML = locale.format(value, {formatLength: 'full', selector:'date'});
+                       });
+                   </script>
+               </div>
+              <p id="formatted"></p>
+           </div>
+           <!-- Calender Section :: Begins Here-->
+           <div class="col-lg-3">
+                   
+                    
+                    <!--Normal Dialog Box :: Begins Here-->
+                    <div data-dojo-type="dijit/form/DropDownButton" class="primaryy">
+                        <span>Register</span>
+                        <div data-dojo-type="dijit/TooltipDialog">
+                            <label for="name2">Name:</label> <input data-dojo-type="dijit/form/TextBox" id="name2" name="name2" /><br />
+                            <label for="hobby2">Hobby:</label> <input data-dojo-type="dijit/form/TextBox" id="hobby2" name="hobby2" /><br />
+                            <button data-dojo-type="dijit/form/Button"  type="submit">Save</button>
+                        </div>
+                    </div>
+                    <!--Normal Dialog Box :: Ends Here-->
+                    
+                    <!--Dialog Box :: Begins Here-->
+                    <div data-dojo-type="dijit/Dialog" data-dojo-id="myDialog" title="Name and Address">
+                        <table class="dijitDialogPaneContentArea">
+                            <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input data-dojo-type="dijit/form/TextBox" name="name" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="address">Address:</label></td>
+                                <td><input data-dojo-type="dijit/form/TextBox" name="address" id="address"></td>
+                            </tr>
+                        </table>
+
+                        <div class="dijitDialogPaneActionBar">
+                            <button data-dojo-type="dijit/form/Button" class="btn default"  type="submit" id="ok">OK</button>
+                            <button data-dojo-type="dijit/form/Button" class="btn default" type="button" data-dojo-props="onClick:function(){myDialog.hide();}"
+                                    id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <button data-dojo-type="dijit/form/Button" class="primaryy" type="button" onClick="myDialog.show();">
+                        Show me!
+                    </button>
+                    <!--Dialog Box :: Ends Here-->
+                    
+                    <!--Dialog 2 :: Begins Here-->
+                    <div id="dialogColor" title="Modal Dialog Box" data-dojo-type="dijit/Dialog" style="width: 500px" >
+                        Modal Dialog Box Content Begins Here....
+                    </div>
+
+                    <button id="button5" data-dojo-type="dijit/form/Button" class="primaryy" type="button">Modal Box!
+                        <script type="dojo/method" data-dojo-event="onClick" data-dojo-args="evt">
+                            require(["dijit/registry"], function(registry){
+                            registry.byId("dialogColor").show();
+                            });
+                        </script>
+                    </button>
+                    <!--Dialog 2 :: Ends Here-->
+                    
+                    <button id="buttonId" class="primaryy" data-dojo-type="dijit/form/Button">Tooltip above</button>
+                    <button id="button2" class="primaryy" data-dojo-type="dijit/form/Button">Tooltip below</button>
+                   <button id="button3" class="primaryy" data-dojo-type="dijit/form/Button">Tooltip after</button>
+                     <button id="button4" class="primaryy" data-dojo-type="dijit/form/Button">Tooltip before</button>
+                    
+                    <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:'buttonId',position:['above']">
+                        a <i>disposition</i> to bear injuries patiently : <b>forbearance</b>
+                    </div>
+                    
+                    <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:'button2',position:['below']">
+                        a <i>disposition</i> to bear injuries patiently : <b>forbearance</b>
+                    </div>
+                   
+                   <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:'button3',position:['after']">
+                        a <i>disposition</i> to bear injuries patiently : <b>forbearance</b>
+                    </div>
+                   
+                   <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:'button4',position:['before']">
+                        a <i>disposition</i> to bear injuries patiently : <b>forbearance</b>
+                    </div>
+                    
+                   
+                    
+                </div>
+           </div>
+              
+            <div class="row">
+                
+                <!--Editor Content :: Begins Here-->
+                <div class="col-lg-6">
+                    <h4>Dojo - Editor</h4>
+                    <hr>
+                    <div data-dojo-type="dijit/Editor" id="editor1" data-dojo-props="onChange:function(){console.log('editor1 onChange handler: ' + arguments[0])}">
+                        <p>This instance is created from a div directly with default toolbar and plugins</p>
+                    </div>
+                </div>
+                <!--Editor Content :: Ends Here-->
+                
+                <!--Tree Content :: Begins Here-->
+                <div class="col-lg-3">
+                    <h4>Dojo - Tree</h4>
+               <hr>
+                    <div data-dojo-type="dojo/store/Memory" data-dojo-id="myStore">
+                        <!-- Create store with inlined data.
+                            For larger data sets should use dojo.store.JsonRest etc. instead of dojo.store.Memory. -->
+                        <script type="dojo/method">
+                            this.setData([
+                            { id: 'world', name:'The earth', type:'planet', population: '6 billion'},
+                            { id: 'AF', name:'Africa', type:'continent', population:'900 million', area: '30,221,532 sq km',
+                            timezone: '-1 UTC to +4 UTC', parent: 'world'},
+                            { id: 'EG', name:'Egypt', type:'country', parent: 'AF' },
+                            { id: 'KE', name:'Kenya', type:'country', parent: 'AF' },
+                            { id: 'Nairobi', name:'Nairobi', type:'city', parent: 'KE' },
+                            { id: 'Mombasa', name:'Mombasa', type:'city', parent: 'KE' },
+                            { id: 'SD', name:'Sudan', type:'country', parent: 'AF' },
+                            { id: 'Khartoum', name:'Khartoum', type:'city', parent: 'SD' },
+                            { id: 'AS', name:'Asia', type:'continent', parent: 'world' },
+                            { id: 'CN', name:'China', type:'country', parent: 'AS' },
+                            { id: 'IN', name:'India', type:'country', parent: 'AS' },
+                            { id: 'RU', name:'Russia', type:'country', parent: 'AS' },
+                            { id: 'MN', name:'Mongolia', type:'country', parent: 'AS' },
+                            { id: 'OC', name:'Oceania', type:'continent', population:'21 million', parent: 'world'},
+                            { id: 'EU', name:'Europe', type:'continent', parent: 'world' },
+                            { id: 'DE', name:'Germany', type:'country', parent: 'EU' },
+                            { id: 'FR', name:'France', type:'country', parent: 'EU' },
+                            { id: 'ES', name:'Spain', type:'country', parent: 'EU' },
+                            { id: 'IT', name:'Italy', type:'country', parent: 'EU' },
+                            { id: 'NA', name:'North America', type:'continent', parent: 'world' },
+                            { id: 'SA', name:'South America', type:'continent', parent: 'world' }
+                            ]);
+                        </script>
+                        <script type="dojo/method" data-dojo-event="getChildren" data-dojo-args="object">
+                            // Supply a getChildren() method to store for the data model where
+                            // children objects point to their parent (aka relational model)
+                            return this.query({parent: object.id});
+                        </script>
+                    </div>
+
+               <!-- Create the model bridging the store and the Tree -->
+               <div data-dojo-type="dijit/tree/ObjectStoreModel" data-dojo-id="myModel"
+                    data-dojo-props="store: myStore, query: {id: 'world'}"></div>
+
+               <!-- Create the tree -->
+               <div data-dojo-type="dijit/Tree" id="myTree" data-dojo-props="model: myModel"></div>
+                </div>
+                <!--Tree Content :: Ends Here-->
+                
+                <div class="col-lg-3">
+                     <h4>Dojo - Slider</h4>
+               <hr>
+               <h6>Horizontal Slider</h6>
+                    <div id="horizontalSlider"
+                         style="width:400px;"
+                         name="horizontalSlider"
+                         data-dojo-type="dijit/form/HorizontalSlider"
+                         data-dojo-props="value:6,
+                         minimum: -10,
+                         maximum:10,
+                         discreteValues:11,
+                         intermediateChanges:true,
+                         showButtons:false">
+                        <ol data-dojo-type="dijit/form/HorizontalRuleLabels" container="topDecoration"
+                            style="height:1.5em;font-size:75%;color:gray;">
+                            <li> </li>
+                            <li>20%</li>
+                            <li>40%</li>
+                            <li>60%</li>
+                            <li>80%</li>
+                            <li> </li>
+                        </ol>
+                        <div data-dojo-type="dijit/form/HorizontalRule" container="bottomDecoration"
+                             count=11 style="height:5px;"></div>
+                        <ol data-dojo-type="dijit/form/HorizontalRuleLabels" container="bottomDecoration"
+                            style="height:1em;font-size:75%;color:gray;">
+                            <li>0%</li>
+                            <li>50%</li>
+                            <li>100%</li>
+                        </ol>
+                    </div>
+               
+               <h6>Vertical Slider</h6>
+                    <div id="verticalSlider" data-dojo-type="dijit/form/VerticalSlider"
+                    value="6" minimum="-10" maximum="10" discreteValues="11"
+                    intermediateChanges="true"
+                    showButtons="false" style="height:200px;" name="verticalSlider">
+                   <ol data-dojo-type="dijit/form/VerticalRuleLabels" container="leftDecoration"
+                       style="width:1.5em;font-size:75%;color:gray;">
+                       <li> </li>
+                       <li>20%</li>
+                       <li>40%</li>
+                       <li>60%</li>
+                       <li>80%</li>
+                       <li> </li>
+                   </ol>
+                   <div data-dojo-type="dijit/form/VerticalRule" container="rightDecoration"
+                        count="11" style="width:5px;"></div>
+                   <ol data-dojo-type="dijit/form/VerticalRuleLabels" container="rightDecoration"
+                       style="width:1em;font-size:75%;color:gray;">
+                       <li>0%</li>
+                       <li>50%</li>
+                       <li>100%</li>
+                   </ol>
+               </div>
+
+                </div>
+                
+
+            </div>
+
+            <div class="row">
+                 
+                <!--Tab Container :: Begins Here-->
+                <div class="col-md-6">
+                    <h4>Dojo - Tab Container</h4>
+               <hr>
+                    <div>
+                        <div data-dojo-type="dijit/layout/TabContainer" style="width: 100%; height: 200px;">
+                            <div data-dojo-type="dijit/layout/ContentPane" title="My first tab" data-dojo-props="selected:true">
+                                Lorem ipsum and all around...
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" title="My second tab">
+                                Lorem ipsum and all around - second...
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" title="My last tab" data-dojo-props="closable:true">
+                                Lorem ipsum and all around - last...
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!--Tab Container :: Ends Here-->
+                <div class="col-md-6 fog-form_wrapper">
+                    <div class="row">
+                        <div class="form_header">
+                           <h4>Dojo - Form Elements</h4>
+                    </div>    
+                    </div>
+                    
+                   
+               <hr>
+                        <form class="form-horizontal" >
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">Default Textbox</label>
+                                <div class="col-md-9">
+                                    <input type="text" name="firstname"
+                                           data-dojo-type="dijit/form/TextBox" 
+                                           data-dojo-props="trim:true, propercase:true" id="firstname" placeholder="First Name"/>
+                                </div>
+                                <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:'firstname',position:['above']">
+                                    a <i>disposition</i> to bear injuries patiently : <b>forbearance</b>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">Validation </label>
+                                <div class="col-md-9">
+                                    <input type="text" name="firstname"
+                                           data-dojo-type="dijit/form/ValidationTextBox" 
+                                           data-dojo-props="regExp:'\\d{5}', invalidMessage:'Invalid zip code.'" id="lastname" placeholder="Last Name"/>
+                                </div>
+                                <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:'lastname',position:['above']">
+                                    a <i>disposition</i> to bear injuries patiently : <b>forbearance</b>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">Validation </label>
+                                <div class="col-md-9">
+                                    <input id="date1" name="date1" type="text" data-dojo-type="dijit/form/DateTextBox" data-dojo-props="placeHolder:'Birthday'">
+                                </div>
+                            </div>
+                            
+                             <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">Disabled w/placeHolder </label>
+                                <div class="col-md-9">
+                                <input id="date5" name="date5" type="text" data-dojo-type="dijit/form/DateTextBox" data-dojo-props='value:"2008-12-25", disabled:true'>
+                                </div>
+                            </div>
+                            
+                          
+                           
+                          
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">Enabled Button</label>
+                                <div class="col-md-9">
+                                    <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"icon-thumbs-up"'   type="button">Btn-Default 
+                                    </button>
+                                    <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"icon-ok"' class="success"  type="button">Btn-Success 
+                                    </button>
+                                    <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"icon-plane"' class="info"  type="button">Btn-Info 
+                                    </button>
+                                    <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"icon-check"' class="primaryy"  type="button">Btn-Primary 
+                                    </button>
+                                    <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"icon-cloud"' class="danger"  type="button">Btn-Danger 
+                                    </button>
+                                   
+                                    <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"icon-shopping-cart", disabled:true' disabled>
+                                        Disabled
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">Drop Down Button</label>
+                                <div class="col-md-9">
+                                    <div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'dijitIconEdit'" class="fbtn default" >
+                                        <span style="width: 100%;">Drop Down</span>
+                                        <div data-dojo-type="dijit/Menu" id="editMenu1" style="display: none;">
+                                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                                 iconClass:'dijitIconCut',
+                                                 onClick:function(){ console.debug('not actually cutting anything, just a test!') }
+                                                 ">Cut</div>
+
+                                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                                 iconClass:'dijitIconCopy',
+                                                 onClick:function(){ console.debug('not actually copying anyything, just a test!'); }
+                                                 ">Copy</div>
+
+                                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                                 iconClass:'dijitIconPaste',
+                                                 onClick:function(){ console.debug('not actually pasting anyything, just a test!'); }
+                                                 ">Paste</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div data-dojo-type="dijit/form/DropDownButton" data-dojo-props='iconClass:"dijitIconEdit", disabled:true'>
+					<span>Drop Down</span>
+					<ul data-dojo-type="dijit/Menu" id="editMenu2" style="display: none;">
+						<li data-dojo-type="dijit/MenuItem" data-dojo-props="
+							iconClass:'dijitIconCut',
+							onClick: function(){ console.debug('not actually cutting anything, just a test!') }
+						">Cut</li>
+
+						<li data-dojo-type="dijit/MenuItem" data-dojo-props="
+							iconClass:'dijitIconCopy',
+							onClick: function(){ console.debug('not actually copying anything, just a test!') }
+						">Copy</li>
+
+						<li data-dojo-type="dijit/MenuItem" data-dojo-props="
+							iconClass:'dijitIconPaste',
+							onClick: function(){ console.debug('not actually pasting anything, just a test!') }
+						">Paste</li>
+					</ul>
+				</div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">Disabled w/placeHolder </label>
+                                <div class="col-md-9">
+                                    <input id="date4" name="date4" type="text" data-dojo-type="dijit/form/DateTextBox" data-dojo-props='placeHolder:"Birthday", disabled:true'>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="form-group">
+                                <fieldset>
+                                    <div class="col-lg-5">
+                                        <input id="check1" type="checkBox" data-dojo-type="dijit/form/CheckBox">
+					<label for="check1">unchecked</label>
+
+					<input id="check2" type="checkBox" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked:true" checked="checked">
+					<label for="check2">checked</label>
+                                    </div>
+                                    
+                                    <div class="col-lg-7">
+                                        
+                                        <input id="check3" type="checkBox" data-dojo-type="dijit/form/CheckBox" data-dojo-props='disabled:true' disabled>
+					<label for="check3">disabled</label>
+
+					<input id="check4" type="checkBox" data-dojo-type="dijit/form/CheckBox"	 data-dojo-props='disabled:true, checked:true' checked="checked" disabled>
+					<label for="check4">disabled and checked</label>
+                                        
+                                    </div>
+				</fieldset>
+                            </div>
+                            
+                            <div>
+                                <fieldset>
+					<input type="radio" name="g1" id="g1rb1" value="news" data-dojo-type="dijit/form/RadioButton">
+					<label for="g1rb1">news</label>
+					<input type="radio" name="g1" id="g1rb2" value="talk" data-dojo-type="dijit/form/RadioButton"  data-dojo-props='checked:true' checked>
+					<label for="g1rb2">talk</label>
+					<input type="radio" name="g1" id="g1rb3" value="weather" data-dojo-type="dijit/form/RadioButton"  data-dojo-props='disabled:true' disabled>
+					<label for="g1rb3">weather <span dir="ltr">(disabled)</span></label>
+				</fieldset>
+                            </div>
+                            
+                        
+                            
+                        </form>
+                </div>
+                
+             
+            </div>
+        </div>
+                       <div id="gridContainer" style="width: 1024px; height: 400px;"></div>
+        <button onclick='showFilterBar()'>Show Filter Bar</button>
+        
+        
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+<!--    <script src="http://code.jquery.com/jquery-latest.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="js/bootstrap.datepicker.js"></script>
+    <script>dojoConfig = {parseOnLoad: true}</script>
+    <script src="../Dojo-Toolkit/dojo/dojo.js" type="text/javascript"></script>
+      <!-- call all Plugins -->
+    <script src="js/theme.js"></script>
+
+    <!-- initialize this page scripts -->
+    
+</body>
+</html>

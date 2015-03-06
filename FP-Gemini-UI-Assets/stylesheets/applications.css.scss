@@ -1,0 +1,431 @@
+span.name:hover {
+  cursor: pointer;
+}
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+.table .row .iconControl {
+  width: 40%;
+}
+
+.myApp .row.child {
+  margin-left: 2px;
+}
+
+.myApp .row.replica {
+  display: none;
+}
+
+.myApp .row.recovered .iconBtn {
+  display: none;
+}
+
+.myApp .row .activity {
+  float: left;
+}
+
+.myApp .row .activity.replicating {
+  color: #92a336;
+}
+
+.myApp .row .activity.shutdown {
+  color: #7b7f8d;
+}
+
+.myApp .row > div.workflow-progress {
+  padding: 0px;
+}
+
+div.workflow-progress {
+  visibility: hidden;
+}
+
+div.app-details {
+  display: none;
+  padding-left: 35px;
+}
+
+.btn {
+  margin: 10px; 
+}
+
+span.workflow-progress-text {
+  left: 2%;
+  right: 0%;
+  font-weight: normal;
+}
+
+span.workflow-progress-value {
+  left: 72%;
+  right: 0%;
+}
+
+.myApp .row div:first-child span.workflow-progress-value, myApp .row div span.workflow-progress-value {
+  font-size: 12px;
+}
+
+.myApp .row div:first-child span.workflow-progress-text, myApp .row div span.workflow-progress-text {
+  font-size: 12px;
+}
+
+.myApp .row div:first-child span.detail, myApp .row div span.detail {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+div#verify-msg {
+  border-top: 1px solid #3a4959;
+  padding: 4px 0;
+  display: none;
+  margin-top: 10px;
+}
+div#verify-details {
+  border-bottom: 1px solid #3a4959;
+  padding: 4px 0;
+  display: none;
+}
+div#verify-details span.heading {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: right;
+  width: 100px;
+}
+span.verified {
+  background: url(/assets/check_mark_green.png) no-repeat top left;
+  background-size: 70% auto;
+  display: inline-block;
+  width: 22px;
+  height: 17px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.table .row span.edit-name {
+  display: none;
+  position: relative;
+}
+
+.title span.edit-name {
+  display: none;
+  position: relative;
+}
+
+span.edit-name .btn {
+  position: relative;
+}
+
+span.edit-name input {
+  margin: 0px;
+  color: #555;
+}
+
+.application-content h2 a, .application-content h2 input {
+  font-size: 14px;
+}
+
+div.title div.workflow-progress {
+  float: right;
+}
+
+.tooltip {
+  margin-left: 10px;
+  z-index: 10000;
+  opacity: 1;
+}
+
+.tooltip > .tooltip-inner {
+  background-color: #243748;
+  color: #fff; 
+  border: 1px solid #CCCCCC;  
+  text-align: left;  
+  max-width: 300px !important;
+  z-index: 10000;
+}
+
+a .tooltip {
+  height: 120px;
+}
+
+.tooltip > .tooltip-inner {
+  background-color: #fff;
+  color: #243748;
+}
+
+.tooltip.bottom .tooltip-arrow{
+  border-bottom-color:#000;
+}
+
+span.animated-progress {
+  color: #f04e23;
+  font-size: 9px;
+  font-weight: bold;
+  left: 30%;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+}
+
+span.animated-progress:hover {
+  cursor: pointer;
+}
+
+.cloud_giff_animated .tooltip {
+  height: 100px;
+}
+
+.cloud_giff_animated {
+  position: relative;
+  float: right;
+  right: -30px;
+  top: -10px;
+}
+
+.title {
+  height: 46px;
+}
+
+.application-content h2[class*='Border'] i.cloud {
+  height: 25px;
+}
+
+.cloud_giff_animated .tooltip {
+  background: none repeat scroll 0 0 #fff;
+  color: #243748;
+  cursor: default;
+  display: none;
+  font-size: 10px;
+  font-weight: bold;
+  height: 90px;
+  left: -29%;
+  line-height: 16px;
+  margin-top: -45px;
+  opacity: 1;
+  padding: 0 10px;
+  top: 250%;
+  width: 200px;
+}
+
+.cloud_giff_animated .tooltip .title{
+  text-align:center;
+  display:inline-block;
+  width:100%;
+  border:none;
+  
+}
+.cloud_giff_animated .tooltip i{
+  background:url(/assets/tool_tip_arrow1.jpg) no-repeat;
+  width:13px;
+  height:27px;
+  display:inline-block;
+  position:absolute;
+  left:-13px;
+  top:50%;
+  margin-top:-13.5px;
+}
+.cloud_giff_animated .tooltip i {
+  left: 90px;
+  right: auto;
+  top: -6px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+}
+
+.cloud_giff_animated .tooltip .textRow span.left-text{
+  width:45%;
+  display:inline-block;
+}
+.cloud_giff_animated .tooltip .view{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+.dockerImageHolder .inactive{
+  position:absolute;
+  right:2%;
+  top:2%;
+  color:#cccccc;
+  font-size:15px;
+  font-weight:bold;
+}
+
+#app-target-modal{
+  color:#333;
+}
+#app-target-modal form label{
+  font-weight:normal;
+}
+#app-target-modal form span.smallHead{
+  display:block;
+  text-align:left;
+  font-weight:bold;
+  color:#333;
+  margin:15px 0;
+}
+#app-target-modal form label.checkBox{
+  width:auto;
+  margin-bottom:10px;
+  float:none;
+}
+#app-target-modal form label.checkBox input{
+  margin:0 5px 0 0;
+  vertical-align:middle;
+  
+}
+#app-target-modal .inputRow{
+  margin-top:5px;
+}
+.inputRow input {
+  height: 12px;
+  width: 35px;
+}
+#app-target-modal input[type='text'] {
+  width: 300px;
+  margin-left: 10px;
+}
+.carousel {
+  width: auto;
+}
+.carousel .slides .slideItem {
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+}
+.carousel .slides .slideItem.running {
+  border: 5px solid #92a336;
+}
+.carousel .slides .slideItem img {
+  background-color: #454f5f;
+  padding: 15px;
+}
+.carousel .slides .slideItem img.inactive {
+  background-color: #454f5f;
+}
+.carousel .slides .slideItem img.active {
+  background-color: #fff;
+}
+.carousel .extra-buttonNav {
+  margin: 0 auto;
+}
+.carousel .extra-buttonNav .bullet {
+    background: url("/assets/Bullet-Green.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    margin: 5px;
+    position: relative;
+    width: 16px;
+}
+.carousel .extra-buttonNav .bulletActive {
+    background: url("/assets/Bullet-Black.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+span.inactive, span.running {
+  position: absolute;
+  top: 5px;
+  left: 340px;
+}
+span.inactive {
+  color: #777;
+}
+span.running {
+  color: #92a336;
+}
+span.cloud {
+  position: absolute;
+  background:url("/assets/cloud.png") no-repeat scroll 0 0 / 35px 23px rgba(0, 0, 0, 0);
+  top: 5px;
+  left: 10px;
+  width: 35px;
+  height: 23px;
+}
+span.cloudName {
+  position: absolute;
+  top: 25px;
+  left: 3px;
+  color: #000;
+  font-size: 9px;
+}
+div.description {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  left: 100%;
+  line-height: 16px;
+  margin-top: 25px;
+  opacity: 1;
+  padding: 0 10px;
+  top: 50%;
+  width: 90%;
+}
+div.description .title {
+  border: medium none;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+div.description .textRow span.left-text {
+    display: inline-block;
+    width: 45%;
+}
+
+.textRow .smallHeading {
+  text-align: right;
+  margin-right: 10px;
+}
+
+div.db-details div.smallHeading {
+  width: 60px;
+}
+
+div.heading {
+  float: left;
+  font-weight: bold;
+  margin-left: 10px;
+  text-align: right;
+}
+
+span.value {
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+table.db-detail {
+  width: 390px;
+}
+
+table.db-detail th,td {
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 0px 5px;
+}
+
+table.db-detail th {
+  text-align: center;
+}
+
+table.db-detail td {
+  font-weight: normal;
+}
+
+div.row div.heading {
+  color: #f04e23;
+  font-size: 16px;
+  text-align: center;
+  float: none;
+}
+
+.text-box {
+  margin: 10px 0;
+}
+
+span.activity-label {
+  bottom: -50%;
+  position: absolute;
+  left: 20%;
+  color: #92a336;
+}

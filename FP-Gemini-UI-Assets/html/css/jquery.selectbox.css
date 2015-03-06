@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+
+.sbHolder {
+	background-color:rgb(244,240,238);
+	font-family: 'Asap';
+	font-size: 16px;
+	font-weight: 600;
+	height: 32px;
+	position: relative;
+	width: 100%;
+	border-radius:2px;
+	border:1px solid rgba(0,0,0,0.5);
+}
+.sbHolder:focus .sbSelector {
+}
+.sbSelector {
+	display: block;
+	height: 32px;
+	left: 0;
+	line-height: 32px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 9px;
+	top: 0;
+	width: 100%;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover {
+	color: #444;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle {
+	display: block;
+	width: 46px;
+	height: 32px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: none !important;
+	-moz-transition:  none !important;
+	-ms-transition:  none !important;
+	-o-transition:  none !important;
+	background: url('../img/select-icons@2x.png') 0 0px no-repeat;
+	background-size:46px auto;
+}
+/*.sbToggle:hover {
+	background: url('../img/select-icons.png') 0 -49px no-repeat;
+}*/
+.sbToggleOpen {
+	background: url('../img/select-icons@2x.png') 0 -32px no-repeat;
+	background-size:46px auto;
+}
+/*.sbToggleOpen:hover {
+	background: url('../img/select-icons.png') 0 bottom no-repeat;
+}*/
+.sbHolderDisabled {
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder {
+}
+.sbHolderDisabled .sbToggle {
+}
+.sbOptions {
+	background-color: #eee;
+	border: solid 1px rgba(0,0,0,0.5);
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 32px;
+	width: 100%;
+	height:180px;
+	z-index: 1;
+	overflow-y:auto !important;
+	-webkit-overflow-scrolling:touch !important;
+	border-top:none;
+}
+.sbOptions li {
+	padding: 0;
+}
+.sbOptions a {
+	display: block;
+	outline: none;
+	padding: 5px 0 5px 9px;
+	border-bottom: solid 1px rgba(0,0,0,0.25);
+}
+.sbOptions li:last-child a {
+	border-bottom: solid 0px rgba(0,0,0,0.25);
+}
+.sbOptions a:link, .sbOptions a:visited {
+	color: #444;
+	text-decoration: none;
+}
+.sbOptions a:hover, .sbOptions a:focus, .sbOptions a.sbFocus {
+	color: #444;
+	background-color: rgba(0,0,0,0.05);
+	*background-color: #f3f3f3;
+}
+.sbOptions li.last a {
+	border-bottom: none;
+}
+.sbOptions .sbDisabled {
+	border-bottom: solid 1px rgba(0,0,0,0.25);
+	color: #999;
+	display: block;
+	padding: 10px 0 10px 9px;
+}
+.sbOptions .sbGroup {
+	border-bottom: solid 1px rgba(0,0,0,0.25);
+	color: #444;
+	display: block;
+	font-weight: bold;
+	padding: 10px 0 10px 9px;
+}
+.sbOptions .sbSub {
+	padding-left: 9px;
+}
+/*** Error State ***/
+.error .sbSelector:link, .error .sbSelector:visited, .error .sbSelector:hover,
+.error .sbOptions a:link, .error .sbOptions a:visited {
+	color: #f00;
+}

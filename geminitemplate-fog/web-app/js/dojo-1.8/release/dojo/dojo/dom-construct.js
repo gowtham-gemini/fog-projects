@@ -1,0 +1,12 @@
+/*
+	Copyright (c) 2004-2012, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+//>>built
+define("dojo/dom-construct","exports,./_base/kernel,./sniff,./_base/window,./dom,./dom-attr,./on".split(","),function(e,f,p,k,g,q){function j(a,c){var b=c.parentNode;b&&b.insertBefore(a,c)}function l(a){if(a.canHaveChildren)try{a.innerHTML="";return}catch(c){}for(var b;b=a.lastChild;)m(b,a)}function m(a,c){a.firstChild&&l(a);c&&(p("ie")&&c.canHaveChildren&&"removeNode"in a?a.removeNode(!1):c.removeChild(a))}var h={option:["select"],tbody:["table"],thead:["table"],tfoot:["table"],tr:["table","tbody"],
+td:["table","tbody","tr"],th:["table","thead","tr"],legend:["fieldset"],caption:["table"],colgroup:["table"],col:["table","colgroup"],li:["ul"]},r=/<\s*([\w\:]+)/,n={},s=0,o="__"+f._scopeName+"ToDomId",i;for(i in h)if(h.hasOwnProperty(i))f=h[i],f.pre="option"==i?'<select multiple="multiple">':"<"+f.join("><")+">",f.post="</"+f.reverse().join("></")+">";e.toDom=function(a,c){var c=c||k.doc,b=c[o];b||(c[o]=b=++s+"",n[b]=c.createElement("div"));var a=a+"",d=a.match(r),e=d?d[1].toLowerCase():"",b=n[b];
+if(d&&h[e]){d=h[e];b.innerHTML=d.pre+a+d.post;for(d=d.length;d;--d)b=b.firstChild}else b.innerHTML=a;if(1==b.childNodes.length)return b.removeChild(b.firstChild);for(e=c.createDocumentFragment();d=b.firstChild;)e.appendChild(d);return e};e.place=function(a,c,b){c=g.byId(c);"string"==typeof a&&(a=/^\s*</.test(a)?e.toDom(a,c.ownerDocument):g.byId(a));if("number"==typeof b){var d=c.childNodes;!d.length||d.length<=b?c.appendChild(a):j(a,d[0>b?0:b])}else switch(b){case "before":j(a,c);break;case "after":b=
+a;(d=c.parentNode)&&(d.lastChild==c?d.appendChild(b):d.insertBefore(b,c.nextSibling));break;case "replace":c.parentNode.replaceChild(a,c);break;case "only":e.empty(c);c.appendChild(a);break;case "first":if(c.firstChild){j(a,c.firstChild);break}default:c.appendChild(a)}return a};e.create=function(a,c,b,d){var f=k.doc;if(b)b=g.byId(b),f=b.ownerDocument;"string"==typeof a&&(a=f.createElement(a));c&&q.set(a,c);b&&e.place(a,b,d);return a};e.empty=function(a){l(g.byId(a))};e.destroy=function(a){(a=g.byId(a))&&
+m(a,a.parentNode)}});

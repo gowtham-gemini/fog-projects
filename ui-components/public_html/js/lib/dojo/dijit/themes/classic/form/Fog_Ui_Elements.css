@@ -1,0 +1,156 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 6, 2014, 5:35:21 PM
+    Author     : Pradeep
+*/
+.classic .fog-form_wrapper {
+  background-color: #f7f7f7;
+  border: 1px solid #dae3e9;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.classic .fog-form_wrapper .dijitSelect, .classic .fog-form_wrapper .dijitTextBox {
+  width: 100%;
+  /* -webkit-box-shadow: 0 6px 3px -6px #bdbdbd;
+	   -moz-box-shadow: 0 6px 3px -6px #bdbdbd;
+	        box-shadow: 0 6px 3px -6px #bdbdbd;*/
+
+}
+.classic .fog-form_wrapper .dijitSelect,
+.classic .fog-form_wrapper .dijitSelect .dijitButtonContents,
+.classic .fog-form_wrapper .dijitTextBox,
+.classic .fog-form_wrapper .dijitTextBox .dijitButtonNode {
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  /*   .border-radius(3px);*/
+
+  /*    padding: 2px 3px;*/
+
+}
+.classic .fog-form_wrapper .dijitTextBoxHover, .classic .fog-form_wrapper .dijitTextBoxHover .dijitButtonNode {
+  border-bottom: 1px solid #9d9d9d;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  box-shadow: none;
+}
+.classic .fog-form_wrapper .dijitComboBox .dijitArrowButtonInner {
+  border: none;
+}
+.classic .fog-form-wrapper .dijitTextBoxDisabled .dijitButtonNode {
+  background-color: #e7e7e7;
+}
+.classic .fog-form_wrapper,
+.classic .fog-form_wrapper .dijitSelectFocused,
+.classic .fog-form_wrapper .dijitSelectFocused .dijitButtonContents,
+.classic .fog-form_wrapper .dijitTextBoxFocused,
+.classic .fog-form_wrapper .dijitTextBoxFocused .dijitButtonNode {
+  border-color: none;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.classic .fog-form_wrapper .dijitSelectError,
+.classic .fog-form_wrapper .dijitSelectError .dijitButtonContents,
+.classic .fog-form_wrapper .dijitTextBoxError,
+.classic .fog-form_wrapper .dijitTextBoxError .dijitButtonNode {
+  border-color: #C0111E;
+}
+.classic .fog-form_wrapper .dijitValidationTextBoxError .dijitValidationContainer {
+  background-color: #C0111E;
+  /*    background-image: url("../form/images/error.png");*/
+
+  /*    background-position: center top;*/
+
+  background-image: none;
+  border-radius: 4px 4px 0px 0;
+  height: 100%;
+  width: 27px;
+}
+.classic .fog-form_wrapper .dijitValidationTextBoxError .dijitValidationContainer:before {
+  font-family: 'font-awesome';
+  content: 'x';
+  color: white;
+  font-size: 16px;
+}
+/* Fog-form-wrapper-default*/
+.classic .fog-form-wrapper-default {
+  background-color: #f7f7f7;
+  border: 1px solid #dae3e9;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.classic .fog-form-wrapper-default .dijitSelect .dijitInputField, .classic .fog-form-wrapper-default .dijitTextBox .dijitInputField {
+  padding: 1px 9px;
+}
+.classic .fog-form-wrapper-default .dijitSelect, .classic .fog-form-wrapper-default .dijitTextBox {
+  width: 100%;
+  height: 30px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  /* -webkit-box-shadow: 0 6px 3px -6px #bdbdbd;
+	   -moz-box-shadow: 0 6px 3px -6px #bdbdbd;
+	        box-shadow: 0 6px 3px -6px #bdbdbd;*/
+
+}
+.classic .fog-form-wrapper-default .dijitInputInner {
+  height: 25px;
+  border-radius: 8px;
+}
+.classic .fog-form-wrapper-default .dijitComboBox .dijitButtonNode {
+  width: 28px;
+  height: 28px;
+}
+.classic .fog-form-wrapper-default .dijitTextBoxDisabled .dijitButtonNode {
+  background-color: #e7e7e7;
+}
+.classic .fog-form-wrapper-default .dijitSelect .dijitArrowButtonInner, .classic .fog-form-wrapper-default .dijitComboBox .dijitArrowButtonInner {
+  margin: 4px 0 0 4px;
+}
+.classic .fog-form-wrapper-default .dijitComboBox .dijitArrowButtonInner {
+  border: none;
+}
+.classic .fog-form-wrapper-default,
+.classic .fog-form-wrapper-default .dijitSelectFocused,
+.classic .fog-form-wrapper-default .dijitSelectFocused .dijitButtonContents,
+.classic .fog-form-wrapper-default .dijitTextBoxFocused,
+.classic .fog-form-wrapper-default .dijitTextBoxFocused .dijitButtonNode {
+  border-color: none;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  /*        padding-top: 4px;*/
+
+}
+.classic .fog-form-wrapper-default .dijitSelectError,
+.classic .fog-form-wrapper-default .dijitSelectError .dijitButtonContents,
+.classic .fog-form-wrapper-default .dijitTextBoxError,
+.classic .fog-form-wrapper-default .dijitTextBoxError .dijitButtonNode {
+  border-color: #C0111E;
+}
+.classic .fog-form-wrapper-default .dijitValidationTextBoxError .dijitValidationContainer {
+  background-color: #C0111E;
+  /*    background-image: url("../form/images/error.png");*/
+
+  /*    background-position: center top;*/
+
+  background-image: none;
+  border-radius: 0px 3px 3px 0;
+  height: 100%;
+  width: 27px;
+}
+.classic .fog-form-wrapper-default .dijitValidationTextBoxError .dijitValidationContainer:before {
+  /*        font-family: 'font-awesome';*/
+
+  content: 'x';
+  color: white;
+  font-size: 16px;
+}
+.classic .fog-form-wrapper-default .dijitPlaceHolder {
+  top: 5px;
+  left: 5px;
+}

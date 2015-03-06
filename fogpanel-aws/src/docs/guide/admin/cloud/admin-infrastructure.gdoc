@@ -1,0 +1,43 @@
+  This section list users aquired resources in cloud infrastructure.
+Based on cloud core user services this section is classified into following
+types those are:
+
+ * Instance* 
+ * Storage*
+ * Snapshot* 
+ * Bandwidth* 
+  
+h3. Instance:
+
+          Accounts created Instances and their action like stop,start,restart,
+migrate etc.. are listed in this tab.This option is useful for admin to see the 
+Instance of accounts. 
+
+ !adminguide/cloud/2.png!
+
+h3. Storage:
+
+         Accounts created data disks in cloud storage are listed in this tab.
+This option is useful for admin to see the data disk of accounts.
+
+!adminguide/cloud/3.png!
+
+h3. Snapshot
+
+    Accounts created root and data disks snapshots are listed in this tab.This 
+option is useful for admin to see the snapshot of accounts.
+    
+!adminguide/cloud/4.png!
+
+h3. Bandwidth
+
+    Accounts Instances bandwidth allocation,exceeded and their exceed usages cost
+are listed in this tab. This option is useful for admin to see the bandwidth 
+of accounts.
+    
+!adminguide/cloud/5.png!
+
+h3. Ipstatics
+
+       Accounts aquired secondary ipaddress are listed in this tab.This option is 
+useful for admin to see the secondary ips of accounts.

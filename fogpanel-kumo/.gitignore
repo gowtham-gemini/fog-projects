@@ -1,0 +1,8 @@
+*.class
+target
+.settings
+.project
+.classpath
+nbproject
+.svn
+/derby.log

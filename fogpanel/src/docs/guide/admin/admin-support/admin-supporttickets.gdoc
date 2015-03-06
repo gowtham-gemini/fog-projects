@@ -1,0 +1,14 @@
+  Client post a support tickets must choose departments.The admin users view that 
+newly posted tickets in department also client received 
+confirmation email from fogpanel that new ticket was posted with open status.
+Login as admin user to reply the client posted tickets. 
+In fogpanel menu select tickets option by default all departments by all account by all tickets with
+their status are listing. Admin users use filter option to choose department 
+to get tickets of that departments with ticket status. In fogpanel auto Refresh 
+feature reload the tickets list automatically at frequencies ranging from every 
+5 minutes or admin need to refresh the page to get new tickets lists. 
+A ticket starts life in the 'Open' status. This indicates admin user to reply a new ticket. 
+Once you replied the status automatically changes to 'Answered'. The status of 
+ticket is changed manually from view ticket screen.
+
+!adminguide/services/1.png!

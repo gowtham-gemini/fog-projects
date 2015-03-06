@@ -1,0 +1,336 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic);
+
+body{
+	background: url('../img/groovepaper.png') repeat;
+	font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+	height:52px;
+	line-height:50px;
+	display:inline-block;
+	padding:10px;
+}
+.vmButton {
+    cursor: pointer;
+    
+}
+#vmName {
+  font-weight:900;
+}
+
+#totalBandWidth {
+    color: #ff0000 !important;
+    font-size: 20px;
+}
+
+.start {
+  background-image: url('../images/start.jpeg');
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+.stop {
+  background-image: url('../images/stop.jpeg');
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+.reboot {
+  background-image: url('../images/reboot.png');
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+#volumeListWidget {
+    display: inline-block;
+}
+
+
+#addVolume {
+/*    background: url('../images/addvolume.JPG') no-repeat;
+    height: 82px;
+    background-color: #4B4B4B;
+    margin-right: 6px;
+    margin-top: 6px;
+    width: 115px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px 4px 4px 4px;*/
+}
+
+.vmButton a {
+    text-decoration: none;
+}
+a.vmButton, a.vmButton:visited {  
+display:block;  
+background: url('../images/simple_button.png') repeat-x;  
+width: 150px;  
+padding:10px 0;  
+text-align:center;  
+border:1px solid #4BACE5;  
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);  
+font-weight:bold;  
+text-transform:uppercase;  
+border-radius: 5px;  
+-moz-border-radius: 5px;  
+-webkit-border-radius: 5px;  
+color:#FFF;  
+text-decoration: none;  
+opacity:.85;  
+}  
+  
+a.vmButton:hover {  
+text-decoration: none;
+}  
+  
+a.vmButton:active {  
+background-position:  0 -200px;  
+padding:11px 0 9px;  
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);  
+} 
+#status {
+    font-size: 20px;
+}
+
+#isoName {
+    font-size: 20px;
+}
+
+#osName {
+    font-size: 30px;
+}
+.iso {
+    background-color: #4FB4D2; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.vmButtons {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#iso label {
+   text-align: left; 
+   margin-left: 5px; 
+   width: 75px
+}
+.verticalSeparator {
+    border-right: 1px solid #000000; 
+    height: 18px; 
+    margin-right: 10px; 
+    padding: 0 10px 0 0; 
+    width: auto;
+}
+.verticalSeparator a {
+   cursor: pointer;  
+}
+
+.separator {
+    border-bottom: #000000 solid thin;
+}
+.top-section {
+    background: url('../img/low_linen.png') repeat;
+    border-bottom: 1px solid #292929;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+    padding:10px;
+    height:30px;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+	text-align:right;
+}
+.top-section ul.top-menu {
+    display: inline-block;
+    float: right;
+    list-style: none outside none;
+    margin-right: 15px;
+    width: 50%;
+}
+
+.top-section ul.top-menu > li {
+    display: inline-block;
+    float: right;
+    line-height: 35px;
+    margin-right: 15px;
+    text-align: right;
+	padding:0 15px;
+}
+.menu-sidebar{
+	background:url('../img/low_linen.png') repeat;
+	height:100%;
+	width:150px;
+	position:fixed;
+	z-index:1000;
+	padding:0px;
+	font-family: 'Roboto', sans-serif;
+	font-size:12px;
+}
+.menu-sidebar-main{
+	margin-top:50px;
+}
+.menu-sidebar-main ul{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style:none;
+}
+.menu-sidebar-main ul li{
+	margin:0;
+	padding:0;
+	width:150px;
+}
+.menu-sidebar-main ul li a{
+	color:#FFF;
+}
+.menu-sidebar-main ul li a:hover{
+	background:#000000;
+}
+.menu-sidebar-main ul li i{
+	margin-right:10px;
+}
+.menu-sidebar-main ul li.active{
+	background-color: #54b4eb;
+    background-image: linear-gradient(to bottom, #54b4eb, #2b9ee0);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.arrowlistmenu{
+	width: 100%; /*width of accordion menu*/
+}
+.arrowlistmenu ul{ /*CSS for UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0px; /*bottom spacing between each UL and rest of content*/
+	background:#54b4eb;
+}
+.arrowlistmenu ul li{
+	padding-bottom: 0px; /*bottom spacing between menu items*/
+}
+.arrowlistmenu ul li a{
+	color: #fff;
+	display: block;
+	padding: 10px 0;
+	padding-left: 19px; /*link text is indented 19px*/
+	text-decoration: none;
+	border-bottom: 1px solid #68c8ff;
+}
+.arrowlistmenu ul li a:visited{
+	color: #fff;
+}
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+	color: #fff;
+	background-color: #4bace5;
+}
+
+
+
+
+.menu-sidebar-main ul li.active {
+    background-color: #54B4EB;
+    background-image: linear-gradient(to bottom, #54B4EB, #2B9EE0);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.nav-collapse .nav > li {
+    float: none;
+}
+.navbar .nav > li {
+    border-bottom: 1px solid #1C1C1C;
+    border-top: 1px solid #505050;
+    float: left;
+}
+.menu-sidebar-main ul li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.menu-sidebar-main ul li {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+li {
+    line-height: 20px;
+}
+.menu-sidebar-main ul {
+    list-style: none outside none;
+}
+.nav {
+    list-style: none outside none;
+}
+.menu-sidebar {
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+}
+body {
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+body {
+    font-family: 'Roboto',sans-serif;
+}
+html {
+    font-size: 100%;
+}
+#main {
+    margin-left: 140px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.video-img img {
+    width: 535px;
+    height: 366px;
+}
+#paymentLoader .dijitDialogTitleBar,
+#cardVerifyLoader .dijitDialogTitleBar {
+    background: #FBFBFB;
+}
+#paymentLoader .dijitDialogTitleBar .dijitDialogCloseIcon,
+#cardVerifyLoader .dijitDialogTitleBar .dijitDialogCloseIcon  {
+    display: none;
+}
+#paymentLoader .dijitDialogPaneContent,
+#cardVerifyLoader .dijitDialogPaneContent {
+    border-top: none
+}
+#paymentLoader,
+#cardVerifyLoader {
+    background: #81BEFF;
+}
+ 
+#paymentLoader .dijitDialogPaneContent .spacing,
+#cardVerifyLoader .dijitDialogPaneContent .spacing {
+    margin-left: 40px;
+    margin-top: 0;
+}
+ 
+#paymentLoader .dijitDialogPaneContent .message,
+#cardVerifyLoader .dijitDialogPaneContent .message {
+    color: #000000;
+    font-size: 20px;
+    margin-top: 5px;
+}
+ 
+#paymentLoader .dijitDialogPaneContent .success,
+#cardVerifyLoader .dijitDialogPaneContent .success {
+    color: #000000;
+}
+#paymentLoader .dijitDialogPaneContent .error,
+#cardVerifyLoader .dijitDialogPaneContent .error {
+    color: #F20000;
+}
+ 
+#paymentLoader .dijitDialogPaneContent .hide_lable,
+#cardVerifyLoader .dijitDialogPaneContent .hide_lable {
+    margin: 0
+}

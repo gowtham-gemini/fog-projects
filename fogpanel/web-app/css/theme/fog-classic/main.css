@@ -1,0 +1,120 @@
+@import url("font.css");
+
+body,
+input, select, textarea {
+    font-family: 'SourceSansProRegular', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+body {
+	/*background: #55575B;*/
+	color: #fff;
+}
+
+#content {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.centeredContainer {
+    width: 98%;
+    display: block;
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+}
+
+#appLayout {
+    height: 100%;
+    padding:0px;
+}
+
+#leftCol {
+    width: 14em;
+}
+
+#header {
+    background:#f5f4f4;
+    border-bottom:#e0e0e0 1px solid;
+    display:block;
+/*    height:50px;*/
+    padding:5px 0px;
+}
+
+#panel_setting {
+    float:right;
+    border-left:#CCCCCC 1px solid;
+    padding:12px 0px 12px 15px;
+}
+
+.banner {
+    float: left;
+    display: inline-block;
+}
+
+.menu, .footerMenu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: 10px 5px 0px 0px;
+    padding: 0px;	
+}
+
+.menu li, .footerMenu li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin: 3px;
+    height: 20px;
+    border: 0px solid gray;
+    padding: 0px 5px 3px 5px;
+}
+
+.menu li a, .footerMenu li a {
+    text-decoration: none;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footerMenu {
+    float: left;
+}
+       
+#screen-loader {
+    width: 100%;
+    position: static;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: block;
+    background: #f0f0f0;
+}
+
+#footerCol .poweredBy {
+    margin: 10px 5px 0px 0px;
+    float: right;
+}
+
+/* Dojo Style overriding */
+.fog-classic .dijitSplitContainer-dijitContentPane, .fog-classic .dijitBorderContainer-dijitContentPane {
+    color: #000; 
+    padding:0px;
+    background:url(images/groovepaper.png);
+}
+
+.fog-classic .dijitSplitContainer-child, .fog-classic .dijitBorderContainer-child {
+    border: 0px;
+    padding:0px;
+}

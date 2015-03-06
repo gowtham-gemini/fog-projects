@@ -1,0 +1,1 @@
+UPDATE log set mail_send = 1 where mail_send = 0;

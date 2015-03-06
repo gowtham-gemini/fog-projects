@@ -1,0 +1,35 @@
+  Fogpanel contains two types of account:
+
+  * Retail Account
+  * Trial Account
+
+ !userguide/account/1.png!
+ 
+
+ h3. Retail Account
+
+         This account type need credit card verification to use services.
+
+ h3. Trial Account
+
+         For this account, limited services is provide by service provider. Admin 
+provide credit & promotion code  to this account type. If credit & 
+promotion code  is completely used. Fogpanel block 
+account automatically and request that user to change this account to retail 
+account for further use. This Account type is use to enhance 
+the sales.
+
+ h3. Promotion code
+
+         At the time of Trial account sign-up promotion code is used as 
+mandatory.It is addition credit provide for trail account by admin.
+
+
+{note}
+Signup process for Retail and Trial account is same
+{note}
+
+      !userguide/account/2.png!
+      !userguide/account/3.png!
+      !userguide/account/4.png!
+ 

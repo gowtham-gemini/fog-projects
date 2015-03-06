@@ -1,0 +1,141 @@
+  The General setting menu is where you change the vast majority of Fogpanel 
+general settings.This menu contain following configuration options for fogpanel.
+
+ h3. 1.Email
+
+ Fogpanel admin email configuration elements are visible in this section.
+This configuration is need for account signup,email notification for admin users 
+and use for other purpose too.
+
+ !adminguide/configuration/3.png!
+
+ Email setting contain following options:
+{code}
+
+*Application URL: *  Fogpanel billing portal running URL
+(e.g): Https://fogpanel.fogpanel.com/FogPanel
+*Host: *   Email server hostname
+(e.g): smtp.gmail.com
+*User Name:*  Email address
+(e.g): fogpanel@fogpanel.com
+*Password:*  password of email address
+*Port:* SMTP port
+*SSL:*  ssl transcation for email
+*From:* Where email are sent from
+(e.g):  Username and from address is stay with same email address.
+
+{code}
+
+ h3. 2.Organization billing settings
+
+It contain basic settings such as your company name, address, terms and condition ,
+logo are configured. This setting is apply in user pdf configuration.
+
+!adminguide/configuration/1.png!
+
+  Organization billing contain following options:
+
+*Name: Enter company name*
+
+*Email: Enter company email address*
+
+*Address: Add address of your company*
+
+Address Extension:  address extensions
+
+*City: where company is located*
+
+*Country: where company is located*
+
+*State: where company is located*
+
+*Zip:  Area zip code*
+
+*Phone: Companay phone contact*
+
+*Fax: Company fax contact*
+
+*Logo URL(width: 200px, height50px only): Link your company logo*
+
+*Signature: Company or signature*
+
+*Terms and Conditions: TOS of cloud* 
+
+
+h3. 3.Login security
+
+ If someone makes incorrect login /password attempts. Fogpanel tracks that hacker
+ip and banned in automatically. Those banned interval and other setting for login
+security is listed in this section.
+
+!adminguide/configuration/4.png!
+
+ *Login security contain following options:*
+
+*Link Active Time:*   New user account signup verification link activation period.
+*Unlock Time in (min):* Banned ip unlock time
+*MAX LOGIN FAILURE PER IP:*  Enter values to allow max login failure from a IP.
+*MAX LOGIN FAILURE:*  Enter values to allow login failure.
+
+
+ h3. 4.Email Templates
+
+     In fogpanel this system is known as acknowledge-ment system. Because every 
+action held and status for that action (output) is sent through email for admin account  
+and users account. This acknowledgement system use email templates to send the 
+action output to admin and account users contact email address. Email templates
+are based on this system without email templates this system not work.Fogpanel
+provide right to admin user to edit the email templates also it allow you to 
+customize the messages that go out to your customers when actions occur inside fogpanel. 
+Every email that goes out to a customer can be customized here.To edit an email template, go to  
+configuration> general> email templates> select Email Templates and edit content you want to change.
+
+!adminguide/configuration/5.png!
+
+ *Email templates are classified into several section: Those are*
+
+ *1.Header and Footer setup*
+
+     Header is document title.Header is a text or graphics usually printed
+at the top of the page. It include the content of admin statement and logo of panel.
+     Footer is a text or graphics usually printed at bottom of the page.It include the
+content of admin statement and fogpanel version.
+ 
+!adminguide/configuration/6.png!
+
+ *2.Account*
+
+   Under this section account relate action like enable,disable etc .. are linked to email templates. 
+
+ *3.Billing*
+
+  Under this section billing relate action like creditlimit,payment etc .. are linked to email templates. 
+
+ *4.Cloud*
+
+ Under this section cloud relate action like Instance,storage etc .. are linked to email templates. 
+ 
+ *5.Password*
+
+  Under this section password reset action email templates are avaliable.
+
+ h3. 5.Admin Users
+    
+      This option use to add more admin users for fogpanel also it list existing
+admin users.
+
+!adminguide/configuration/7.png!
+ 
+h3. 6.Support
+
+    This section is used to add departments and predefined reply for support 
+system.
+
+!adminguide/configuration/9.png!
+
+!adminguide/configuration/10.png!
+
+ {note}
+You need to create department then add predefined reply for that created
+ department. Those created departments are listed for account users.
+ {note}

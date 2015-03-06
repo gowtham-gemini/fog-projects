@@ -1,0 +1,74 @@
+Provides option to manage payments, by providing list of payments based on various filters and option to add payment.
+
+*List Payment*
+
+Lists all the payments available with pagination and by the filters specified.
+
+*Arguments*
+
+* *userName* (Optional) : user name of the account(Email)
+* *fromDate* (Optional) : From Date (date format :yyyy-MM-dd)
+* *toDate* (Optional) : To date of the account (date format :yyyy-MM-dd)
+
+*Request URL*   
+
+     https://demo.fogpanel.com/FogPanel/api/admin/billing/listPayment?userName=example@test.com&fromDate=2014-01-01&apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=668f66b81643aa61490cf108d391c1e5
+        
+*Example Response*
+
+{code}
+
+[ 
+    {
+        "amount":970,
+        "id":1,
+        "processingFee":30,
+        "totalAmount":1000,
+        "tokenNo":"PAY-65T09308PJ720952XKMBOFFA",
+        "account":"nandhini@assistanz.com",
+        "date":"18-02-2014"
+    },
+    {
+        "amount":970,
+        "id":1,
+        "processingFee":30,
+        "totalAmount":1000,
+        "tokenNo":"PAY-65T09308PJ720952XKMBOFFA",
+        "account":"nandhini@assistanz.com",
+        "date":"18-02-2014"
+    },
+    {
+        "amount":970,
+        "id":1,
+        "processingFee":30,
+        "totalAmount":1000,
+        "tokenNo":"PAY-65T09308PJ720952XKMBOFFA",
+        "account":"nandhini@assistanz.com",
+        "date":"18-02-2014"
+    }
+]
+
+{code}
+
+*Add Payment*
+
+Add a payment to DRAFT invoice with provided information, does not allow duplicates.
+
+*Arguments*
+
+
+* *paymentCode* (Required) : paymentCode for this payment(unique code)
+* *userName* (Required) : user name of the account(Email)
+* *date* (Required) : user name of the account (date format :yyyy-MM-dd)
+* *amount* (Required) : The Payment Amount (format :100.00(2 Decimals only))
+*Request URL*   
+
+    https://demo.fogpanel.com/FogPanel/api/admin/billing/addPayment?paymentCode=Pay-12345678&amount=100.00&date=2014-01-01&userName=john@example.com&apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=668f66b81643aa61490cf108d391c1e5
+
+*Example Response*
+
+{code}
+
+[{result: "success"}]
+
+{code}

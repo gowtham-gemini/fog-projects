@@ -1,0 +1,110 @@
+  Fogpanel support two types of snapshot  those are:
+    
+     # Disk snapshots
+     # VM snapshots
+ 
+ *Disk snapshot*
+
+  Fogpanel supports snapshots of disk volumes( Both root-disk and data-disk). 
+Snapshots are a point-in-time capture of Instance disks. Users can create 
+snapshots manually,snapshots of both root disks and data disks are supported 
+also user can create volumes from snapshots.
+
+   !userguide/cloud-user/snapshot/1.png!
+
+*Snapshot management*
+
+*Create snapshot*
+
+* Log in to the FogPanel UI.
+* In the menu, click cloud/snapshot.
+* Click *CREATE SNAPSHOT* provide the following details,
+Volume list: Select volume you want to snapshot(It list both root disk and data
+disk volumes, Root disk volume name are mentioned by default.It start with 
+ROOT-NUMBERIC).
+Then click ok. The snapshot for volume is created and listed.
+ 
+ *Delete snapshot*
+
+* Log in to the FogPanel UI.
+* In the menu, click cloud/snapshot.
+* In list view new and old snapshot are listed. You can choose sanpshot and use 
+action button delete in selected snapshot to delete it.
+
+ 
+*Create volumes from snapshot*
+
+* Log in to the FogPanel UI.
+* In the menu, click cloud/Snapshot.
+* In list view new and old snapshot are listed. You can choose snapshot and 
+use action button Add volume in selected snapshot to create volume.
+ 
+ (Note: If created snapshot is from shared storage type volume. Volumes are created 
+in the same shared technology)
+ 
+*VM-snapshot*
+
+  VM snapshot to preserve all the VM's data volumes as well as (optionally) its 
+CPU/memory state. This is useful for quick restore of a VM. 
+For example, you can snapshot a VM, then make changes such as software upgrades. 
+If anything goes wrong, simply restore the VM to its previous state using the 
+previously saved VM snapshot.
+The VM snapshot includes not only the data volumes, but optionally also whether 
+the VM is running or turned off (CPU state) and the memory contents.
+VM snapshots can have a parent/child relationship. Each successive snapshot of 
+the same VM is the child of the snapshot that came before it. Each time you take 
+an additional snapshot of the same VM, it saves only the differences between the 
+current state of the VM and the state stored in the most recent previous 
+snapshot. The previous snapshot becomes a parent, and the new snapshot is its 
+child. It is possible to create a long chain of these parent/child snapshots, 
+which amount to a "redo" record leading from the current state of the VM back 
+to the original.
+
+*Limitations on VM Snapshots*
+
+       If a VM has some stored snapshots, you can't attach new volume to the VM 
+or delete any existing volumes. If you change the volumes on the VM, it would 
+become impossible to restore the VM snapshot which was created with the previous 
+volume structure. If you want to attach a volume to such a VM, first delete its 
+snapshots.
+VM snapshots which include both data volumes and memory can't be kept if you 
+change the VM's service offering. Any existing VM snapshots of this type will 
+be discarded.
+You can't make a VM snapshot at the same time as you are taking a volume 
+snapshot.
+
+*Types of Vmsnapshots*
+
+     Vm snapshot have two types
+  
+      # Snapshot disks
+      # Snapshot memory
+
+     By default snapshot disks option is used. It snapshot virtual machine root
+    and attached data disk on time.
+    
+     Snapshot memory option is used to snapshot virtual machine with memory
+    and disk status.
+
+*Create vm snapshot*
+
+* Log in to the FogPanel UI.
+* In the menu, click cloud/Snapshot/vmsnapshot tab.
+* You can choose create vmsnapshot option. It need vm snapshot name,snapshot
+Type,instance list then create option.
+
+
+ *Restore vmsnapshot*
+
+* Log in to the FogPanel UI.
+* In the menu, click cloud/Snapshot/vmsnapshot tab.
+* In list view new and old snapshot are listed. You can choose snapshot and 
+use action button revert to restore vm snapshot
+
+
+ *Delete vmsnapshot*
+
+* Log in to the FogPanel UI.
+* In the menu, click cloud/Snapshot/vmsnapshot.
+* In list view new and old snapshot are listed. You can choose snapshot and 
+use action button delete to delete it.

@@ -1,0 +1,280 @@
+package com.assistanz.cloud.cloudstack.vpn;
+
+/**
+ *
+ * @author Gowtham
+ *
+ */
+public class CreateVpnConnectionResponse {
+
+    /**
+     * the vpn gateway ID
+     */
+    private String id;
+
+    /**
+     * the owner
+     */
+    private String account;
+
+    /**
+     * the guest cidr list of the customer gateway
+     */
+    private String cidrList;
+
+    /**
+     * the date and time the host was created
+     */
+    private String created;
+    
+    /**
+     * the domain name of the owner
+     */
+    private String domain;
+
+    /**
+     * the domain id of the owner
+     */
+    private String domainId;
+
+    /**
+     * if DPD is enabled for customer gateway
+     */
+    private String dpd;
+
+    /**
+     * Lifetime of ESP SA of customer gateway
+     */
+    private String espLifetime;
+
+    /**
+     * IPsec policy of customer gateway
+     */
+    private String espPolicy;
+
+    /**
+     * the public ip address id of the customer gateway
+     */
+    private String gateway;
+
+    /**
+     * the Lifetime of IKE SA of customer gateway
+     */
+    private String ikeLifetime;
+
+    /**
+     * the IKE policy of customer gateway
+     */
+    private String ikePolicy;
+
+    /**
+     * the IPsec preshared-key of customer gateway
+     */
+    private String ipSecPsk;
+
+    /**
+     * the project name
+     */
+    private String project;
+
+    /**
+     * the project ip
+     */
+    private String projectId;
+
+    /**
+     * the public IP address
+     */
+    private String publicIp;
+
+    /**
+     * the date and time the host was removed
+     */
+    private String removed;
+
+    /**
+     * the customer gateway ID
+     */
+    private String s2sCustomerGatewayId;
+
+    /**
+     * the vpn gateway ID
+     */
+    private String s2sVpnGatewayId;
+
+    /**
+     * the state of vpn connection
+     */
+    private String state;
+    
+    private String jobId;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    public String getCidrList() {
+        return cidrList;
+    }
+
+    public void setCidrList(String cidrList) {
+        this.cidrList = cidrList;
+    }
+
+    public String getCreated() {
+        return created;
+    }
+
+    public void setCreated(String created) {
+        this.created = created;
+    }
+
+    public String getDomain() {
+        return domain;
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
+
+    public String getDomainId() {
+        return domainId;
+    }
+
+    public void setDomainId(String domainId) {
+        this.domainId = domainId;
+    }
+
+    public String getDpd() {
+        return dpd;
+    }
+
+    public void setDpd(String dpd) {
+        this.dpd = dpd;
+    }
+
+    public String getEspLifetime() {
+        return espLifetime;
+    }
+
+    public void setEspLifetime(String espLifetime) {
+        this.espLifetime = espLifetime;
+    }
+
+    public String getEspPolicy() {
+        return espPolicy;
+    }
+
+    public void setEspPolicy(String espPolicy) {
+        this.espPolicy = espPolicy;
+    }
+
+    public String getGateway() {
+        return gateway;
+    }
+
+    public void setGateway(String gateway) {
+        this.gateway = gateway;
+    }
+
+    public String getIkeLifetime() {
+        return ikeLifetime;
+    }
+
+    public void setIkeLifetime(String ikeLifetime) {
+        this.ikeLifetime = ikeLifetime;
+    }
+
+    public String getIkePolicy() {
+        return ikePolicy;
+    }
+
+    public void setIkePolicy(String ikePolicy) {
+        this.ikePolicy = ikePolicy;
+    }
+
+    public String getIpSecPsk() {
+        return ipSecPsk;
+    }
+
+    public void setIpSecPsk(String ipSecPsk) {
+        this.ipSecPsk = ipSecPsk;
+    }
+
+    public String getProject() {
+        return project;
+    }
+
+    public void setProject(String project) {
+        this.project = project;
+    }
+
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
+    }
+
+    public String getPublicIp() {
+        return publicIp;
+    }
+
+    public void setPublicIp(String publicIp) {
+        this.publicIp = publicIp;
+    }
+
+    public String getRemoved() {
+        return removed;
+    }
+
+    public void setRemoved(String removed) {
+        this.removed = removed;
+    }
+
+    public String getS2sCustomerGatewayId() {
+        return s2sCustomerGatewayId;
+    }
+
+    public void setS2sCustomerGatewayId(String s2sCustomerGatewayId) {
+        this.s2sCustomerGatewayId = s2sCustomerGatewayId;
+    }
+
+    public String getS2sVpnGatewayId() {
+        return s2sVpnGatewayId;
+    }
+
+    public void setS2sVpnGatewayId(String s2sVpnGatewayId) {
+        this.s2sVpnGatewayId = s2sVpnGatewayId;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getJobId() {
+        return jobId;
+    }
+
+    public void setJobId(String jobId) {
+        this.jobId = jobId;
+    }
+
+}

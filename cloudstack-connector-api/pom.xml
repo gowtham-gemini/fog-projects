@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>CloudStack API</name>
+    <groupId>com.fogpanel.connectors</groupId>
+    <artifactId>cloudstack-api</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <inceptionYear>2013</inceptionYear>
+    <description>Cloudstack API Wrappers for 4.3.x</description>
+    <url>http://projects.fogpanel.com/cloudstack-api</url>
+    <organization>
+        <name>AssistanZ Networks</name>
+        <url>http://www.assistanz.com/</url>
+    </organization>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    
+    <issueManagement>
+        <url>http://jira.fogpanel.com/browse/CACL</url>
+        <system>JIRA</system>
+    </issueManagement>
+    
+    <scm>
+        <url>https://git.assistanz.com/fogpanel/cloudstack-connector-api.git</url>
+        <developerConnection>scm:git:[fetch=]https://git.assistanz.com/fogpanel/cloudstack-connector-api.git[push=]git@git.assistanz.com:repositories/fogpanel/cloudstack-connector-api.git</developerConnection>
+        <tag>cloudstack-api-1.0.0</tag>
+    </scm>
+    
+    <distributionManagement>
+        <repository>
+            <id>HOME</id>
+            <name>HOME-releases</name>
+            <url>http://localhost:8081/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>HOME</id>
+            <name>HOME-snapshots</name>
+            <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
+    <developers>
+        <developer>
+            <name>Gowtham R</name>
+            <email>gowtham@assistanz.com</email>
+            <organization>AssistanZ Networks Pvt Ltd</organization>
+            <timezone>+5.5</timezone>
+        </developer>
+    </developers>
+    
+    <licenses>
+        <license>
+            <name>AssistanZ Propreitory License</name>
+            <url>http://www.assistanz.com/licenses/az</url>
+        </license>
+    </licenses>
+    
+    <ciManagement>
+        <url>http://track.assistanz.com:3030/job/cloudstack-api/</url>
+        <system>Jenkins</system>
+        <notifiers>
+            <notifier>
+                <address>cloudstack-api-build@projects.fogpanel.com</address>
+                <sendOnFailure>true</sendOnFailure>
+            </notifier>
+        </notifiers>
+    </ciManagement>
+    
+    <mailingLists>
+        <mailingList>
+            <name>cloudstack-api-build</name>
+            <post>cloudstack-api-build@projects.fogpanel.com</post>
+            <subscribe>http://projects.fogpanel.com/mailinglist/mail.cgi/list/csapibuild/</subscribe>
+        </mailingList>
+        <mailingList>
+            <name>cloudstack-api-dev</name>
+            <post>cloudstack-api-dev@projects.fogpanel.com</post>
+            <subscribe>http://projects.fogpanel.com/mailinglist/mail.cgi/list/csapidev/</subscribe>
+        </mailingList>
+    </mailingLists>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock</artifactId>
+            <version>1.43</version>
+            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>fluent-hc</artifactId>
+            <version>4.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+            <type>jar</type>
+        </dependency>
+
+
+
+
+        <!--        <dependency>
+            <groupId>sun-opends</groupId>
+            <artifactId>OpenDS</artifactId>
+            <version>2.3.0-build002</version>
+            <type>jar</type>
+        </dependency>    -->
+    </dependencies>
+
+    <build>
+        <!-- To use the plugin goals in your POM or parent POM -->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.12.1</version>
+                <configuration>
+                    <configLocation>style.xml</configLocation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.2</version>
+            </plugin>
+            <plugin>    
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.4</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-module-markdown</artifactId>
+                        <version>1.6</version>
+                    </dependency>
+                    <dependency><!-- add support for ssh/scp -->
+                        <groupId>org.apache.maven.wagon</groupId>
+                        <artifactId>wagon-ssh</artifactId>
+                        <version>1.0</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>lt.velykis.maven.skins</groupId>
+                        <artifactId>reflow-velocity-tools</artifactId>
+                        <version>1.1.1</version>
+                    </dependency>
+                    <!-- Reflow skin requires Velocity >= 1.7  -->
+                    <dependency>
+                        <groupId>org.apache.velocity</groupId>
+                        <artifactId>velocity</artifactId>
+                        <version>1.7</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <check>
+                        <branchRate>100</branchRate>
+                        <lineRate>85</lineRate>
+                        <haltOnFailure>false</haltOnFailure>
+                        <totalBranchRate>100</totalBranchRate>
+                        <totalLineRate>85</totalLineRate>
+                        <packageLineRate>85</packageLineRate>
+                        <packageBranchRate>100</packageBranchRate>
+                        <!--                        <regexes>
+                            <regex>
+                                <pattern>com.example.reallyimportant.*</pattern>
+                                <branchRate>90</branchRate>
+                                <lineRate>80</lineRate>
+                            </regex>
+                            <regex>
+                                <pattern>com.example.boringcode.*</pattern>
+                                <branchRate>40</branchRate>
+                                <lineRate>30</lineRate>
+                            </regex>
+                        </regexes>-->
+                    </check>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>clean</goal>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+    
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.17</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>
+                <configuration>
+                    <show>private</show>
+                    <nohelp>true</nohelp>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.12.1</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>checkstyle</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>
+                <configuration>
+                    <show>public</show>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

@@ -1,0 +1,28 @@
+.disabled {
+    display: none;
+}
+
+.sidebar-nav .dashboard-menu .active .submenu {
+    /*display: block;*/
+}
+
+.submenu {
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+
+.bolder {
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+
+.active {
+    display: block;  
+    height: auto;
+    overflow: hidden;
+    
+}
+.activeMenu a{
+    border: 0px none !important;
+}

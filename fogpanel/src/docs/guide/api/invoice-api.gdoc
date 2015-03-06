@@ -1,0 +1,184 @@
+Provides list of invoices, or specific invoice in the given period or for an account.
+Each invoice has invoice items and these invoice items has their own individual price including or excluding taxes.
+
+h3. Current Usage
+
+Provides usage information which has not been raised as an invoice. 
+Can also be considered as a DRAFT invoice which will be changing based on current month usage.
+
+*Arguments*
+    
+* *userName* (Optional) : user name of the account(email)
+
+*Request URL* 
+
+    http://demo.fogpanel.com/FogPanel/api/admin/account/currentUsage?apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=a6c93c0aa69c7cdecb493d5dee2e19d4
+    
+*Example Response*
+
+{code}
+   
+[ 
+  {
+    "invoiceId": 1001,
+    "account": john@example.com,
+    "currentUsage" : 100.00,
+    "payment" : 200.00,
+    "totalAmount" : 500.00,
+    "previousBalance" : 300.00,
+    "credit" : 10.00,
+    "refundAmount" : 200.00,
+    "invoiceItem" : [
+        {
+          "billableItemId" : 1,
+          "billableItem" : ComputerOffer,
+          "usageUnits" : 12.00,
+          "usageUnitPrice" : 0.1111,
+          "taxPercent" : 12.00,
+          "taxAmount" : 12.00,
+          "totalAmount" 12.00,
+          "discountPercent" : 12.00,
+          "discountAmount" : 12.00,
+          "zone" : India,
+          "name" : gowtham,
+          "plan" : small
+
+        },
+        {
+          "billableItemId" : 8
+          "billableItem" : Custom Item,
+          "usageUnits" : 12.00,
+          "usageUnitPrice" : 0.1111,
+          "taxPercent" : 12.00,
+          "taxAmount" : 12.00,
+          "totalAmount" 12.00,
+          "discountPercent" : 12.00,
+          "discountAmount" : 12.00,
+          "zone" : -,
+          "name" : support,
+          "plan" : -
+
+        }
+    ]
+  }
+]
+{code}
+
+*List Invoice*
+
+Lists all the FINAL invoices with pagination and by the filters specified.
+
+*Arguments*
+    
+* *userName* (Optional) : user name of the account(Email)
+* *fromDate* (Optional)  : from date for the invoice (date format :yyyy-MM-dd)
+* *toDate* (Optional)  : to date for the invoice (date format :yyyy-MM-dd)
+* *page* (Optional)  : The list of account result will be in  pagination option. the result will shows only the give pageNo. by default the page no wil be 1.
+* *recordPerPage* (Optional)  : The list of account result will be in  pagination option. this is a option that how much record you want to show per page. by default 100 record per page.
+
+*Request URL* 
+
+    http://demo.fogpanel.com/FogPanel/api/admin/account/listInvoice?apiKey=ce42029e1e01d57ae41d60138ed6320610c988d0&signature=a6c93c0aa69c7cdecb493d5dee2e19d4
+        
+*Example Response*
+
+{code}
+
+[ 
+    "invoices": [
+        {
+          "invoiceId": 1001,
+          "currentUsage" : 100.00,
+          "account": john@example.com,
+          "payment" : 200.00,
+          "totalAmount" : 500.00,
+          "previousBalance" : 300.00,
+          "credit" : 10.00,
+          "refundAmount" : 200.00,
+          "invoiceDate" : 03-02-2014,
+          "dueDate" : 09-02-2014,
+          "invoiceItem" : [
+              {
+                "billableItemId" : 1,
+                "billableItem" : ComputerOffer,
+                "usageUnits" : 12.00,
+                "usageUnitPrice" : 0.1111,
+                "taxPercent" : 12.00,
+                "taxAmount" : 12.00,
+                "totalAmount" 12.00,
+                "discountPercent" : 12.00,
+                "discountAmount" : 12.00,
+                "zone" : India,
+                "name" : gowtham,
+                "plan" : small
+
+              },
+              {
+                "billableItemId" : 8
+                "billableItem" : Custom Item,
+                "usageUnits" : 12.00,
+                "usageUnitPrice" : 0.1111,
+                "taxPercent" : 12.00,
+                "taxAmount" : 12.00,
+                "totalAmount" 12.00,
+                "discountPercent" : 12.00,
+                "discountAmount" : 12.00,
+                "zone" : -,
+                "name" : support,
+                "plan" : -
+
+              }
+          ]
+        },
+        {
+          "invoiceId": 1002,
+          "currentUsage" : 100.00,
+          "account": john@example.com,
+          "payment" : 200.00,
+          "totalAmount" : 500.00,
+          "previousBalance" : 300.00,
+          "credit" : 10.00,
+          "refundAmount" : 200.00,
+          "invoiceDate" : 03-01-2014,
+          "dueDate" : 09-01-2014,
+          "invoiceItem" : [
+              {
+                "billableItemId" : 1,
+                "billableItem" : ComputerOffer,
+                "usageUnits" : 12.00,
+                "usageUnitPrice" : 0.1111,
+                "taxPercent" : 12.00,
+                "taxAmount" : 12.00,
+                "totalAmount" 12.00,
+                "discountPercent" : 12.00,
+                "discountAmount" : 12.00,
+                "zone" : India,
+                "name" : gowtham,
+                "plan" : small
+
+              },
+              {
+                "billableItemId" : 8
+                "billableItem" : Custom Item,
+                "usageUnits" : 12.00,
+                "usageUnitPrice" : 0.1111,
+                "taxPercent" : 12.00,
+                "taxAmount" : 12.00,
+                "totalAmount" 12.00,
+                "discountPercent" : 12.00,
+                "discountAmount" : 12.00,
+                "zone" : -,
+                "name" : support,
+                "plan" : -
+
+              }
+          ]
+        },
+        ...
+    ],
+    "totalPages":10,
+    "page":1,
+    "recordPerPage":100,
+    "totalRecords":1000
+]
+{code}

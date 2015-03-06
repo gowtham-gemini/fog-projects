@@ -1,0 +1,33 @@
+{
+"device": "${evt/device}",
+"component":"${evt/component}",
+"severity": "${evt/severity}",
+"time": "${evt/lastTime}",
+"eventKey": "${evt/eventKey}",
+"message":"${evt/message}",
+"eventDetail":"${urls/eventUrl}",
+"acknowledge":"${urls/ackUrl}",
+"close":"${urls/closeUrl}",
+"deviceEvents":"${urls/eventsUrl}",
+"uuid":"${eventSummary/uuid}",
+"evid":"${evt/evid}",		
+"ntevid":"${evt/ntevid}",
+"firstTime":"${evt/firstTime}",
+"ipAddress": "${evt/ipAddress}"
+
+}
+
+For Return
+
+{
+"event": "${evt/summary}",
+"clearedby": "${evt/clearid}",
+"at": "${evt/stateChange}",
+"device": "${evt/device}",
+"component": "${evt/component}",
+"severity": "${evt/severity}",
+"message":"${evt/message}",
+"reopen":"${urls/reopenUrl}",
+"time": "${evt/lastTime}",
+"eventKey": "${evt/eventKey}"
+}

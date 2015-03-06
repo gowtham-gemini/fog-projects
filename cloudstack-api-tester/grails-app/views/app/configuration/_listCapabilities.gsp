@@ -1,0 +1,1 @@
+    <input type="hidden" value="${params.apiCommand}" name="command" id="command" >

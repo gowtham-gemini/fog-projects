@@ -1,0 +1,28 @@
+   Account setting option is use to manage their account. It contain three types 
+of settings those are:
+ 
+ # General
+ # Billing info
+ # Password
+
+!userguide/account/profile/1.png!
+ 
+ 
+*General*
+
+     It contains contact address for user. User is able to edit their information 
+like.firstname,lastname,city,state,code,phone number etc..
+     
+ Note: Users are unable to change their username.
+
+*Billing info*
+        
+     It contain billing address of user. User is able to edit the information 
+like. Address1,Address2,City,Country,state,pincode.
+
+*Password*
+
+    Option use to reset password for User.
+
+
+

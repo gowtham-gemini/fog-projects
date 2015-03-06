@@ -1,0 +1,14 @@
+     It contains service provider cloud services. Based on services function,
+ cloud menu is classified into following sub-menus. Those are
+   
+           *Instance*  
+           *Storage* 
+           *Snapshot* 
+           *Firewall* 
+           *Cloud-Health* 
+
+                      !userguide/cloud-user/1.png!
+ 
+
+
+           

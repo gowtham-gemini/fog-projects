@@ -1,0 +1,180 @@
+Install:
+  title: Install
+  installation-steps:
+    title: Install guide
+admin:
+  title: Admin Guide
+  admin-introduction:
+    title: AdminPanel Introduction
+  admin-dashboard:
+    title: Adminpanel Dashboard
+    admin-dashboarddesc:
+      title: Quick Adminpanel Dashboard View
+  clients:
+    title: Accounts Management
+    admin-accountinfra:
+      title: Acccounts Infrastrcture details
+    admin-accountsignup:
+      title: Accounts Signup
+    admin-accountstatus:
+      title: Accounts Status
+  cloud:
+    title: Cloud Management
+    admin-infrastructure:
+      title: Cloud Infrastructure
+    admin-firewall:
+      title: Firewall
+    resourceusage:
+      title: Resource Monitor
+    maintanance:
+      title: Maintanance
+  adminservices:
+    title: Services Management
+    computation-service:
+      title: Computation Offerings
+    storage-service:
+      title: Storage Offerings
+    misc-service:
+      title: Misc offering
+    templates-service:
+      title: Templates Store
+  admin-billing:
+    title: Billing
+    admin-invoice:
+      title: Clients Invoices Management
+    admin-items:
+      title: Clients Items Management
+    adminpayments:
+      title: Client Payments Management
+  configuration:
+    title: Configuration Manager
+    admin-generalconf:
+      title: General configuration
+    admin-billingconf:
+      title: Billing configuration
+    admin-cloudconf:
+      title: Cloud configuration
+  admin-support:
+    title: Support Manager
+    admin-supportdepartment:
+      title: Departments
+    admin-supporttickets:
+       title: Tickets
+    admin-ticketreply:
+      title: Pre-defined reply
+    admin-ticketstatuss:
+      title: Ticket status
+  report:
+    title: Reports and Statistics
+    admin-billableitem:
+      title: Billable item Report
+    admin-creditlimitreport:
+      title: Creditlimit Report
+    admin-paymentpendingreport:
+      title: Payment-Pending Report
+    admin-paymentsreport:
+      title: Payments Report
+    admin-signupreport:
+      title: Signup Report
+  activity:
+    title: Activity
+    admin-events&alerts:
+      title: Events&Alerts
+user:
+  title: UserPanel Guide
+  user-introduction:
+    title: User Introduction
+  user-dashboard:
+    title: User Dashboard
+    dashboard-details:
+      title: User Quick Dashboard View
+  account:
+    title: Account Management
+    profile:
+      title: Client Profile
+  cloud-user:
+    title: Cloud
+    instance:
+      title: Instance
+      instance-management:
+        title: Instance Management
+    storage:
+      title: Storage
+    snapshot:
+      title: Snapshot
+    firewall:
+      title: Firewall
+    health:
+      title: Health 
+  services:
+    title: Service
+    sshkey:
+      title: SSH Key Manager
+    bandwidth:
+      title: Bandwidth  
+    ip-manager:
+      title: IP Manager
+    
+  templates:
+    title: Template store
+    core-templates:
+      title: Core Templates
+    app-templates:
+      title: App Templates        
+  user-billing:
+    title: Billing
+    current-usage:
+      title: Understand your Invoice
+    invoice:
+      title: Invoice
+    payment:
+      title: Payment
+    item:
+      title: Items
+    creditcard:
+      title: Default card
+  statistics:
+    title: Statistics and Reports
+    billable-item:
+      title: Billed Items in the Invoice
+    payment-report:
+      title: Payment Report
+  event:
+    title: Events
+    event-types:
+      title: Types of Events
+    alert-types:
+      title: Types of Alerts
+  user-support:
+    title: Support 
+    tickets:
+      title: Tickets
+api:
+  title: Api Administration Guide
+  account-api:
+    title: Account API Guide 
+  invoice-api:
+    title: Invoice API Guide
+  payment-api:
+    title: Payment API Guide 
+  service-api:
+    title: Service API Guide   
+  template-api:
+      title: Template API Guide
+  firewall-api:
+      title: Firewall API Guide 
+  virtual-machine-api:
+      title: Virtual Machine API
+  static-data-api:
+      title: Static Data API
+  job-api:
+      title: Job
+release-notes:
+   title: Releasenotes
+   release-note-doc:
+       title: Releasenotes
+   adminpanel:
+      title: Adminpanel
+   userpanel:
+      title: Userpanel
+    

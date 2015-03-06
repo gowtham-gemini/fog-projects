@@ -1,0 +1,35 @@
+
+ An event is essentially a significant or meaningful change in the state of your 
+action in admin environment. If admin made any changes those action are logged 
+in this section.
+
+Alerts are quick reminder for user to notify it. Alerts contain cloud infra alerts.
+
+h3. Events
+
+User event have following stat of log record.
+
+The events log records three types of standard events.
+{code}
+
+* *INFO* This event is generated when an operation has been successfully performed.
+* *WARN*  This event is generated in the following circumstances.
+** When a network is disconnected while monitoring a template downloading.
+** When a template download is abandoned.
+* *ERROR* This event is generated when an operation has not been successfully performed.
+
+{code}
+
+!adminguide/activity/1.png!
+
+h3. Alerts
+
+!adminguide/activity/2.png!
+
+h4. Cloud usage Alerts
+
+      The Usage Server in cloudstack is having any issues in updating user usage 
+record. Fogpanel track that issue and generate alert in this section. Admin
+must see this section regularly. if any alerts are generate because fogpanel
+use the cloudstack-usage table to bill the customer.
+ 

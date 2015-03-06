@@ -1,0 +1,93 @@
+  Computation is a set of virtual hardware features such as CPU core count and 
+speed, memory.fogpanel administrator can set up various
+plans based on computation elements and hypervisor types. 
+End users choose hypervisor type in create vm page the associate plans avaliable 
+for that hypervisor type are loading in the create-VM page. Currently fogpanel 
+support two type of hypervisors xenserver and kvm by default. 
+In future we increase that lists. 
+
+ !adminguide/services/2.png!
+
+h3. Create computation plans:
+
+ Login into Fogpanel as admin user in menu select services 
+then click computation and use add offering to create computation plans. 
+ 
+{code}
+ A computation plan include two elements:
+
+  # Technical info
+  # Billing info 
+{code}
+!adminguide/services/3.png!
+
+ *Technical info*
+
+            It allow admin users to choose hardware elements capacity in cloud
+infra. It contain the following options:
+
+  Zone: In Listing select zone you want to create this offering  
+  Name:  Any desired name for the service offering. 
+  Description: A short description of the offering that can be displayed to users 
+  Storage type:The type of storage technology that should be allocated.It contain two types. 
+  Local - It allocates from storage attached directly to the host. 
+  Shared - It allocates from storage from shared storage like san,nfs etc...
+  Hosttag: (Optional) Any tags that you use to organize your hosts 
+  Storage tag:The tags that should be associated with the primary storage.
+  Vcpucore: The number of cores which should be allocated to Instance with this offering.
+  Speed(mhz):The CPU speed of the cores that the Instance is allocated. 
+  Memory: The amount of memory in megabytes that the Instance should be allocated.
+  For example 2048 would provide for a 2 GB RAM allocation. 
+  N/W rate(MB):Allowed data transfer rate in MB per second. e.g 10 mb/s,100 mb/s or 1000 mb/s 
+  B/W(GB): Free of bandwidth allocated for this Plan
+  Base os: which os you want to run this plan linux or windows
+  Hypervisor: xenserver or kvm, select any one of hypervisor.
+  Cpu cap:Whether to limit the level of CPU usage even if spare capacity is available. 
+  Offer ha:If yes, the administrator can choose to have the Instance be monitored 
+and as highly available as possible. 
+  Disk Read Rate: Allowed disk read rate in bits per second.
+  Disk Write Rate: Allowed disk write rate in bits per second.
+  Disk Read Rate: Allowed disk read rate in IOPS (input/output operations per second).
+ Disk Write Rate: Allowed disk write rate in IOPS (input/output operations per second).
+
+*Billing info*
+
+   It allow admin users to code price for hardware element choose. It contain
+following elements:
+
+  Vm-Running cost per Month: Cost of running Instance 
+  Vm-Stoppage cost per Month: Instance is stopped for a month. Stoppage cost is apply 
+for that Instance based on this value. Because it accumulate resource in cloud.
+  Setup Cost: One time charge apply for Instance during first billing cycle.
+  ok/cancel:  To add computation plan
+
+h3. Manage computation plans*
+
+  Admin user have option to enable,disable and delete plans in computation.
+Disable plan is not show in Userpanel.In List page it shown status of plans.Also
+it include overall stat for created plans.
+
+ *List page contain following stats:*
+
+Total computation offering: Total created compute offering for all zones.
+Enabled computation offering: Enabled compute offering stats for all zones.
+disabled computation offering: Disabled compute offering for all zones
+  
+*Edit/delete computation plans*
+
+    To edit existing offerings. Admin user can change computation plan name,desc 
+and billing charges,The updated billing cost will affect in next billing cycle 
+for all user.admin users are unable to edit Technical info elements.
+
+view: Use option view to edit computation plan.
+
+Disable/Enable: Use this option to enable/disable compute offering.
+
+You can disable offerings. That disable offerings not list for users.
+
+Delete: Option to delete offering.
+
+{note}
+Computation based are classified based on ZONE and hypervisor types.
+{note}
+ 

@@ -1,0 +1,49 @@
+  In fogpanel billing. we have two invoice types those are  Draft invoice and
+final invoice. 
+ {code}
+ 
+ Draft Invoice is a invoice contain user bill for current month.
+ Final Invoice is a invoice contain user bill for previous month.
+
+{code}
+  
+  Both Draft and Final invoices for users are listed in the section in grid. 
+Also this page contains statics of  usage cost.
+
+  This section contain three statics boxs:
+
+  *Usage Cost:*
+
+         It contain accumulated charges applied for all of cloud users on a 
+previous day is displayed. 
+
+  *Draft Invoice cost:*
+           
+            It contain sum of charges applied for all of users in cloud for a 
+current month is displayed. This means draft invoice for all of cloud users 
+charges are accumulated and displayed.  
+
+           !adminguide/billing/1.png!
+
+  *Final Invoice cost:*
+
+       It contain sum of previous month final invoices for all of users in cloud
+    is accumulated and displayed.
+
+      !adminguide/billing/2.png!
+
+
+    Draft Invoice page contain Add item option. Admin user this option to add
+    billable items for users in their draft invoice. Admin added items are 
+    classified into two types 
+
+       {code} Recurring item - if admin add item to users under this category. Admin 
+    choose how many billing cycles this items is for charging. For example admin 
+     add recurring item with 10 billing cycle. This item and charges for this
+     item is added automatically for 10 billing cycle invoice.
+
+        Custom item -  If admin add item to users under this category. This
+    added items are charged for current billing cycle only. we known this custom
+    items as per billing cycle item. {code}
+
+    !adminguide/billing/3.png!

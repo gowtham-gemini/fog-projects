@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 20, 2014, 11:22:13 AM
+    Author     : gowtham
+*/
+
+/* Logo */
+#branding { margin-top: 5px; }
+
+/* Font */
+body { font-family: Arial,Helvetica,Garuda,sans-serif; font-size: 13px; line-height: 1.5em; }
+h1 { font-size: 25px; line-height: 1.5em; }
+h2 { font-size: 23px; line-height: 1.5em; }
+h3 { font-size: 21px; line-height: 1.5em; }
+h4 { font-size: 19px; line-height: 1.5em; }
+h5 { font-size: 17px; line-height: 1.5em; }
+h6 { font-size: 15px; line-height: 1.5em; }
+#primary-nav { font-size: 14px; }
+
+/* RevSlider */
+.tp-caption.heading, .tp-caption.balloon-big, .tp-caption.balloon-medium, .tp-caption.balloon-small {
+    background-color: rgba(0, 138, 188, 0.8);
+}
+.tp-caption.balloon-big:after, .tp-caption.balloon-medium:after, .tp-caption.balloon-small:after { border-color: rgba(0, 138, 188, 0.8) transparent; }
+
+/* BG Color */
+header.dark, .skill-score, ul.filter-button-list li a, .slide-control:hover a.has-sub, .button-primary, .stack-callout.bg-dark, .stack-section-title.bg-dark,	ul.price-list li.row-title, .stack-callout.bg-light .callout-icon, .post-content .slide-control a:hover, .button:hover, .button.active, .post-content .img-box .overlay .overlay-mask, #comments .comment-reply-link:hover, #comments .comment-edit-link:hover, .theme-form input[type="submit"], .theme-form input[type="submit"]:hover { background-color: #008abc; }
+
+/* Color */
+a, .color-scheme, .dropcap, header.dark #social-box a, header.dark #social-box form input, .stack-callout em, .stack-callout.bg-dark .button-primary, ul.price-list li.row-price sup, ul.price-list li.row-price em, header.light #primary-nav a:hover, header.dark #primary-nav ul li a:hover, .stack-callout.bg-dark .callout-icon, .feature-title i, .widget-title .word1, .stack-section-title h1 em { color: #008abc; }
+
+/* Border */
+header.light, aside .widget_pages ul li.current_page_item > a, .img-box:hover .overlay-always, aside .widget_sub_nav ul li.current_page_item > a, aside .widget_nav_menu ul li.current_page_item > a, aside .widget_pages ul li.current_page_item > a { border-color: #008abc; }
+
+/* Header */
+header.dark { background-color: #eef2f5; }
+header.dark #social-box a,
+header.dark #social-box form input { color: #eef2f5; }
+
+/* Background */
+body { 
+}
+
+#pre-footer {
+    background: none repeat scroll 0 0 #373839;
+    color: #AAAAAA;
+    font-size: 13px;
+    line-height: 1.4em;
+    padding: 20px 0 1px;
+}
+
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: inherit !important;
+}
+
+a:hover, a:focus,
+#pre-footer a:hover,
+#pre-footer a:focus,
+footer a:hover,
+footer a:focus,
+header a:hover,
+header a:focus {
+    text-decoration: none;
+}
+
+.breadcrumb {
+    margin-bottom: 0px;
+}
+
+/* PAGINATION */
+
+.pagination {
+	border-top: 0;
+	margin: 0;
+	padding: 0.3em 0.2em;
+	text-align: center;
+        float: right;
+/*	   -moz-box-shadow: 0 0 3px 1px #AAAAAA;
+	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
+	        box-shadow: 0 0 3px 1px #AAAAAA;*/
+	background-color: #EFEFEF;
+}
+
+.pagination a.next {
+    margin: 0 5px;
+}
+
+.pagination a,
+.pagination .currentStep {
+	color: #666666;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	   -moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+}
+
+.pagination a:hover, .pagination a:focus,
+.pagination .currentStep {
+	background-color: #999999;
+	color: #ffffff;
+	outline: none;
+/*	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);*/
+}
+
+.pad{
+    padding-bottom:  10px;
+}

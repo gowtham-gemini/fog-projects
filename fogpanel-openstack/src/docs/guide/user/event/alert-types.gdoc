@@ -1,0 +1,21 @@
+ Alerts are classified into two type those are:
+
+  # Billing alerts
+  # Login alerts
+
+h1. Billing alerts
+
+    Account billing relates alerts like invoice generation, etc.. are logged as 
+alerts in this section
+    !userguide/event/alert/2.png!
+ 
+h1. Login alerts
+
+    User login failure attempts are logged as alerts in this section.
+    !userguide/event/alert/1.png! 
+
+h1. Notification
+ 
+       Service provide service health status are notified in this section.
+ 
+    !userguide/event/alert/3.png! 

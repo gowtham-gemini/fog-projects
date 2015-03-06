@@ -1,0 +1,1092 @@
+/* font face */
+@font-face {
+    font-family: 'UbuntuLight';
+    src: url('/assets/ubuntu-l.eot');
+    src: url('/assets/ubuntu-l.eot') format('embedded-opentype'),
+         url('/assets/ubuntu-l.woff') format('woff'),
+         url('/assets/ubuntu-l.ttf') format('truetype'),
+         url('/assets/ubuntu-l.svg#UbuntuLight') format('svg');
+}
+
+
+
+/* globle properties */
+body{
+  font-family: 'UbuntuLight';
+  font-size:12px;
+  line-height:20px;
+  color:#7b7f8d;
+  background:#243748;
+  
+  
+}
+*{
+  margin:0;
+  padding:0;
+}
+ul, ol{
+  list-style:none;
+}
+img{
+  border:none;
+  vertical-align:top;
+  max-width:100%;
+}
+a{text-decoration:none;}
+
+/* log in page start here */
+
+/* wrapper start here */
+#logIn{
+  text-align:center;
+}
+
+/* header start here */
+#logIn header{
+  padding:50px 0 20px 0;
+  border-bottom:1px solid #7b7f8d;
+}
+
+/* content section start here */
+#logIn #contentHolder{
+  padding:50px 0;
+  min-height:590px;
+}
+
+/* log in form start here */
+#loginForm{
+  margin:45px auto 0 auto;
+  width:370px;
+}
+#loginForm label{
+  color:#fff;
+  margin:0;
+  text-align:left;
+  font-weight:normal;
+  width:90px;
+}
+#loginForm .form-control{
+  display:inline-block;
+  width:275px;
+  height:20px;
+  line-height:20px;
+  border-radius:0;
+  color:#fff;
+  color:#333;
+  font-size:12px;
+  padding:0 5px;
+}
+#loginForm .form-btn{
+  width:275px;
+  float:right;
+}
+#loginForm .form-btn button{
+  height:20px;
+  width:100px;
+  line-height:20px;
+  padding:0;
+  border-radius:0;
+  background:#92a336;
+  color:#fff;
+  font-size:12px;
+  border:none;
+  margin:30px auto 10px auto;
+  display:block;
+}
+#loginForm .form-btn button:hover{
+  background:#f04e23;
+}
+#loginForm .form-btn a{
+  text-decoration:underline;
+  color:#616e5f;
+  margin:0 10px;
+}
+#loginForm .form-btn a:hover{
+  color:#f04e23;
+  
+}
+#loginForm .checkbox{
+  text-align:left;
+  vertical-align:middle;
+  color:#fff;
+}
+#loginForm .checkbox input[type=checkbox]{
+  margin:0 5px 0 0;
+  vertical-align:middle;
+  position:static;
+  
+}
+
+/* footer start here */
+footer{
+  border-top:1px solid #7b7f8d;
+  padding:10px 0;
+  text-align:center;
+}
+#logIn footer p{
+  padding-left:90px;
+}
+
+/* log in page end here */
+
+/* index page start here */
+
+/* header */
+header{
+  padding:25px 0;
+}
+#main .logo{
+  float:left;
+}
+#main .nav{
+  position:absolute;
+  left:50%;
+  width:420px;
+  margin-left:-200px;
+  top:40px;
+  text-align:center;
+}
+#main .nav li{
+  border-right:2px solid #7c8282;
+  line-height:normal;
+}
+#main .nav li:last-child{
+  border:none;
+}
+#main .nav li a{ 
+  font-size:14px;
+  color:#7c8282;
+  padding:0 8px;
+  display:inline-block;
+  
+  line-height:normal;
+  font-weight:bold;
+}
+#main .nav li a:hover{
+  background:none;
+  color:#92a336;
+}
+#main .nav li{
+  float:left;
+}
+
+/* user log out */
+#main header .userLogout{
+  float:right;
+  margin-top:15px;
+}
+#main header .userLogout .email{
+  color:#fff;
+}
+#main header .userLogout a{
+  color:#7c8282;
+  border-left:1px solid #7c8282;
+  padding-left:6px;
+  margin-left:6px;
+}
+#main header .userLogout a:hover{
+  color:#92a336;
+}
+/* article start */
+#main h1{
+  text-align:center;
+  color:#f04e23;
+  font-size:30px;
+  margin:0;
+  border-bottom:1px solid #7b7f8d;
+  padding-bottom:15px;
+}
+.colHolder{
+  text-align:center;
+  width:85%;
+  margin:0 auto;
+  color:#fff;
+  font-size:14px;
+  margin:50px auto;
+  min-height:590px;
+}
+.colHolder h2{
+  font-size:16px;
+  margin:30px 0 0 0;
+}
+.colHolder h3{
+  font-size:28px;
+  color:#f04e23;
+  font-weight:bold;
+  margin:10px 0 0 0;
+  border-bottom:1px solid #7b7f8d;
+  padding-bottom:15px;
+  margin-bottom:15px;
+}
+.colHolder h3 span{
+  cursor:pointer;
+}
+.colHolder h3 span:hover{
+  color:#92a336;
+}
+.colHolder h3 a:hover{
+  text-decoration:none;
+}
+.colHolder p{
+  margin:0;
+}
+#contentHolder .startNow{
+  background:#92a336;
+  font-size:20px;
+  padding:15px 30px;
+  color:#fff;
+  display:inline-block;
+  font-weight:bold;
+  margin-top:50px;  
+}
+#contentHolder .startNow:hover{
+  text-decoration:none;
+  background:#f04e23;
+}
+/* index page end here */
+
+/* model window */
+
+/* add cloud model window */
+.modal-content{
+  border-radius:10px;
+}
+.modal-title{
+  color:#f04e23;
+  font-size:24px;
+  text-align:center;
+}
+.modal-header{
+  border:none;
+  text-align:center;
+  font-size:14px;
+}
+.modal form label{
+  width:130px;
+  font-weight:600;
+  margin:0;
+  float:left;
+}
+.modal form .form-control{
+  display:inline;
+  height:20px;
+  border-radius:0;
+  line-height:20px;
+  padding:0 5px;
+  font-size:12px;
+  border:1px solid #9497a2;
+  width:275px;
+}
+.modal-body{
+  padding:15px 50px 30px 50px;
+}
+.modal .form-btn{
+  float:right;
+  width:275px;
+  text-align:center;
+  position:relative;
+}
+.modal .modal-footer{
+  display:none;
+}
+
+.modal .error{
+ clear:both;
+ color: #f04e23;
+}
+.select label{
+  float:left;
+}
+.sbHolder{
+  float:right;
+  height:20px;
+  border-radius:0;
+  line-height:20px;
+  padding:0 5px;
+  font-size:12px;
+  border:1px solid #9497a2;
+  width:258px;
+  background:none;
+}
+.sbSelector{
+  line-height:20px;
+  height:20px;
+  font-weight:normal;
+  font-family: 'UbuntuLight';
+}
+.sbToggle{
+  height:18px;
+  background:#f8a57e url(/assets/select.png) no-repeat 6px;
+  width:20px;
+}
+.modal-body .head strong{
+  display:block;
+  color:#333;
+  font-size:12px;
+}
+.modal-body .head{
+  text-align:center;
+  margin-bottom:15px;
+}
+#addCloud form label{
+  position:relative;
+}
+#addCloud form label .tool_tip{
+  position:absolute;
+  left:50%;
+  botom:0;
+  width:245px;
+  display:inline-block;
+  border:1px solid #aaa;
+  background:#fff;
+  padding:5px;
+  text-align:center;  
+  border-top:2px solid #ddd;
+  font-weight:normal;
+  z-index:9999;
+  margin-left:-122.5px;
+  display:none;
+  
+}
+#addCloud form label .tool_tip i{
+  background:url(/assets/tool_tip_arrow.jpg) no-repeat;
+  display:inline-block;
+  width:8px;
+  height:6px;
+  position:absolute;
+  left:50%;
+  margin-left:-4px;
+  top:-6px;
+}
+#addCloud form label:hover .tool_tip {
+  display:block;
+}
+
+/* scanCloud model window */
+#scanCloud form label{
+  float:none;
+  display:block;
+  width:auto;
+  cursor:pointer;
+}
+#scanCloud form label input{
+  vertical-align:middle;
+  margin:0 5px 0 0;
+}
+#scanCloud .form-btn{
+  width:100%;
+  float:none;
+  margin-top:15px;
+}
+.seekBar{
+  width:220px;
+  height:20px;
+  background:#cdced5;
+  margin:0 auto;
+  position:relative;
+}
+.seekBar .progressBar{
+  position:absolute;
+  left:0;
+  top:0;
+  background:#92a336;
+  color:#333;
+  width:120px;
+  text-align:center;
+}
+
+/* NEXT STEP */
+.nextStep{
+  text-align:center;
+  font-size:14px;
+}
+.nextStep strong{
+  color:#333;
+  display:block;
+  margin-bottom:6px;
+}
+.nextStep .btn{
+  margin:30px 0 5px 0;
+}
+
+.modal .btn{
+  background:#92a336;
+  font-size:12px;
+  color:#fff;
+  height:20px;
+  padding:0 15px;
+  border-radius:0;
+}
+.modal .btn:hover{
+  background:#f04e23;
+}
+.modal .cancel{
+  color:#7b7f8d;
+  margin-left:5px;
+  font-weight:bold;
+}
+.modal-header{
+  padding-bottom:0;
+}
+
+
+
+
+/* application detail page start here */
+.application-content{
+  width:90%;
+  margin:0 auto;
+  text-align:left;
+  color:#fff;
+  font-size:12px;
+}
+.actionBtn_row {
+  padding:20px 0 20px 30px;
+}
+.actionBtn_row a{
+  display:inline-block;
+  background:url(/assets/app-action-btn.png) no-repeat;
+  height:25px;
+  text-indent:-9999px;
+  margin-left:10px;
+}
+.actionBtn_row a.migrate{
+  width:82px;
+  background-position:0 0;
+}
+.actionBtn_row a.clone{
+  width:73px;
+  background-position:-94px 0px;
+}
+.actionBtn_row a.replicate{
+  width:99px;
+  background-position:-179px 0px;
+}
+.actionBtn_row a.recover{
+  width:81px;
+  background-position:-288px 0px;
+}
+.actionBtn_row .quickLinks{
+  float:right;
+  text-align:right;
+}
+.actionBtn_row .quickLinks a{
+  color:#7b7f8d;
+  font-size:12px;
+  background:none;
+  text-indent:inherit;
+  border-right:1px solid #7b7f8d;
+  padding:0 5px;
+  height:auto;
+  line-height:normal;
+  margin:0;
+}
+.actionBtn_row .quickLinks a:last-child{
+  border:none;
+}
+.actionBtn_row .quickLinks a:hover, .actionBtn_row .quickLinks a.active{
+  text-decoration:none;
+  color:#92a336;
+}
+.title{
+  border-top:1px solid #3a4959;
+  border-bottom:1px solid #3a4959;
+  padding:10px 0;
+}
+.application-content h2{
+  color:#f04e23;
+  font-size:18px;
+  margin:-10px 0;
+  padding:10px 0;
+}
+.icon{
+  background:url(/assets/icon.png) no-repeat;
+  display:inline-block;
+  vertical-align:middle;
+  margin:0 5px;
+}
+.application-content h2 .icon{
+  height:12px;
+  width:25px;
+  margin:0 10px 0 0;
+}
+.title .progressBar{
+  float:right;
+  width:200px;
+  height:20px;
+  background:#5f6575;
+}
+.title .progressBar .progress{
+  background:#92a336;
+  color:#243748;
+  font-size:12px;
+  border-radius:0;
+  width:50%;
+  padding:0 2%;
+}
+.app-status{
+  color:#fff;
+  font-size:12px;
+  line-height:18px;
+  padding:15px 0 15px 50px;
+}
+.app-status span{
+  width:140px;
+  display:inline-block;
+}
+.app-status .default{
+  width:auto;
+}
+.app-status a{
+  color:#fff;
+  text-decoration:underline;
+}
+.app-status a:hover{
+  text-decoration:none;
+}
+.application-content .app-type{
+  border-top:1px solid #3a4959;
+  border-bottom:1px solid #3a4959;
+  padding:15px 0 15px 50px;
+}
+.application-content .app-type ul{
+  margin:0;
+}
+.application-content .app-type ul li{
+  font-size:14px;
+  line-height:18px;
+  color:#fff;
+  margin-bottom:25px;
+}
+.application-content .app-type ul li span{
+  display:block;
+  font-size:12px;
+}
+.application-content .app-type ul li:last-child{
+  margin-bottom:0;
+}
+.app-item{
+  padding:15px 0 15px 50px;
+  font-size:12px;
+  color:#fff;
+  line-height:normal;
+}
+
+/* my app */
+.table{
+  clear:both;
+}
+.table .row span{
+  display:inline-block;
+  /*width:40%;*/
+}
+.table .row > div {
+  padding:0;
+} 
+.application-content .actionBtn_row h2{
+  margin-left:-45px;
+}
+.icon.edit{
+  background-position:0 -24px;
+  height:10px;
+  width:10px;
+  /*float:right;*/
+}
+.edit:hover{
+  background-position:0 -45px;
+}
+.icon.delete{
+  background-position:0 -71px;
+  height:10px;
+  width:10px;
+  /*float:right;*/
+}
+.delete:hover{
+  background-position:0 -92px;
+}
+.table .row{
+  border-top:1px solid #3a4959;
+  border-bottom:1px solid #3a4959;
+  padding:8px 0;
+  margin-bottom:-1px;
+}
+.table .owner_row{
+  color:#f8a57e;
+}
+.table .addUser{
+  background:#354253;
+  padding:15px 0;
+}
+.table .addUser input{
+  border:none;
+  background:#9b9da8;
+  width:30%;
+  margin-left:20px;
+  height:20px;
+}
+.table .addUser button{
+  background:#92a336;
+  height:20px;
+  line-height:20px;
+  border:none;
+  color:#fff;
+  padding:0 15px;
+  margin-left:5px;
+}
+// .table .tooltip {
+  // display:none;
+// }
+// .tooltip.bottom .tooltip-arrow{
+  // border-bottom-color:#fff;
+// }
+// .tooltip-inner{
+  // background:#fff;
+  // color:#222;
+  // font-size:10px;
+  // border-radius:2px;
+// }
+
+
+/* app activity */
+.table .small-heading{
+  color:#7b7f8d;
+}
+
+/* my app */
+.searchApp{
+  width:200px;
+  float:right;
+  vertical-align:bottom;
+  margin:15px 0;
+  line-height:normal;
+  position:relative;
+}
+.searchApp input{
+  width:150px;
+  margin-left:7px;
+  vertical-align:bottom;
+  height:25px;
+  background:#9b9da8;
+  border:none;
+  padding:0 25px 0 5px;
+}
+.searchApp button{
+  background:url(/assets/search.png) no-repeat;
+  height:15px;
+  width:15px;
+  position:absolute;
+  right:5px;
+  top:5px;
+  border:none;
+}
+
+.table .progressBar{
+  width:90%;
+  height:20px;
+  background:#5f6575;
+}
+.table .progressBar .progress{
+  background:#92a336;
+  color:#243748;
+  font-size:12px;
+  border-radius:0;
+  width:60%;
+  padding:0 2%;
+}
+.myApp .iconBtn {
+  text-align:center;
+}
+.myApp .iconBtn a{
+  float:none;
+}
+.myApp .iconBtn a.icon{
+  height:10px;
+  width:10px;
+  margin:5px 3px 0 3px
+}
+.icon.fevorite{
+  background-position:-3px -134px;
+}
+.icon.fevorite:hover{
+  background-position:-3px -158px;
+}
+.icon.migrate{
+  background-position:-64px -134px;
+  width:19px !important;
+}
+.icon.migrate:hover{
+  background-position:-64px -158px;
+}
+.icon.clone{
+  background-position:-91px -134px;
+  width:19px !important;
+
+}
+.icon.clone:hover{
+  background-position:-91px -158px;
+}
+.icon.replicate{
+  background-position:-118px -134px;
+  width:22px !important;
+}
+.icon.replicate:hover{
+  background-position:-118px -158px;
+}
+.icon.recover{
+  background-position:-148px -134px;
+  width:13px !important;
+}
+.icon.recover:hover{
+  background-position:-148px -158px;
+}
+.myApp .row > div{
+  padding:0 15px;
+}
+.myApp .row div:first-child span{
+  font-size:14px;
+}
+.appIcon.active{
+  background-position:0 -108px;
+  height:19px;
+}
+.myApp .app-status{
+  padding:0 0 0 43px;
+}
+.myApp .app-status p span{
+  font-weight:bold;
+  font-size:12px !important;
+  color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.greenBorder{
+  border-left:2px solid #8fc73e;
+}
+H2.greenBorder .iconControl{
+  margin-left:5%;
+}
+.application-content h2.greenBorder i.cloud{
+  background-position:-116px -24px;
+  height:20px;
+  width:34px;
+  margin-left:15px;
+}
+.application-content h2.greenBorder .icon{
+  height:10px;
+  width:10px;
+  float:none;
+}
+.dockerHolder{
+  position:relative;
+  padding:30px 0;
+}
+.dockerImageHolder{
+  width:66.5%;
+  border-radius:10px;
+  border:1px solid #eee;
+  background:#fff;
+  padding:5% 2% 2% 2%;
+  position:relative;
+  z-index:99;
+  margin:0 auto;
+}
+.dockerImageHolder .cloudName{
+  position:absolute;
+  left:2%;
+  top:2%;
+}
+.dockerImageHolder .cloudName span{
+  display:block;
+  text-align:center;
+  color:#333;
+  font-weight:bold;
+}
+.dockerImageHolder .running{
+  position:absolute;
+  right:2%;
+  top:2%;
+  color:#92a336;
+  font-size:15px;
+  font-weight:bold;
+}
+.dockerHolder .history_card_holer .history_card_left, .dockerHolder .history_card_holer .history_card_right{
+  background:url(/assets/history_card.png) no-repeat;
+  display:inline-block;
+  width:305px;
+  height:200px;
+  position:absolute;
+  left:2.2%;
+  top:50%;
+  margin-top:-100px;
+}
+.dockerHolder a{
+  text-decoration:none;
+}
+.dockerHolder .history_card_holer .history_card_left_1{
+  left:5%;
+  z-index:1;
+}
+.dockerHolder .history_card_holer .history_card_left_2{
+  left:8%;
+  z-index:2;
+}
+.dockerHolder .history_card_holer .history_card_left_3{
+  left:11%;
+  z-index:3;
+}
+.dockerHolder .history_card_holer .history_card_left_4{
+  left:13.8%;
+  z-index:4;
+}
+.dockerHolder .history_card_holer .active{
+  background:url(/assets/history_card_active.png) no-repeat;
+  margin-top:-120px;
+}
+.dockerHolder .history_card_holer .history_card_right{
+  right:2.2%;
+  left:auto;
+}
+.dockerHolder .history_card_holer .history_card_right_1{
+  right:5%;
+  z-index:1;
+  left:auto;
+}
+.dockerHolder .history_card_holer .history_card_right_2{
+  right:8%;
+  left:auto;
+  z-index:2;
+}
+.dockerHolder .history_card_holer .history_card_right_3{
+  right:11%;
+  left:auto;
+  z-index:3;
+}
+.dockerHolder .history_card_holer .history_card_right_4{
+  right:13.8%;
+  left:auto;
+  z-index:4;
+}
+.dockerHolder .history_card_holer a .tooltip{
+  left:100%;
+  width:90%;
+  background:#fff;
+  opacity:1;
+  padding:0 10px;
+  height:90px;
+  color:#243748;
+  font-weight:bold;
+  cursor:default;
+  font-size:10px;
+  line-height:16px;
+  top:50%;
+  margin-top:-45px;
+  display:none;
+  
+}
+.dockerHolder .history_card_holer .history_card_left .tooltip{
+  left:-90%;
+}
+.dockerHolder .history_card_holer a .tooltip .title{
+  text-align:center;
+  display:inline-block;
+  width:100%;
+  border:none;
+  
+}
+.history_card_holer a .tooltip i{
+  background:url(/assets/tool_tip_arrow1.jpg) no-repeat;
+  width:13px;
+  height:27px;
+  display:inline-block;
+  position:absolute;
+  left:-13px;
+  top:50%;
+  margin-top:-13.5px;
+}
+.history_card_holer .history_card_left .tooltip i {
+  -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+  right:-13px;
+  left:auto;
+}
+
+.history_card_holer a .tooltip .textRow span.left-text{
+  width:45%;
+  display:inline-block;
+}
+.dockerHolder .history_card_holer a .tooltip .view{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+.dockerHolder .history_card_holer a .tooltip .view span{
+  text-decoration:underline;
+  color:#92a336;
+  cursor:pointer;
+}
+
+
+.text-box{
+  background:#354253;
+  border:1px solid #7b7f8d;
+  text-align:left;
+  margin:30px 0;
+  padding:15px;
+  min-height:253px;
+  
+}
+.text-box .textRow{
+  margin:3px 0;
+  font-size:11px;
+}
+.textRow .smallHeading{
+  float:left;
+  width:145px;
+  font-weight:bold;
+}
+.textRow .rightText{
+  float:left;
+  width:60%;
+}
+.textRow .rightText p span{
+  border-right:1px solid #fff;
+  padding-right:13px;
+  margin-right:13px;
+}
+.textRow .rightText p span:last-child{
+  border:none;
+  padding:0;
+  margin:0;
+}
+
+#dockerApp{
+  color:#333;
+}
+#dockerApp form label{
+  font-weight:normal;
+}
+#dockerApp form span.smallHead{
+  display:block;
+  text-align:left;
+  font-weight:bold;
+  color:#333;
+  margin:15px 0;
+}
+#dockerApp form label.checkBox{
+  width:auto;
+  margin-bottom:10px;
+  float:none;
+}
+#dockerApp form label.checkBox input{
+  margin:0 5px 0 0;
+  vertical-align:middle;
+  
+}
+#dockerApp .inputRow{
+  margin-top:5px;
+}
+.inputRow input{
+  width:40px;
+  height:22px;
+  vertical-align:middle;
+  outline:0;
+  margin-right:5px;
+}
+#dockerApp .form-btn{
+  margin:20px 0 0 0;  
+  float:none;
+  width:auto;
+}
+
+.cloud_giff_animated{
+  position:absolute;
+  right:-23%;
+  top:10px;
+  width:19%;
+}
+.appIcon.replicated{
+  height:10px;
+  background-position:0 0;
+}
+/* screen - 9 */
+
+/* diffrent border */
+.redBorder{
+  border-left:2px solid #f1592a;
+}
+.yellowBorder{
+  border-left:2px solid #fcaf17;
+}
+.lightGreenBorder{
+  border-left:2px solid #bdc786;
+}
+
+.application-content form.checked{
+  margin-top:20px;
+}
+.application-content form.checked label{
+  margin:0 10px 0 0;
+  font-size:15px;
+  font-weight:normal;
+}
+.application-content form.checked input{
+  vertical-align:middle;
+  margin:0 5px 0 0;
+}
+.red{
+  color:#f04e23;
+}
+.yellow{
+  color:#f4911e;
+}
+.lightGreen{
+  color:#b9c18e;
+}
+.green{
+  color:#92a336;
+}
+.appIcon{
+  background:url(/assets/icon.png) no-repeat;
+  width:33px;
+  height:0px;
+  display:inline-block;
+  vertical-align:middle;
+  background-position:-100px 0px; 
+}
+.table .appIcon{
+  margin-right:10px;
+}
+.appIcon.vm_icon{
+  background-position:-30px -24px;
+  height:24px;
+}
+.appIcon.physicalServar{
+  background-position:-70px -24px;
+  height:26px;
+}
+.appIcon.dockerIcon{
+  height:20px;
+  background-position:-115px -24px;
+}
+.icon.fevorite{
+  height:10px;
+  width:10px;
+  background-position:-3px -134px;
+}
+.table  .row .iconControl{
+  width:45%;
+}
+.table  .small_Heading{
+  color:#7b7f8d;
+}

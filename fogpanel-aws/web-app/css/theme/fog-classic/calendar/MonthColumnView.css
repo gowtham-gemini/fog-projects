@@ -1,0 +1,263 @@
+.fog-classic .dojoxCalendarMonthColumnView {
+  cursor: default;
+  -webkit-user-select: none;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarScrollContainer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 30px;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  border-bottom: 1px solid #b5bcc7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable td {
+  border-top: dotted 1px #B5BCC7;
+  border-right: 1px solid #cccccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable td span {
+  padding-left: 3px;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable tr:first-child td {
+  border-top: 1px solid transparent;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable .dojoxCalendarToday {
+  background-color: #fff0b4;
+  font-weight: bold;
+  color: #ff0000;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable .dojoxCalendarHiddenEvents {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAF0lEQVQYlWP4z8Dw/1dU1H8GXGBkKAAA+IglWfcls2QAAAAASUVORK5CYII=) repeat-y;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable .dojoxCalendarToday.dojoxCalendarHiddenEvents {
+  background: #fff0b4 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAF0lEQVQYlWP4z8Dw/1dU1H8GXGBkKAAA+IglWfcls2QAAAAASUVORK5CYII=) repeat-y;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable tr td.last-child {
+  border-right: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable tr td.first-child {
+  border-left: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable tr:first-child td.dojoxCalendarToday {
+  border-top: 1px solid #fff0b4;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable .dojoxCalendarWeekend {
+  background-color: #e5f2fe;
+  color: #759dc0;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarGridTable tr:first-child td.dojoxCalendarWeekend {
+  border-top: 1px solid #e5f2fe;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarContainerTable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarContainerTable td {
+  height: 100%;
+  padding: 0;
+  vertical-align: top;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarContainerColumn {
+  position: relative;
+  margin-left: 35px;
+  margin-right: 5px;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEventContainer {
+  position: absolute;
+  overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  khtml-user-select: none;
+  user-select: none;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeader {
+  position: absolute;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: 0;
+  cursor: default;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeaderTable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeaderTable td {
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #efefef;
+  background-image: url("../images/titlebar.png");
+  background-repeat: repeat-x;
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #b5bcc7;
+  border-bottom: 1px solid #b5bcc7;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  khtml-user-select: none;
+  user-select: none;
+  color: #000000;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeaderTable td.last-child {
+  border-right: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeaderTable td.first-child {
+  border-left: 1px solid #b5bcc7;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeaderTable td.Hover {
+  cursor: pointer;
+  background-image: url("../images/titlebar.png");
+  background-repeat: repeat-x;
+  background-color: #abd6ff;
+  border-color: #769dc0;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarColumnHeaderTable td.Active {
+  cursor: pointer;
+  background-color: #7dbefa;
+  border-color: #769dc0;
+  background-position: 0 -136px;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent {
+  position: absolute;
+  text-align: left;
+  color: #FFF;
+  cursor: default;
+  overflow: hidden;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 1px solid #260000;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: #9F0000;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent.Hovered .bg {
+  background-color: #CC0000;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent.Selected .bg {
+  background-color: #660000;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent.Edited .bg {
+  border: dashed 1px #FFFFFF;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent.Focused .bg {
+  border: dashed 1px #FFFFFF;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .startTime {
+  font-weight: bold;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .endTime {
+  position: absolute;
+  font-weight: bold;
+  bottom: 3px;
+  left: 6px;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .beforeIcon {
+  text-align: center;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .afterIcon {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .handle {
+  z-index: 2;
+  background-color: #F00;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  khtml-user-select: none;
+  user-select: none;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .moveHandle {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  cursor: move;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .resizeStartHandle {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  cursor: n-resize;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent .resizeEndHandle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  cursor: n-resize;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent dl {
+  margin: 0;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarEvent dd {
+  margin: 0;
+  padding: 0 3px;
+  text-align: left;
+}
+.fog-classic .dojoxCalendarMonthColumnView .dojoxCalendarVScrollBar {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

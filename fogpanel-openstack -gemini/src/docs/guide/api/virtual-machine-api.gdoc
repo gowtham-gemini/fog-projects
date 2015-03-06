@@ -1,0 +1,68 @@
+This contains the following api's
+
+*Create VM(Virtual Machine)*
+
+Create a VM with the following required fields.
+
+*Arguments*
+
+* *computingOfferReferenceId* (Required) : Specify a computingOfferReferenceid , through which plan base the VM wants to run.
+* *firewallId* (Required) : Specify a firewallId which give by admin to create VM.   
+* *templateReferenceId* (Required) : Specify a templateReferenceId, on which os(Operating System) this VM wants to run.
+* *userName* (Required) : give a userName of the account to create VM. if username is invalid then you cannot create VM
+* *zoneReferenceId* (Required) : Specify a zoneReferenceId , on which zone the VM wants to run( get this id from template api).
+* *billingType* (Optional) : billing type for VM (Values: hourly or monthly) Default: hourly
+
+*Request URL*  
+
+    https://demo.fogpanel.com/FogPanel/api/admin/virtualMachine/createVM?computingOfferReferenceId=4f62a5ff-a931-4410-a007-b07868214945&firewallId=1&templateReferenceId=4f62a5ff-a931-4410-a007&userName=john@example.com&zoneReferenceId=d5986f15-a630-4f31-9b06-d394c3079c16
+    
+*Example Response*
+
+{code}
+
+[
+    {
+        message: "success"
+        referenceId: "4f62a5ff-a931-4410-a007-b07868214945"
+        state: "Starting"
+        jobId: "4f62a5ff-a931-4410-a007-b07868214945"
+        name: "nandhini-1392983755317"
+        computingOffer: "Local-Windows-notag"
+        hypervisor: "XenServer"
+        template: "Linux-template"
+        user: "nandhini@assistanz.com"
+        zoneName: "fogpanel-dev.assistanz.com"
+        osType: "CentOS 4.5 (32-bit)"
+        securityGroupReferenceId: "d5986f15-a630-4f31-9b06-d394c3079c16"                     
+    }
+]
+
+{code}
+
+*Get VM*
+
+Get VM with the following required fields.
+
+*Arguments*
+
+* *referenceId* (Required) : Specify a referenceId , on which resource status you want to know.
+
+*Request URL*  
+
+    https://demo.fogpanel.com/FogPanel/api/admin/virtualMachine/getVM?referenceId=4f62a5ff-a931-4410-a007-b07868214945
+
+*Example Response*
+
+{code}
+
+[
+    {
+        result: "OK"
+        referenceId: "4f62a5ff-a931-4410-a007-b07868214945"        
+        name: "nandhini-1392983755317"        
+        user: "nandhini@assistanz.com"                            
+    }
+]
+
+{code}

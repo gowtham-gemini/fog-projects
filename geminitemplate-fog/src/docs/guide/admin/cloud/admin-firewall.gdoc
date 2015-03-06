@@ -1,0 +1,72 @@
+   In cloudstack firewall is known as security group. In fogpanel, we 
+change term security group as firewall. In cloud this options 
+is used to create firewall and add/remove rules for newly created firewall also 
+admin edit existing firewall rules too.
+
+ h3. Manage Firewall
+
+        In Fogpanel Firewall is based on templates. Fogpanel category templates
+into two main type those are Linux and Windows. All created firewall in fogpanel
+come under this two types. If user create Instance in fogpanel they must choose
+firewall to created instance. 
+ 
+ !adminguide/cloud/6.png!
+
+ For exmaple:  Admin created firewall with the name of juniper under linux type. 
+In user panel under create instance action,user choose Linux category templates 
+like centos,fedora,ubuntu etc.. automatically admin created juniper firewall
+firewall is listed in create Instance page. User must choose firewall Juniper to created
+Instance. By default juniper firewall is created with name of Instancename_juniper under
+firewall section of user panel.
+
+ h3. Create Firewall
+    
+           Login as admin user in fogpanel under  menu click cloud
+and choose firewall then click add firewall option to add new firewall for cloud.
+
+ !adminguide/cloud/7.png!
+
+ *Add firewall page contain following options:*
+
+ *Name: Provide desired name you wish.
+
+ *desc: Provide description for firewall
+
+ *Template type: Linux and windows. choose any one of type you wish to add.
+
+ *Ok : To created firewall in FogPanel.
+
+ 
+
+*Add-rules in firewall:*
+
+*Adding Inbound and Outbound Rules to a Firewall*
+		
+ *Log in to the FogPanel UI  as end user.
+ *In menu , choose cloud/Firewall
+ *In list view, choose firewall you want to add rule, then click the ManagePort.
+		
+ To add an inbound rule, click the inbound tab and fill out the following fields 
+to specify what network traffic is allowed into VM instances in this firewall. 
+If no inbound rules are specified, then no traffic will be allowed in, 
+except for responses to any traffic that has been allowed out through an egress 
+rule.
+		
+ *Add by CIDR*
+
+ Indicate whether the source of the traffic will be defined by IP address (CIDR).
+ 
+ !adminguide/cloud/8.png!
+
+ !adminguide/cloud/9.png!
+		
+ The networking protocol that sources will use to send traffic to the firewall. TCP and UDP are typically used for data exchange and end-user communications. ICMP is typically used to send error messages or network monitoring data.
+Start Port, End Port. (TCP, UDP only) A range of listening ports that are the destination for the incoming traffic. If you are opening a single port, use the same number in both fields.ICMP Type, ICMP Code. (ICMP only) The type of message and error code that will be accepted.
+CIDR. (Add by CIDR only) To accept only traffic from IP addresses within a particular address block, enter a CIDR or a comma-separated list of CIDRs. The CIDR is the base IP address of the incoming traffic. For example, 192.168.0.0/22. To allow all CIDRs, set to 0.0.0.0/0.
+		
+h3. List/Delete firewall
+
+  Firewall are listed in grid with details of Name,Decs,Baseos with Action of
+  Manage port and Delete.
+  Manageport option is use to add rules in firewall.
+  Delete port option is use to delete firewall in FogPanel.

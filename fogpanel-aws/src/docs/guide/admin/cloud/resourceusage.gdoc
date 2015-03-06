@@ -1,0 +1,21 @@
+    Resource monitor contain cloud infrastructure resource capacity statics.
+It list statics based on zones,pod,cluster,host. 
+
+ !adminguide/cloud/10.png!
+
+ {code}
+
+Statics of *zone,pod and cluster* contain following items 
+with percentage of allocated and free resources.
+
+  Memory,Cpu,Storage,Primary storage Allocated,Public Ip address,
+Management Ip address,secondary storage,Vlan,Shared network ips,
+Local storage.
+
+Statics of *Host* contain following items with percentage 
+of allocated and free resources.
+
+   Total Cpu,Cpu utilized,Cpu allocated for Vms,Memory Total,Memory Allocated,
+Memory Used, Network Read,Network Write.
+
+{code}

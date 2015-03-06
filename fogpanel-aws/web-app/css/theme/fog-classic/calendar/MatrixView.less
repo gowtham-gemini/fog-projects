@@ -1,0 +1,373 @@
+@import "MatrixViewCommon.less";
+
+.fog-classic .dojoxCalendarMatrixView {	
+	cursor: default;
+	.select-none;
+}
+	
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGrid {
+	position: absolute;
+	left: @row-header-width;
+	right: 0px;
+	top: @column-header-height;
+	bottom: 0px;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable {
+	position: relative;
+	width: 100%;
+	height: 100%;	
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	table-layout: fixed;	
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable tr{
+	.border-box;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable td {
+	text-align: right;
+	vertical-align: top;	
+	border-bottom: @inner-border;
+	border-right: @inner-border;
+	.border-box;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable td span{
+	padding-right: 2px;
+	padding-top: 2px;		
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable td span.FirstVisibleDayOfMonth{	
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable tr.last-child td	{
+	border-bottom: @outer-border;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable td.last-child	{
+	border-right: @outer-border;
+}
+
+/* 
+ * The dojoxCalendarColToday & dojoxCalendarColWeekend classes is added by the 
+ * MatrixView.styleGridCell method that can be subclassed to add/remove css classes
+ */
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable td.dojoxCalendarToday	{
+	background-color: @today-color;		
+	font-weight: bold;
+	color: @today-label-color;
+}
+			
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable .dojoxCalendarWeekend {
+	background-color: @week-end-color;
+	color: @week-end-label-color;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarGridTable .dojoxCalendarDayDisabled {
+	background-color: @disabled-day-color;
+	color: @disabled-day-label-color;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarYearColumnHeader{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: @row-header-width;
+	height: @column-header-height - 1px;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: @outer-border;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarYearColumnHeader table{
+	position: relative;		
+	width:100%;
+	height: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarYearColumnHeader table td{
+	text-align: center;
+	vertical-align: middle;		
+	border-left: @outer-border;
+	border-top: @outer-border;
+	border-right: @outer-border;
+	.header-background;
+	color: @label-color;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarColumnHeader {
+	position: absolute;
+	left: @row-header-width;
+	right: 0px;
+	top: 0px;
+	height: @column-header-height - 1px;
+	cursor: default;
+	border-bottom: @outer-border;	
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarColumnHeaderTable {
+	position: relative;		
+	width:100%;
+	height: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;		
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarColumnHeaderTable td {
+	overflow:hidden;
+	vertical-align: middle;
+	text-align: center;
+	.header-background;
+	border-right: @inner-border;
+	border-top: @outer-border;
+	.select-none;
+	color: @label-color;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarColumnHeaderTable td.last-child {
+	border-right: @outer-border;
+}
+
+/* 
+ * The dojoxCalendarColWeekend class is added by the 
+ * ColumnView.styleColumnHeaderCell method that can be subclassed to add/remove css class.
+ */
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarColumnHeaderTable .dojoxCalendarWeekend {
+	color: @week-end-label-color;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarRowHeader {
+	position: absolute;
+	left: 0px;				
+	top: @column-header-height;
+	width: @row-header-width;
+	bottom: 0;
+	cursor: default;
+	
+	.select-none;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarRowHeaderTable {
+	position: relative;			
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarRowHeaderTable tr{
+	.border-box;
+}
+
+/* 
+ * The MatrixView.styleRowHeaderCell method that can be subclassed to add/remove css classes per hour.
+ */
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarRowHeaderTable td {
+	text-align: center;
+	vertical-align: middle;	
+	border-left: @outer-border;
+	border-right: @outer-border;
+	border-bottom: @inner-border;
+	background-color: @row-color;
+	.transition-duration(0.2s);
+	.border-box;
+	color: @label-color;
+	cursor: pointer;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarRowHeaderTable td.last-child {
+	border-bottom: @outer-border;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarRowHeaderTable td.Hover {
+	background-color: @row-color-hover;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarRowHeaderTable td.Active {
+	background-color: @row-color-active;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarContainer {
+	position: absolute;
+	top: @column-header-height;
+	left: @row-header-width;
+	right: 0px;
+	bottom: 0px;
+	cursor: default;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarContainerTable {
+	position: relative;
+	width: 100%;
+	height: 100%;	
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	table-layout: fixed;	
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarContainerTable tr{
+	.border-box;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarContainerTable td{
+	vertical-align: top;
+	border-bottom: solid 1px transparent;
+	border-right: solid 1px transparent;
+	.border-box;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarContainerTable td div.dojoxCalendarContainerRow{
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEventContainer {
+	position: absolute;
+	overflow: hidden;
+ 	.select-none;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent {	
+	position: absolute;
+	text-align: left;
+	color: #000000;
+	cursor: default;
+	white-space: nowrap;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal {
+	color: #FFF;
+	position: absolute;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal .bg {
+	border: @horizontal-border;	
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;	
+	color: #000000;	
+	.rounded-corners(5px);
+	background-color: @horizontal-color;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal.Hovered  .bg {
+	background-color: @horizontal-hover-color;	
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal.Selected .bg {
+	background-color: @horizontal-selected-bg-color;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.Edited {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal.Edited .bg {
+	border: dashed 1px #FFF;
+	.opacity(30);
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal.Focused .bg {
+	border: dashed 1px #FFF;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel.Hovered {
+	color: #F40;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel.Selected {
+	color: #F00;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel.Edited {
+	border: dashed 1px #FFF;
+	background: #600;
+	.opacity(30);
+	color: #FFF;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel.Focused {
+	border: dashed 1px #000000;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal .labels {
+	position: absolute;
+	left: 3px;
+	right: 1px;
+	bottom: 2px;
+	overflow: hidden;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel .labels {
+	position: absolute;
+	left: 2px;
+	right: 2px;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent .handle {
+	.glass-view;
+	position: absolute;
+	width:5px;
+	height:100%;
+	cursor:e-resize;	
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent .moveHandle {
+	left:0;
+	top:0;
+	width:100%;
+	cursor:move;	
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent .resizeStartHandle {
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarEvent .resizeEndHandle {
+	right:0px;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarExpand {
+	position: absolute;
+	text-align: center;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarExpand span {
+	position: inline-block;
+	vertical-align: middle;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarExpand .bg {
+	position: relative;
+	margin-right: 5px;
+	margin-left: 5px;
+	height: 100%;
+	.rounded-corners(5px);
+	.transition-duration(0.2s);
+	.border-box;	
+	border: 1px solid transparent;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarExpand.Up .bg {
+	background-color: @expand-up-color;
+	border: 1px solid @expand-up-color - #555555;
+}
+
+.fog-classic .dojoxCalendarMatrixView .dojoxCalendarExpand.Down .bg {
+	background-color: @expand-down-color;
+	border: 1px solid @expand-down-color - #555555;
+}

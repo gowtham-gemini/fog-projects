@@ -1,0 +1,30 @@
+Instance OR vm (virtual machine) is a virtual server that contain cpu,memory,
+disk and network, also include with some additional services like firewall etc..
+		
+  
+*Features in Fogpanel Instance are:*
+		
+# Scale cpu and memory
+		
+# Attach iso's
+		
+# Add secondary disks
+		
+# Backup Instance
+		
+# Firewall
+		
+# Password reset
+		
+# Instance Action like start,stop etc..
+		
+# Aquire/release secondary ip
+		
+# Ssh-key security
+		
+# Secure console access
+		
+# Vm-statics (like cpu,bandwidth etc..)
+	
+!userguide/cloud-user/instance/1.png!
+		

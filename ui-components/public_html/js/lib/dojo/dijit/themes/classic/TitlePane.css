@@ -1,0 +1,79 @@
+/* TitlePane 
+ * 
+ * Styling TitlePane means styling the TitlePane title and its content container  (dijitTitlePane)
+ * 
+ * TitlePane title:
+ * 1. TitlePane title (default styling): 
+ * 		.dijitTitlePaneTitle - TitlePane's title div style: background-color, border
+ *
+ * 2. hovered TitlePane title (ie, mouse hover on a title bar)
+ * 		.dijitTitlePaneTitleHover - styles when mouse hover on the title div
+ * 
+ * 3. active TitlePane title (ie, mouse down on a title bar)
+ * 		.dijitTitlePaneTitleActive - styles when mouse down on the title div
+ * 
+ * 
+ * TitlePane Content Container:
+ * 1. outer/inner container: 
+ * 		.dijitTitlePaneContentOuter / dijitTitlePaneContentInner - styles for the content outer div
+ */
+.classic .dijitTitlePaneTitle {
+  background-color: #018985;
+  background-image: url("images/standardGradient.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0) 30%);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0) 30%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0) 30%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0) 30%);
+  _background-image: none;
+  border: 1px solid #c1c1c1;
+  padding: 0 7px 3px 7px;
+  min-height: 17px;
+}
+.classic .dijitTitlePaneTitleHover {
+  background-color: #d8d7d7;
+  border-color: #9d9d9d;
+}
+.classic .dijitTitlePaneTitleActive {
+  background-color: #bebebe;
+  border-color: #9d9d9d;
+  background-image: url("images/activeGradient.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.95) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.95) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.95) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.95) 3px, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+}
+.classic .dijitTitlePaneTitleFocus {
+  margin-top: 3px;
+  padding-bottom: 2px;
+}
+.classic .dijitTitlePane .dijitArrowNode {
+  background-image: url("images/spriteArrows.png");
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 7px;
+}
+.classic .dijitTitlePane .dijitOpen .dijitArrowNode {
+  background-position: 0 0;
+}
+.classic .dijitTitlePane .dijitClosed .dijitArrowNode {
+  background-position: -14px 0;
+}
+.classic .dijitTitlePane .dijitTitlePaneTextNode {
+  color: #000000;
+}
+.classic .dijitTitlePaneContentOuter {
+  background: #ffffff;
+  border: 1px solid #c1c1c1;
+  border-top: none;
+}
+.classic .dijitTitlePaneContentInner {
+  padding: 10px;
+}
+.classic .dijitTitlePaneTextNode {
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: text-top;
+}

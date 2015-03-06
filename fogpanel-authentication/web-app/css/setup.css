@@ -1,0 +1,1108 @@
+#wizard {
+    /*height: 100%;*/
+    width: 100%;
+    /*overflow-x: hidden;*/ 
+}
+
+#wizard .wizardPane {
+    width: inherit;
+    /*overflow: hidden;*/
+}
+
+.wizardPane h3 {
+    margin: 0 0 0 0;
+}
+
+#setupWizardBorderContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.controls .dijitSpinner {
+    width: 100%;
+}
+
+#osListItem {
+    width: 100%;
+    height: 100%;
+}
+
+.controls .dijitTextBox {
+    width: 100%;
+}
+#resizeStorageSliderCollection .dijitTextBox {
+    width: 20% !important; 
+}
+.updatable {
+    display: block;
+}
+
+.hide_lable {
+    display: none;
+    margin: 5px 0 0 110px;
+}
+
+.non_updatable {
+     display: none;
+}
+.show_lable {
+     display: block;
+}
+#storageAddDisk .non_updatable {
+    display: none;
+}
+#addDiskInfo {
+    display: none;
+}
+#addDiskInfo label {
+    width: 100px;
+}
+#storageAddDiskForm .non_updatable {
+    display: none;
+}
+#wizardComputingOfferPage,
+#diskOfferingPage,
+#misscellaneousPage,
+#dashboardDiskOfferingPage,
+#computingOfferPage {
+    overflow: auto;
+    height: 100%;
+}
+
+#serviceListItems,
+#diskListCollection,
+#miscellaneousListContainer {
+    overflow: hidden;
+}
+
+.setupWizardLeftPane {
+    width: 55%;
+    min-width: 500px;
+    float: left;
+}
+
+.setupWizardRightPane {
+    min-width: 335px;
+    width: 39px;
+    float: right;
+}
+
+.myTab {
+    height: 600px;
+    width: 100%;
+    padding: 0 !important;
+}
+.gridDiv {
+    width: auto;
+    height: auto;
+}
+
+.errorMessage {
+    display: none;   
+}
+
+.wizardLeftContent {
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 350px;
+    margin-left: 5px;
+    width: 675px;
+    overflow: auto;
+}
+.ListItemContainer {
+    border: solid 1px #CCCCCC;
+    width: 305px;
+    height: 350px;
+    float: left;
+    margin: 0 0 0 2px; 
+    overflow: auto;
+}
+.zoneInfo {
+    width: 100%;
+}
+
+.zoneInfo h4 {
+    float: left;
+    margin: 5px 0 0 50px;
+}
+
+.zoneItem {
+    margin-left: 28px;
+    margin-top: 5px;
+}
+
+.zoneItem label {
+    float: left;
+    width: 50px;
+    margin-left: 40px;
+}
+
+.zoneItem span {
+    margin-left: 10px;
+}
+
+.zoneItem .dijitTextBox {
+    width: 100px;
+    margin-left:  20px;
+}
+
+.buttonGroup {
+    float: right;
+}
+
+.selectedItem {
+    border: 1px solid #86ABD9;
+}
+
+.unSelectItem {
+    border: 1px solid #000000;
+}
+
+.zoneWidget {
+    width: 700px;
+    margin-top: 5px;
+}
+
+.zoneCostHeading h5 {
+    float: left;
+    margin: 3px 0 0 48px;
+}
+
+#miscelZoneCostInfo h4 {
+    float: left;
+    margin: 5px 0 0 50px;
+}
+
+#dashboardComputingZoneInfo h5{
+    float: left;
+    margin: 3px 0 0 55px;
+}
+
+h5 span {
+    color: #FF9900;
+    font-size: 18px;
+}
+
+.zoneErrorMessage {
+    border: 3px solid #F40004; 
+    margin: 10px 0 0 5px;
+    width: 690px;
+    display: none;
+}
+.zoneErrorMessage span {
+    color: #000000;
+    font-size: large;
+    font-family: serif;
+    font-weight: bold;
+    margin-left: 200px;
+}
+.require {
+    color: #F00003;
+}
+.comingsoon{
+	position:absolute;
+	margin-top:130px;
+	text-align:center;
+	width:140px;
+    color: #0088cc;
+	font-weight:700;
+	background:#fff;
+	padding:4px 0;
+	border-radius: 5px;
+	border:1px solid #dae1e8;
+}
+.serviceListContainer {
+    width: 215px;
+    height: 211px;
+    border: 1px solid #CCCCCC;
+    margin-left: 150px;
+    background: #FFFFFF;
+    margin-top: 5px;
+    overflow: auto;
+}
+
+.serviceListContainerElement {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.serviceListContainerElement  label {
+    float: left;
+    width: 100px;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.grid_12 .dijitButton {
+    float: left;
+}
+
+ #storageAddDisk .dijitDialogPaneContent {
+    height: 400px;
+    background: #FFFFFF;
+}
+
+#snapshotTempPage .dijitDialogPaneContent {
+    width: auto;
+    height: auto;
+}
+
+/*#storageAddDialog .dijitDialogPaneContent {
+    width: 455px;
+    height: auto;
+}*/
+
+#ulList,  #instanceDiskName, #instanceDiskSize {
+    list-style-type: none
+}
+
+.nextButton .dijitButton .dijitButtonNode  {
+    
+    background: url('../images/round_arrow_right.png') no-repeat;
+    border: none;
+    width: 48px;
+    height: 48px;
+   
+}
+
+.nextButton {
+    float: right;
+}
+
+.pervButton {
+    float: right;
+}
+
+.pervButton .dijitButton .dijitButtonNode, 
+.pervButton .dijitButton .dijitButtonNode #prevButton, 
+.nextButton .dijitButton .dijitButtonNode #nextButton {
+    background: url('../images/round_arrow_left.png') no-repeat;
+    border: none;
+    width: 48px;
+    height: 48px;
+   
+}
+
+ 
+.pervButton .dijitButton .dijitButtonNode #prevButton,
+.nextButton .dijitButton .dijitButtonNode #nextButton {
+    background: transparent;
+}
+.configLabel {
+    width: 579px;
+    background: #E2F2C1;
+    float: left;
+    text-align: left;
+    margin: 5px 0 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#infoMenu a, #adminInfoMenu a {
+    cursor: pointer;
+}
+
+.horizontalcontent {
+   margin : 0px;
+   padding: 0;
+}
+
+#diskOfferingPage .form-horizontal .horizontalcontent label,
+#dashboardDiskOfferingPage .form-horizontal .horizontalcontent label{
+    color: #1684C2;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    width: 100px;
+ }
+
+#diskOfferingPage .form-horizontal .horizontalcontent  .elements,
+#dashboardDiskOfferingPage .form-horizontal .horizontalcontent .elements {
+    margin-left: 115px;
+}
+
+#diskOfferingPage .form-horizontal .control-group, 
+#dashboardDiskOfferingPage .form-horizontal .control-group {
+    margin: 10px 0 0 0; 
+}
+
+#wizardComputingOfferPage .form-horizontal .horizontalcontent label,
+#computingOfferPage .form-horizontal .horizontalcontent label{
+    width:100px;
+    color: #1684C2;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    
+}
+
+#dashboardComputingOfferForm .horizontalcontent label {
+    width: 60px;
+    color: #1684C2;
+    font-size: 14px;
+    font-weight: bold;
+    /*margin-left: 110px;*/
+    
+}
+
+#wizardComputingOfferPage .form-horizontal .horizontalcontent  .elements, 
+#computingOfferPage .form-horizontal .horizontalcontent  .elements{
+    margin-left: 110px;
+}
+
+#diskOfferContent .form-horizontal .horizontalcontent label, 
+#dashboardDiskOfferContent .form-horizontal .horizontalcontent label{
+    color: #1684C2;
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    text-align: right;
+    width: 100px;
+}
+
+#miscelZoneCostInfo .form-horizontal .horizontalcontent label{
+    width: 50px;
+    text-align: left;
+    float: left;
+    color: #1684C2;
+    font-size: 14px;
+    font-weight: bold; 
+    margin: 0;
+}
+
+#miscelZoneCostInfo .form-horizontal .horizontalcontent  .elements {    
+    margin-left: 50px;   
+}
+
+#dashboardMiscelZoneCostInfo .form-horizontal .horizontalcontent label{
+    width: 50px;
+    text-align: left;
+    float: left;
+    color: #1684C2;
+    font-size: 14px;
+    font-weight: bold; 
+    margin: 0;
+}
+
+#dashboardMiscelZoneCostInfo .form-horizontal .horizontalcontent  .elements {
+    
+    margin-left: 50px;
+   
+}
+
+#diskOfferContent .form-horizontal .horizontalcontent  .elements {
+    
+    margin-left: 115px;
+   
+}
+
+#diskOfferContent .form-horizontal .horizontalcontent  .elements .dijitTextBox {
+    width: 90%;
+}
+
+.customDisk .control-label {
+    width: 100px;
+    text-align: right;
+    float: left;
+    color: #1684C2;
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+     margin-right: 10px;
+}
+
+.customDisk .controls {
+    margin-left: 0px;
+}
+.customDisk .controls .dijitTextBox {
+    width: 50%;
+}
+
+
+#computingOfferContent .form-horizontal .horizontalcontent label, 
+#dashboardcomputingOfferContent .form-horizontal .horizontalcontent label{
+    width: 100px;
+    text-align: right;
+    float: left;
+    color: #1684C2;
+    font-size: 14px;
+    margin: 0;
+}
+
+#computingOfferContent .form-horizontal .horizontalcontent  .elements, 
+#dashboardcomputingOfferContent .form-horizontal .horizontalcontent  .elements{   
+    margin-left: 110px;
+       
+}
+
+#computingOfferContent .form-horizontal .horizontalcontent  .elements .dijitTextBox, 
+#dashboardcomputingOfferContent .form-horizontal .horizontalcontent  .elements .dijitTextBox {
+    width: 90%;
+}
+
+#computingOfferContent .form-horizontal .row-fluid .span6, 
+#dashboardcomputingOfferContent .form-horizontal .row-fluid .span6 {
+    margin: 0px 0 0px 0;
+}
+
+#wizardComputingOfferPage .form-horizontal .control-group, 
+#computingOfferPage .form-horizontal .control-group{
+    margin: 10px 0 0 0; 
+}
+
+#diskOfferContent .form-horizontal .row-fluid .span6 {
+    margin: 0px 0 0px 0;
+}
+
+#diskOfferingPage .form-horizontal .control-group,
+#dashboardDiskOfferingPage .form-horizontal .control-group {
+    margin-top: 5px; 
+}
+
+.highlight {
+    float: right; 
+    color: #FF9D40; 
+    font-size: 18px;            
+    font-weight: bold; 
+    margin: -20px -23px 0 0;
+}
+
+.contents {
+    /*margin-top: 5px;*/
+}
+
+.content .dijitTextBox {
+    width: 330px;
+    border-radius: 5px;
+    /*margin-top: 10px;*/
+}
+
+.content label {
+    float: left;
+    /*margin-top: 10px;*/ 
+    /*width: 150px;*/
+    text-align: right;
+    margin-right: 10px;
+    color: #1684C2;
+    font-size: 14px;
+    font-weight: bold; 
+}
+
+#adminVmActionForm label, #adminStorageActionForm label {
+    font-size: 10px !important; 
+}
+
+.squareContainer {
+    height: 200px;
+    width: auto;
+    border: 2px solid #BEC1C8;
+    margin-top: 5px;
+    background: #FFFFFF;
+    border-radius: 3px;
+       
+}
+
+ .rectContainerSmall span {
+    color: #4BACE5;
+    font-size: 14px;
+    font-weight: bold; 
+    margin: 10px 0 0 0;
+}
+
+.spacing {
+    margin-top: 45px;
+}
+
+.squareContainer  span {
+    color: #4BACE5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rectContainerMedium {
+    height: auto;
+    width: auto;
+    border: 2px solid #B2B2B2;
+    margin-top: 35px;
+    background: #FFFFFF;
+    border-radius: 3px;
+}
+.rectContainerMedium span {
+    color: #4BACE5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rectContainerMedium #spenCost {
+    font-size: 80px;
+    font-weight: bold; 
+    margin-left: 150px
+}
+
+.rectContainerSmall {
+    border: 2px solid #B2B2B2;
+    margin-top: 5px;
+    background: #FFFFFF;
+    border-radius: 3px;
+}
+
+.setBackground {
+    background: url('../images/chart.jpg') no-repeat #DDDDDD; 
+}
+
+#accountDetail {
+    background: #C4C4C4;
+}
+
+#accountSetupBreadcrumb .breadcrumb,
+#alertBreadcrumb .breadcrumb {
+    padding: 0;
+    margin: 2px;
+    background: -moz-linear-gradient(center bottom , #E1E1E1 38%, #FEFEFE 89%) repeat scroll 0 0 #E1E1E1;
+} 
+
+#accountSetupBreadcrumb .breadcrumb .hide_lable,
+#alertBreadcrumb .breadcrumb .hide_lable {
+    display: none;
+    margin: 0;
+     
+}
+
+#accountSetupBreadcrumb .breadcrumb .show_lable, 
+#alertBreadcrumb .breadcrumb .show_lable {
+    display: inline-block;
+}
+
+#accountDetail ul li {
+    /*margin-left: 30px;*/
+    width: 200px;
+    border: none;
+}
+
+#accountDetail ul li a {
+    color: #898989;
+}
+
+.activeMenu  {
+    background: #F8F8F8;
+    display: block;
+}
+#accountDetail ul li:hover {
+    background: #F8F8F8;
+}
+
+#accountTabContainer .menuItemTheme .navbar .navbar-inner {
+    background: #C4C4C4;
+    /*margin-top: 50px;*/
+}
+
+#accountTabContainer .menuItemTheme .navbar .navbar-inner a {
+     color: #534F4D;
+     font-weight: bold; 
+}
+
+ #profileTabContainer .menuItemTheme .navbar .navbar-inner,
+ #contactTabContainer .menuItemTheme .navbar .navbar-inner,
+ #billingTabContainer .menuItemTheme .navbar .navbar-inner, 
+ #notificationTabContainer .menuItemTheme .navbar .navbar-inner, 
+ #userAlertTabContainer .menuItemTheme .navbar .navbar-inner, 
+ #billingAlertTabContainer .menuItemTheme .navbar .navbar-inner,
+ #instanceInfo .navbar .navbar-inner, #currentInstanceInfo .navbar .navbar-inner{
+    background: #C4C4C4;
+    
+}
+#contactTabContainer .menuItemTheme .navbar {
+    margin-bottom: 5px;
+}
+#profileTabContainer .menuItemTheme .navbar .navbar-inner a, 
+#contactTabContainer .menuItemTheme .navbar .navbar-inner a,
+#billingTabContainer .menuItemTheme .navbar .navbar-inner a,
+#notificationTabContainer .menuItemTheme .navbar .navbar-inner a, 
+#userAlertTabContainer .menuItemTheme .navbar .navbar-inner a,
+#billingAlertTabContainer .menuItemTheme .navbar .navbar-inner a,
+#instanceInfo .navbar .navbar-inner a,  
+#currentInstanceInfo .navbar .navbar-inner a{  
+    color: #534F4D;
+    font-weight: bold; 
+}
+#currentInstanceInfo .navbar {
+    margin-bottom: 0;
+}
+#statusButtons .dijitButtonNode, #createVmButton .dijitButtonNode {
+    width: 120px;
+    height: 30px;
+}
+#statusButtons #statusInfo {
+    margin: 40px 0 0;
+}
+
+#currentPlanDetails .dijitButtonNode {
+    height: 35px;
+    width: 200px;
+}
+#notificationTabContainer .navbar-form {
+    background: #E5EFF1;
+    margin-top: 15px;
+}
+
+#notificationTabContainer .navbar-form h4 {
+    color: #2773C1;
+    margin-top: 10px;
+}
+
+#notificationTabContainer .navbar-form .dijitTextBox,
+#notificationTabContainer .navbar-form .dijitButton {
+    margin-top: 10px;
+}
+
+#accountTabContainer .dijitTab {
+    min-width: 360px;
+}
+
+#profileTabContainer .dijitTab {
+    min-width: 410px;
+}
+
+#contactTabContainer .dijitTab,  #billingTabContainer .dijitTab,
+#notificationTabContainer .dijitTab,  #userAlertTabContainer .dijitTab, 
+#billingAlertTabContainer .dijitTab {
+    min-width: auto;
+}   
+
+#generalAccountInfo .menuItemTheme .form-horizontal .generalContents {
+    margin-top: 30px;
+}
+
+#generalAccountInfo .menuItemTheme .form-horizontal .generalContents label, 
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents label, 
+#accountContactPage .menuItemTheme .form-horizontal .generalContents label,
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents label,
+#vmInfo .form-horizontal .generalContents label,
+#invoiceDetails .form-horizontal .generalContents label {
+    background: none repeat scroll 0 0 #F7F7F7;
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 300px;
+    color: #757575;
+    font-weight: bold;
+}
+
+#vmInfo .form-horizontal .generalContents label {
+    background: #E4E3E2;
+    width: 150px;
+    margin-bottom: 15px;
+}
+#vmInfo .form-horizontal .control-group {
+    margin : 5px 0 0 0;
+}
+#vmInfo .form-horizontal {
+    margin: 25px 0;
+}
+#vmInfo .form-horizontal .generalContents .controls span {
+    color: #757575;
+    background: #E4E3E2;
+    float: left;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: left;
+    width: 350px;
+}
+#vmInfo .form-horizontal .generalContents .controls span a {
+    cursor: pointer;
+}
+#invoiceDetails .form-horizontal .generalContents label {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-color: #363636;
+    border-style: solid;
+    border-width: 1px 1px 1px 2px;
+    color: #000000;
+    padding-top: 0; 
+    margin-bottom: 0;
+    width: 180px;
+    font-weight: normal;
+    font-size: 12px; 
+}
+
+#invoiceDetails .form-horizontal .control-group  {
+    margin: 0;
+}
+
+#invoiceDetails .form-horizontal .generalContents .controls span { 
+    border-color: #363636;
+    border-style: solid;
+    border-width: 1px 2px 1px 0;
+    float: left;
+    width: 185px;
+    font-size: 12px 
+   
+}
+#accountContactPage .menuItemTheme .form-horizontal .generalContents label {
+    margin-bottom: 0;
+}
+#loginDetailPage .form-horizontal .generalContents label {
+    margin-bottom: 0;
+}
+
+#loginDetailPage .navbar {
+    margin-bottom: 11px;
+}
+
+#generalAccountInfo .menuItemTheme .form-horizontal .generalContents .controls span,
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls span, 
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls span {
+
+    background: none repeat scroll 0 0 #F7F7F7;
+    float: left;
+    margin-left: 25px;
+    padding-top: 5px;
+    text-align: left;
+    width: 789px;
+    color: #64727E;
+}
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls span { 
+    
+    background: none repeat scroll 0 0 #F7F7F7;
+    float: left;
+    margin-left: 25px;
+    padding-top: 5px;
+    text-align: left;
+    width: 500px;
+    color: #64727E;
+}
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .non_updatable {
+    display: none;
+}
+#buttonGroup {
+    margin-top: 0;
+}
+
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .dijitTextBox,
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .dijitTextBox,
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .dijitTextBox {
+    width: 300px;
+    margin-left: 145px;
+}
+
+/*#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .dijitSelect, .dijitSelect *, 
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .dijitSelect, .dijitSelect *, 
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .dijitSelect, .dijitSelect *{
+    display: inline; 
+    margin-left: 26px;
+    width: 250px;
+}
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .dijitSelect span, 
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .dijitSelect span, 
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .dijitSelect span {
+    background: none;
+    margin-left: -23px;
+    color: #000000;
+    width: auto;
+}*/
+
+
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect, 
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect *, 
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect, 
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect *, 
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect, 
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect * {
+    width: 265px;
+    margin-left: 5px;
+    color: #000000;
+}
+
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect tbody tr td .dijitArrowButtonInner, 
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect tbody tr td .dijitArrowButtonInner,
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .span4 .dijitSelect tbody tr td .dijitArrowButtonInner {
+    width: 16px;
+    margin-left: 0;
+}
+
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .hide_lable,
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .hide_lable, 
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .hide_lable {
+    display: none;
+}
+
+#generalProfileInfo .menuItemTheme .form-horizontal .generalContents .controls .show_lable,
+#accountContactPage .menuItemTheme .form-horizontal .generalContents .controls .show_lable,
+#billingTabContainer .menuItemTheme .form-horizontal .generalContents .controls .show_lable {
+    display: block;
+}
+
+#generalProfileInfo .menuItemTheme .form-horizontal .passwordField .controls .dijitTextBox, 
+.passwordField .dijitTextBox {
+    margin-left: 30px;
+    width: 300px;
+}
+
+#generalProfileInfo .menuItemTheme .form-horizontal .control-group,
+#accountContactPage .menuItemTheme .form-horizontal .control-group {
+    margin: 0 0 10px 0;
+}
+
+#billingTabContainer .menuItemTheme .form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+
+#accountContactPage .menuItemTheme #userForm .control-group {
+    margin-bottom: 20px;
+}
+
+#generalAccountInfo .menuItemTheme .form-horizontal {
+    margin-top: 30px;
+}
+
+#accountProfilePage .rectContainerMedium {
+    height: 200px;
+    margin-top: 60px;
+    background: url('../images/profileImage.jpg') no-repeat #FFFFFF; 
+    width: 215px;
+}
+
+#invoiceDetails  .spacing {
+    margin-top: 10px;
+}
+
+#companyAddress ul, #userInfo ul {
+   list-style-type: none;
+}
+
+#userInfo .spacing {
+    margin-top: 20px;
+}
+
+#userInfo > ul li:first-child  {
+    font-weight: bold;
+    font-size: 20px; 
+}
+.test {
+    background: red;
+}
+
+#storageAddDisk .form-horizontal .span5 .controls .dijitSelect {
+    width: 350px;
+}
+
+#storageAddDisk .form-horizontal .span5 .controls .dijitSelect .dijitArrowButton {
+    width: 16px;
+    border: 1px solid #B5BCC7;
+}
+#storageAttachDisk .form-horizontal .control-group .controls .dijitSelect tbody tr .dijitArrowButton {
+    width: 16px;
+    border: 1px solid #B5BCC7;
+}
+.contentInfo {    
+    background: none repeat scroll 0 0 #F5F4F4;
+    border: 1px solid #BEC1C8;
+    height: 350px;
+    overflow: auto;
+}
+
+.staticDiv {
+    margin-top: 10px;
+    padding: 5px;
+    position: fixed;
+    width: 300px;
+}
+
+#osTypeForm .non_updatable {
+    display: none
+}
+
+
+#osSelectedValues .dojoDndSource {
+    height: 310px;
+ }
+ 
+ #listArrow {
+     width: 1%;
+     margin: 10px;
+ }
+ 
+ #planListResult,  #groupingCost {
+     color: #FF9900;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+ }
+ 
+ #instancePageForm .control-group .unitCost, 
+ #tempCreateVm .control-group .unitCost {
+    color: #FF9900;
+    float: right;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: -155px;
+    margin-top: -20px;
+    width: 150px;
+ }
+ 
+ 
+ #tempCreateVm .control-group .unitCost {    
+    margin-right: 114px;   
+ }
+ #tempCreateVm .control-group .tempUnitCost {
+     margin-right: -250px;
+    margin-top: -16px;
+ }
+ 
+ #instancePageForm .control-group .avgCost, 
+ #tempCreateVm .control-group .avgCost{
+     color: #50FF20;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    float: left;
+    
+ }
+ 
+ #instancePageForm .control-group .customDisk .dijitTextBox,
+ #tempCreateVm .control-group .customDisk .dijitTextBox, 
+ #storageAddDiskForm .control-group .customDisk .dijitTextBox{
+     float: right;
+    margin-right: -79px;
+    margin-top: -20px;
+    width: 70px;
+ }
+ #tempCreateVm .control-group .customDisk .dijitTextBox {
+     margin-right: 212px;
+ }
+ 
+ #instancePageForm .control-group .customDisk .customDiskSize,  
+ #tempCreateVm .control-group .customDisk .customDiskSize {
+    color: #FF9900;
+    float: right;
+    font-weight: bold;
+    margin-right: -99px;
+    margin-top: -15px;
+ }
+ #instancePageForm .control-group .customDisk .unitCost {
+    margin-right: -251px;
+    margin-top: -16px;
+ }
+ 
+ #instancePageForm .control-group .tempCost .unitCost {
+    margin-right: -100px;
+    margin-top: 1px;
+    display: block;
+    
+ }
+ 
+ #tempTabContainer .tabcontent .selectZone .dijitSelect {
+     /*margin-left: 250px;*/
+     width: 360px;
+     border: 1px solid #B5BCC7;
+ }
+ #tempTabContainer .tabcontent .selectZone .dijitSelect tbody tr .dijitArrowButton {
+     width: 16px;
+     border: 1px solid #B5BCC7;
+ }
+ 
+ #wizardComputingOfferPage .form-horizontal .control-group .controls .selectOption .dijitSelect,
+ #computingOfferPage .form-horizontal .control-group .controls .selectOption .dijitSelect,
+ #diskOfferingPage .form-horizontal .control-group .controls .selectOption .dijitSelect, 
+ #dashboardDiskOfferingPage .form-horizontal .control-group .controls .selectOption .dijitSelect, 
+ #miscelZoneForm .control-group .controls .selectOption .dijitSelect {
+     border: 1px solid #B5BCC7;
+     width: 120px;
+     
+ }
+ 
+ #wizardComputingOfferPage .form-horizontal .control-group .controls .selectOption .dijitSelect tbody tr .dijitArrowButton,
+ #computingOfferPage .form-horizontal .control-group .controls .selectOption .dijitSelect tbody tr .dijitArrowButton,
+ #diskOfferingPage .form-horizontal .control-group .controls .selectOption .dijitSelect tbody tr .dijitArrowButton, 
+ #dashboardDiskOfferingPage .form-horizontal .control-group .controls .selectOption .dijitSelect tbody tr .dijitArrowButton, 
+ #miscelZoneForm .control-group .controls .selectOption .dijitSelect tbody tr .dijitArrowButton, .fog-classic .controls .dijitSelect{
+     width: 16px;
+     border: 1px solid #B5BCC7;
+ }
+ #networkPageCollection #adminSecurityGroupsList .WizardListItem #attachTag {
+     float: right;
+ } 
+ 
+ #updateTaxInfoPage {
+     background: #FFFFFF;
+ }
+ 
+ #adminTaxTabContainer .taxContent .form-horizontal .control-group .controls .dijitTextBox {
+     width: 70%;
+ }
+ 
+ #diskOfferContent .form-horizontal .diskCustomSize, 
+ #dashboardDiskOfferContent .form-horizontal .diskCustomSize 
+ {
+     display: none;
+ }
+ 
+ #diskOfferContent .form-horizontal .updatableContent, 
+ #dashboardDiskOfferContent .form-horizontal .updatableContent  {
+     display: block;
+ }
+
+ #configLoader .dijitDialogTitleBar,
+ #thankyouDialog .dijitDialogTitleBar, 
+ #dashboardConfigLoader .dijitDialogTitleBar {
+     background: #FBFBFB;
+ }
+ #configLoader .dijitDialogTitleBar .dijitDialogCloseIcon, 
+ #thankyouDialog .dijitDialogTitleBar .dijitDialogCloseIcon, 
+ #dashboardConfigLoader .dijitDialogTitleBar .dijitDialogCloseIcon {
+     display: none;
+ }
+ #configLoader .dijitDialogPaneContent, 
+ #thankyouDialog .dijitDialogPaneContent, 
+ #dashboardConfigLoader .dijitDialogPaneContent {
+     border-top: none
+ }
+ #configLoader, #thankyouDialog, #dashboardConfigLoader {
+     background: #81BEFF;
+ }
+ 
+ #configLoader .dijitDialogPaneContent .spacing,  
+ #dashboardConfigLoader .dijitDialogPaneContent .spacing {
+     margin-left: 40px;
+     margin-top: 0;
+ }
+ 
+ #configLoader .dijitDialogPaneContent .message, 
+ #dashboardConfigLoader .dijitDialogPaneContent .message {
+     color: #000000;
+     font-size: 20px;
+     margin-top: 5px;
+ }
+ 
+ #configLoader .dijitDialogPaneContent .success, 
+#dashboardConfigLoader .dijitDialogPaneContent .success {
+     color: #000000;
+ }
+ #configLoader .dijitDialogPaneContent .error,  
+ #dashboardConfigLoader .dijitDialogPaneContent .error {
+     color: #F20000;
+ }
+ 
+ #configLoader .dijitDialogPaneContent .hide_lable,
+ #dashboardConfigLoader .dijitDialogPaneContent .hide_lable {
+     margin: 0
+ }
+ 
+ #setupWizardSteps li {
+     width: 185px;
+     background:  -moz-linear-gradient(center bottom , #E1E1E1 38%, #FEFEFE 89%) repeat scroll 0 0 #E1E1E1;
+     background:  -webkit-linear-gradient(center bottom , #E1E1E1 38%, #FEFEFE 89%) repeat scroll 0 0 #E1E1E1;
+     margin-top: 0;
+     margin-left: 2px;
+     border-radius: 5px; 
+ }
+ #setupWizardSteps li > a {
+     margin: 0;
+ }
+ #setupWizardSteps li :hover {
+     background: #37AAE4;
+     color: #FFFFFF;
+ }
+ 

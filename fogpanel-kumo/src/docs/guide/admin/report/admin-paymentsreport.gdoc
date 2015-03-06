@@ -1,0 +1,16 @@
+ It provide analysis for Users payments. Admin users choose Date Range
+and Username or select all users in account field to generate analysis payment
+report.
+
+ Analysis report Include following elements:
+
+  * Account name:*
+  * Total Amount:*
+ 
+ {note}
+
+ Admin users have download their generated analysis report as csv and pdf.
+
+ {note}
+
+!adminguide/reports/6.png!

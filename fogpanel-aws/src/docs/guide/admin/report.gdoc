@@ -1,0 +1,20 @@
+  FogPanel comes with analysis tool. This tool is use to analysis both cloud
+and billing history and current status also it help status of business.You can 
+use this tool to generate report those report are download
+as pdf and xml formats. In fogpanel analysis report is viewed into two types:
+
+* Text analysis*
+* Visual analysis or graph analysis*
+
+ In Fogpanel admin users are able to analysis the following items:
+
+                      !adminguide/reports/0.png!
+
+ * Billable item analysis*
+ * Signup analysis*
+ * Payment analysis*
+ * Payment pending analysis*
+ * Credit limit analysis*
+
+                           !adminguide/reports/0.png!
+

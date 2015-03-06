@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="${project.name}">
+    <publishDate position="top" format="yyyy-MM-dd" />
+    <version position="top" />
+    
+    
+    <body>
+        <links>
+            <item name="All Projects" href="/" />
+        </links>
+        
+        <breadcrumbs>
+            <item name="Home" href="/"/>
+        </breadcrumbs>
+        
+        <menu name="Main" inherit="top">
+            <item name="About" href="index.html" />
+            <item name="Project Summary" href="project-summary.html" />
+            <item name="Project License" href="license.html" />
+        </menu>
+        
+        <menu name="Contacts and Communications">
+            <item name="Project Team" href="team-list.html" />
+            <item name="Mailing Lists" href="mail-lists.html" />
+        </menu>
+        
+        <menu name="Documentation">
+            <item name="API" href="apidocs/index.html" />
+            <item name="Custom Documentation" href="mydoc.html" />
+        </menu>
+        
+        <menu name="Codebase">
+            <item name="Source Repository" href="source-repository.html" />
+            <item name="Distribution Management" href="distribution-management.html" />
+        </menu>
+        
+        <menu name="Tools">
+            <item name="Issue Tracking" href="issue-tracking.html" />
+            <item name="Continuous Integration" href="integration.html" />
+        </menu>
+        
+        <menu name="Dependencies">
+            <item name="Dependencies" href="dependencies.html" />
+            <item name="Dependency Information" href="dependency-info.html" />
+        </menu>
+        
+        <menu name="Plugins">
+            <item name="Project Plugins" href="plugins.html" />
+            <item name="Plugin Management" href="plugin-management.html" />
+        </menu>
+        
+        <menu name="Reports">
+            <item name="Checkstyle" href="checkstyle.html" />
+            <item name="Coverage" href="cobertura/index.html" />
+            <item name="PMD" href="pmd.html" />
+            <item name="CPD" href="cpd.html" />
+        </menu>
+    </body>
+    
+    
+    <poweredBy>
+        <logo name="Maven" href="http://maven.apache.org/"
+              img="http://maven.apache.org/images/logos/maven-feather.png"/>
+    </poweredBy>
+    
+    <skin>
+        <groupId>lt.velykis.maven.skins</groupId>
+        <artifactId>reflow-maven-skin</artifactId>
+        <version>1.1.1</version>
+    </skin>
+    
+    <custom>
+        <reflowSkin>
+            <smoothScroll>true</smoothScroll>
+            <theme>bootswatch-flatly</theme>
+            <highlightJs>true</highlightJs>
+            <highlightJsTheme>github</highlightJsTheme>
+            <brand>
+                <name>${project.name}</name>
+                <href>${project.url}</href>
+            </brand>
+            <slogan>Java library to validate FogPanel license</slogan>
+            <titleTemplate>%2$s | %1$s</titleTemplate>
+            <toc>top</toc>
+            <tocTopMax>6</tocTopMax>
+            <topNav>Documentation|Codebase|Dependencies|Tools</topNav>
+            <bottomNav>
+                <column>Main|Contacts and Communications</column>
+                <column>Documentation|Dependencies|Plugins</column>
+                <column>Codebase|Tools|Reports|modules</column>
+            </bottomNav>
+            
+            <pages>
+                <index project="project-id">
+                    <shortTitle>Welcome</shortTitle>
+                    <breadcrumbs>false</breadcrumbs>
+                    <toc>false</toc>
+                    <sections>
+                        <body />
+                        <sidebar />
+                        <thumbs>2</thumbs>
+                        <columns>3</columns>
+                    </sections>
+                </index>
+            </pages>
+        </reflowSkin>
+    </custom>
+</project>

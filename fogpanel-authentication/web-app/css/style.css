@@ -1,0 +1,427 @@
+/*@import 'http://fonts.googleapis.com/css?family=Simonetta:400,400italic';*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300,300italic);
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+    background: #272A2D;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    color: #000;
+}
+
+label {
+	font-family: 'Open Sans', sans-serif;
+}
+label, input, button, select, textarea{
+	font-size:12px !important;
+	color:#333333;
+}
+#loader {
+	/*background: #AFAFAF;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 999;*/
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	text-align:center;
+}
+
+#wrapper {
+	position: relative;
+	/*width: 960px;*/
+	margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 590px;
+    display: block;
+    margin-top: 50px;
+    background: green;
+    height: 400px;
+    
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#CACACA));
+    background-image: -webkit-linear-gradient(top, #E6E6E6, #CACACA);   
+    background-image: -moz-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: -ms-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: -o-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: linear-gradient(top, #E6E6E6, #CACACA);    
+
+    border: thin solid #F0F0F0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#accountTypeContainer {
+    margin: 0 auto;
+    width: 650px;
+    display: block;
+    margin-top: 50px;
+    background: green;
+    
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#CACACA));
+    background-image: -webkit-linear-gradient(top, #E6E6E6, #CACACA);   
+    background-image: -moz-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: -ms-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: -o-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: linear-gradient(top, #E6E6E6, #CACACA);    
+
+    border: thin solid #F0F0F0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    
+}
+
+#signupContainer {
+    margin: 0 auto;
+    width: 650px;
+    display: block;
+    margin-top: 50px;
+    background: green;
+    
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#CACACA));
+    background-image: -webkit-linear-gradient(top, #E6E6E6, #CACACA);   
+    background-image: -moz-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: -ms-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: -o-linear-gradient(top, #E6E6E6, #CACACA);
+    background-image: linear-gradient(top, #E6E6E6, #CACACA);    
+
+    border: thin solid #F0F0F0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+.element {
+    margin-top: 5px;
+}
+
+.element .dijitTextBox {
+    width: 330px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.element label {
+    float: left;
+    margin-top: 10px; 
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.wizard_container {
+    /*background: none repeat scroll 0 0 rgba(255, 255, 255, 0.65);*/
+	background:#ffffff;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+    display: block;
+    /*margin: 30px 25px 0 0;*/
+    padding-top: 20px;
+    position: relative;
+    width: 580px;
+	
+}
+#signupPage .wizard_container .dojoxWizard .form-horizontal {
+    margin:  0;
+	font-size:11px !important;
+	color:#999999;
+}
+
+.wizard_container .dojoxWizard {
+    /*background: #D9D9D9;*/
+    margin: 0;
+    border: none;
+    height: auto;
+    overflow: hidden;
+ }
+ #signupPage .wizard_container .dojoxWizard .dojoxWizardContainer  {
+     margin-bottom:  10px;     
+ }
+.wizard_container .dojoxWizard .dojoxWizardButtons {
+    float: right;
+    margin-bottom: 3px; 
+    display: block;
+}
+
+/*.wizard_container .dojoxWizard .dojoxWizardButtons .dijitButton {
+    width: 100px;
+	border: none;
+    float: right;
+}*/
+
+#signupWizard .fogPanelWizard {
+    /*margin-left: 100px;*/
+}
+.wizard_container .dojoxWizard .form-horizontal .control-group {
+    margin-bottom: 5px;
+}
+
+.wizard_container .dojoxWizard .dojoxWizardButtons .dijitButton .dijitButtonNode {
+	/*background: linear-gradient(#54B3FF, #0078D9) repeat scroll 0 0 transparent;
+	border: none;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5) inset;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+    border-color: #2480C2;
+	width: 92px;
+	height: 22px;
+    padding: 5px;*/
+	background: #3B9FF3 !important;
+	border:1px solid #1f5e93 !important;
+	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.3) !important;
+	color:#fff !important;
+	-webkit-box-shadow:  0px 0px 0px 0px !important;
+    box-shadow:  0px 0px 0px 0px !important;
+	padding:4px;
+	font-weight:700;
+	margin:0px;
+}
+.wizard_container .dojoxWizard .dojoxWizardButtons .dijitButton .dijitButtonNode:hover {
+	background: #62b0f1 !important;
+}
+.wizard_container #cancelButton {
+    /*background: url('../images/wizard_nav_button.png') no-repeat green;*/
+   /* width: 100px;
+    text-transform: uppercase;*/
+    /*padding-top: 3px;*/
+    /*padding-left: 20px;
+    margin-top: -41px;
+    color: #fff;*/
+    /*height: 30px;*/
+    /*border-radius: 5px;*/
+    /*border: none;*/
+    /*float: right;
+    margin-right: 120px; */
+}
+/*.wizard_container .dojoxWizard .dojoxWizardButtons .dijitButton .dijitButtonNode .dijitButtonContents {
+	padding-top: 3px;
+    padding-left: 20px;
+	text-transform: uppercase;
+	color: #fff;
+    font-size: 14px;
+}*/
+
+.address {
+	clear: right;
+	display: block;
+	height: 40px;
+}
+
+.address > .element {
+    float: left;
+    clear: none;
+}
+
+.address .element.zip {
+    width: 200px;	
+}
+
+.address .element.zip > label {
+    width: 67px;
+}
+
+.address .element.zip .dijitTextBox {
+    width: 80px;
+}
+
+.address .element.city .dijitTextBox {
+    width: 170px;    
+}
+
+.tab {
+    display: block;
+    height: 45px;
+    /*margin-left: 128px;*/
+    margin-top: 31px;
+    background: url('../images/signup_title-image.png') no-repeat;
+    position: absolute;
+    z-index: 10;
+    left: 19%;
+    /*width: 150px;*/
+ }
+
+ .claro .dijitTextBoxFocused .dijitInputContainer {
+     border-radius: 5px;
+ }  
+ 
+ .tab span {
+     color: #F4F4F4;
+     font-size: large;
+     font-weight: bold;
+     display: block;
+     height: 35px;
+     width: 100px;
+     padding: 15px 0px 0px 35px;
+ }
+ 
+ .terms {
+     margin-top: 20px;
+ }
+ 
+ .terms label {
+     float: right;
+     /*margin-right: 322px;*/
+     margin-top: 0;
+     text-align: left;
+     width: 250px;
+     font-style: italic;
+     font-size: 17px;
+     float: left;
+ }
+ 
+.terms .dijitCheckBox {
+    margin-left: 150px !important;
+    float: left;
+}
+ 
+#accountTypePage {
+    color: black;
+    background: url('../images/cloud.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#signupPage {
+    color: black;
+	/*background-color:#123573;*/
+   background:url("../images/bgs/15.jpg") no-repeat !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bgs/landscape.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bgs/landscape.jpg', sizingMethod='scale')";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#signupPage .wizard_container{
+	padding-top: 0 !important;
+}
+.signup_title h1{
+	font-size:36px;
+	color:#123573;
+	font-weight:300;
+	margin-left:20px;
+	margin-right:20px;
+	padding-bottom:18px;
+	border-bottom:1px solid #CCCCCC;
+        margin-top: 10px;
+}
+.wizard-steps{
+	width:auto !important;
+}
+.wizard-steps li.active .step, .wizard-steps li.active:before{
+	color:#123573 !important;
+}
+.loginBackground {
+    background: url('../images/cloud.jpg') no-repeat center center fixed; 
+}
+
+.require {
+    color: #F00003;
+}
+
+.buttonGroup {
+    float: right;
+}
+
+.validation {
+    display: none;
+    color: #F00003;
+    margin-left: 180px;
+}
+
+#billingAddressBlock {
+    display: none;
+      
+}
+
+.info span {
+    color: #0061EA;
+    display: block;
+    font-size: large;
+    font-weight: bold;
+ }
+
+ #signup_wizard .form-horizontal .row-fluid .validationErrorMsg {
+     color: #EF0B0E;
+     display: none;
+}
+
+ #paymentLoader .dijitDialogTitleBar {
+     background: #FBFBFB;
+ }
+ #paymentLoader .dijitDialogTitleBar .dijitDialogCloseIcon {
+     display: none;
+ }
+ #paymentLoader .dijitDialogPaneContent {
+     border-top: none
+ }
+ #paymentLoader {
+     background: #81BEFF;
+ }
+ 
+ #paymentLoader .dijitDialogPaneContent .spacing {
+     margin-left: 40px;
+     margin-top: 0;
+ }
+ 
+ #paymentLoader .dijitDialogPaneContent .message {
+     color: #000000;
+     font-size: 20px;
+     margin-top: 5px;
+ }
+ 
+ #paymentLoader .dijitDialogPaneContent .success {
+     color: #000000;
+ }
+ #paymentLoader .dijitDialogPaneContent .error {
+     color: #F20000;
+ }
+ 
+ #paymentLoader .dijitDialogPaneContent .hide_lable {
+     margin: 0
+ }
+ #signupPage{
+ 	margin-bottom:20px !important;
+}
+ #signupPage .welcome_wiz{
+     /*left: 16% !important;*/
+	/* width:80%;
+	 margin:0 auto;*/
+	 margin:0 auto;
+	 left: auto;
+	right: auto;
+ }
+
+.login-wrapper .span6 {
+	 float:none !important;
+	 margin-bottom:50px !important;
+ }
+.signup_panel_logo{
+ 	text-align:center;
+}
+
+ 

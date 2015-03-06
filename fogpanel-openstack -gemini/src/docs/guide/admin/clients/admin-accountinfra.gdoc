@@ -1,0 +1,44 @@
+   This section list user acquire resources and charges applicable for that
+resources and other billing relates information for users are contain in this 
+category. Based on user services this category is classified into following
+types those are:
+
+ * Account summary 
+ * Infrastructure
+ * Invoice
+ * Payments
+ * Items
+  
+h3. Account summary:
+
+          It contain Account current status and billing information and 
+current usage (Draft invoice),invoice and support graphs etc..
+
+ !adminguide/clients/2.png!
+
+h3. Infrastructure:
+
+         It contain stats of account aquire services in cloud.
+
+   !adminguide/clients/3.png!
+
+h3. Invoice:
+
+         It list a user invoices.
+
+       !adminguide/clients/4.png!
+
+h3. Payments:
+
+    It list a user payments.
+
+     !adminguide/clients/5.png!
+        
+h3. Items:
+
+   It list custom/recurring items for a User.
+
+     !adminguide/clients/6.png!
+
+
+

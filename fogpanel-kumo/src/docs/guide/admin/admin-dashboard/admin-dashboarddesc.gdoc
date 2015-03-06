@@ -1,0 +1,57 @@
+  Cloud accounts current month billable items subscriptions and charges applied 
+for  that subscriptions are graphically present. 
+
+ !adminguide/Dashboard/1.png!
+
+ {code} 
+
+Dashboard contain following summary:
+
+ *Usage cost*
+
+   Cloud accounts billable items charges for a previous day is displayed in this 
+section on dashboard with date information.
+
+ *Current Month cost*
+
+  Cloud accounts billable items charges for a current month is displayed in this
+section on dashboard with month information.
+
+*Current month payments*
+
+   Cloud accounts payments made for current month summary is displayed in this 
+section.
+
+*Credit limit status *
+
+   It contains summary of credit limit exceed accounts list.
+
+*Current Month pending Payments*
+ 
+   It contains summary of Payments pending accounts list and total payments pending
+
+*Income Forecast *
+
+    It contains summary estimate income for next quartley,halfly and annual 
+forecast.
+
+*System Overview*
+
+    It contains fogpanel running version.
+ 
+*Account status*
+
+    It contains  accounts summary with the base of account status like 
+active,disable etc..
+
+*Current month Income *
+
+    It contains billable items and recurring/custom item summary for current 
+month usage cost for cloud accounts.
+
+*Daily Usage Cost*
+
+    It contains cloud accounts current billing cycle day comparison chart. 
+
+{code}
+ 

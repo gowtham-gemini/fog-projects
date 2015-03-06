@@ -1,0 +1,7 @@
+*Health*
+
+   It provide status of current services. If any service in maintenance.
+It alert user as well as provide detail describe for the cause. 
+
+  
+   !userguide/cloud-user/health/1.png!

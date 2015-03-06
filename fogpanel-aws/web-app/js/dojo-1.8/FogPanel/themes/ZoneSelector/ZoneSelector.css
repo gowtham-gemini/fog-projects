@@ -1,0 +1,32 @@
+ .zone-cont {
+     display:block;
+ }
+ 
+.zone-cont ul { 
+    margin-left:0px;
+}
+
+.zone-cont ul li { 
+    border-top: 0px !important;    
+    border-bottom:1px solid #e7e8ea;
+    padding-left:0px !important;
+}
+
+.zone-cont ul li .zone-type {
+    margin-right:8px
+}
+
+.zone-cont ul li .zone-name {
+    display:block;
+}
+.zone_active {    
+   width:10px;height:4px;
+   background:#0bbc10;
+   float:left;
+   margin-top:4px;
+   margin-left:4px;
+   margin-right: 5px;
+   -webkit-border-radius: 5px 5px 5px 5px;
+   border-radius: 5px 5px 5px 5px; 
+   height: 10px;
+}

@@ -1,0 +1,26 @@
+<div class="dojoxGridFCBox">
+	<div class="dojoxGridFCBoxSelCol" dojoAttachPoint="selColNode">
+		<div class="control-group horizontalcontent">
+			<span class="dojoxGridFCBoxField control-label">${_colSelectLabel}</span>
+			<div class="controls updatable elements">
+				<select dojoAttachPoint="_colSelect" dojoType="dijit.form.Select" 
+					class="dojoxGridFCBoxColSelect"
+					dojoAttachEvent="onChange:_onChangeColumn">
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="dojoxGridFCBoxCondition" dojoAttachPoint="condNode">
+		<div class="control-group horizontalcontent">
+			<span class="dojoxGridFCBoxField control-label">${_condSelectLabel}</span>
+			<div class="controls updatable elements">
+				<select dojoAttachPoint="_condSelect" dojoType="dijit.form.Select" class="dojoxGridFCBoxCondSelect" dojoAttachEvent="onChange:_onChangeCondition">
+				</select>
+			</div>
+		</div>
+		<div class="dojoxGridFCBoxCondSelectAlt" dojoAttachPoint="_condSelectAlt" style="display:none;"></div>
+	</div>
+	<div class="dojoxGridFCBoxValue" dojoAttachPoint="valueNode">
+		<span class="dojoxGridFCBoxField control-label">${_valueBoxLabel}</span>
+	</div>
+</div>

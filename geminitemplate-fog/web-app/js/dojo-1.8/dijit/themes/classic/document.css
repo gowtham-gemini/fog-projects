@@ -1,0 +1,41 @@
+@import url("../../../dojo/resources/dojo.css");
+/* ======= Styling for the document itself (overriding dojo.css) ======== */
+.classic {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: .688em;
+  color: #ffffff;
+}
+/* Headings */
+.classic h1 {
+  font-size: 1.545em;
+  margin-bottom: 0.727em;
+}
+.classic h2 {
+  font-size: 1.364em;
+  line-height: 1.455em;
+  margin-top: 1em;
+  margin-bottom: 0.60em;
+  font-weight: normal;
+}
+.classic h3,
+.classic h4,
+.classic h5,
+.classic h6 {
+  font-size: 1.091em;
+  font-weight: normal;
+}
+/* paragraphs, quotes and lists */
+.classic p {
+  line-height: 1.3em;
+}
+/* pre and code */
+.classic pre, .classic code {
+  font-family: inherit;
+  background-color: #264460;
+  border: 1px solid #d3d3d3;
+}
+/* tables */
+.classic table.dojoTabular thead, .classic table.dojoTabular tfoot {
+  background-color: #264460;
+  border: 1px solid #d3d3d3;
+}

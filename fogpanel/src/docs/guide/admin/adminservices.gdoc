@@ -1,0 +1,29 @@
+Fogpanel provide layer for account to make use of the cloud. This means not just 
+a account UI, but a set of options and resources that account can choose from, 
+such as templates for creating virtual machines, disk storage, and more. 
+
+A account creating a new instance can make a variety of choices about its 
+characteristics and capabilities.Fogpanel provides several ways to present account
+with choices when creating a new instance. 
+
+*Fogpanel provide following services for Account*:
+
+*Computation service:*  
+You can choose CPU speed, number of CPUs, RAM size, tags 
+on the root disk, cost and other choices to create computation plans for accounts. 
+Account user can choose this plans to create Instance. 
+
+                    !adminguide/services/0.png!
+
+*Storage service:*
+
+ You can choose disk size, tag and cost and other choices to 
+create storage plans for user. User choose this plans to create data disks.
+3.Misc service: It contain service of snapshot,bandwidth,ipaddress,vmsnapshot. 
+You can setup cost for those services.User can charge while use those services.
+4.Templates service: It provide templates service for users, templates is a OS 
+images,user can choose template when creating a new instance. You can code 
+charges for special template while uploading. If users use those special 
+templates fogpanel charges it.
+
+

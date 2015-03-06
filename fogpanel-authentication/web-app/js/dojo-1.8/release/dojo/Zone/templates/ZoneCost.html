@@ -1,0 +1,49 @@
+<div class="zoneCostWidget">   
+    <div  class="row-fluid" data-dojo-attach-point="zoneCostList">
+        <div class="span4 zone-cost-boxcont zone_cost">
+            <div class="row-fluid">
+                <div class="span12 zone_cost_row_1">
+                    <div class="control-group">
+                        <label  class="control-label costLabel" style="" data-dojo-attach-point="costLabelNode">VM Running Cost/Month:</label>
+                        <div class="controls elements"><input  type="number" data-dojo-attach-point="zoneCostNode"></div>
+                    </div>
+                </div>
+                <div class="span12 zone_cost_row_2">                   
+                    <label class="hideCost control-label" data-dojo-attach-point="runningCost">VM Running Cost/HR</label>
+                    <span data-dojo-attach-point = "unitCostNode" class="unitCost span3"> 0.00000</span>
+                </div>
+            </div>   
+            </div>           
+    <div class="span4 zone-cost-boxcont min_cost" data-dojo-attach-point="minCostContainer">    
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="control-group">
+                    <label  class="control-label costLabel" data-dojo-attach-point="vmStopageLabel">Vm Stopage Cost/Month:</label>
+                    <div class="controls elements"><input type="number" data-dojo-attach-point="minCostNode"></div>
+                </div>
+            </div>
+            <div class="span12">
+                <label class="hideCost control-label" data-dojo-attach-point="stopCost">VM Stopage Cost/HR</label>
+                <span data-dojo-attach-point = "stopageCostNode" class="unitCost hideCost span3"> 0.00000</span>
+            </div>
+        </div>                    		       
+    </div>
+    <div class="span4 zone-cost-boxcont setup_cost" data-dojo-attach-point="setupCostContainer">
+        <div class="row-fluid">
+            <div class="span12">
+                <div  class="control-group">
+                    <label  class="control-label costLabel" data-dojo-attach-point="vmSetupLabel">Setup Cost:</label>
+                    <div class="controls elements"><input  type="number" data-dojo-attach-point="setupCostNode"></div>
+                </div>
+            </div>            
+        </div>
+    </div>        
+    <div  class="control-group">                                 
+        <span data-dojo-attach-point="tempZoneCost" class="costLabel"></span>
+    </div>         
+    <span data-dojo-attach-point="zoneNameNode"  style="display: none">ZoneName</span>
+    <span data-dojo-attach-point ="zoneId" style="display: none"></span>    
+    <span data-dojo-attach-point="tempSetupCost" class="" style="display: none">0</span>   
+    <span data-dojo-attach-point="tempMinCost" class="" style="display: none">0</span>  
+    </div>
+ </div>

@@ -1,0 +1,49 @@
+Fog-panel version 0.1.1
+
+*Userpanel features:*
+
+# Pay-as you use billing
+# Credit limit for each user.
+# User self service portal
+# Interactive Dashboard with reousrce compusation,usage,payment etc.. items with graphical representation 
+# Easy instance management action like create vm,start.stop,restart,attachiso,delete,changeservice etc..
+# Handy storage management to create volumes,attach,detach and delete volumes,
+# User friendly backup management to backup Instance disks and extra disk attached for instances.
+# Create volumes from Instance disks.
+# Each Instance have seprate fiewall.
+# Portal ssh-key service action like generatekey,reset-key,delete-key and change instance ssh-key options.
+# Bandwidth usage statics for each instance
+# Easy aquire/release feature of secondary ips for instances.
+# Service health status monitor
+# User aquired resource accurate hourly billing
+# Fewer Payment gateway support like paypal etc..
+# User billied resource analyisis tools.
+# Alerts and event management for user
+# Easy support management
+# Interactive Template store like amazon market place
+# Simplify cloud management through UI/UX
+
+*Admin panel features:*
+
+# Billiable item based resource billing
+# Flexiable invoice creation modes.
+# Add recurring and custom itemsa for a user or bulk of users.
+# Client management through support tickets.
+# Discount for billiable items
+# Flexiable method of applying late fees.
+# Trail management
+# Easy configuration management
+# Analyasits tool for generation report for admin or group of user or particular user.
+# Plan based services
+# Post-paid,prepaid and monthly method of billing support.
+# Admin user friend template store and easy options to upload templates.
+# Both xenserver and kvm hypervisor support. 
+# Account Management with several automated features like enable,disable etc..
+# Zone based billing
+# Easy cloud management without login into cloudstack
+# Resource management tool
+# Activity management 
+# Power full control of user vms management
+# Enterprise architeature to handle large number of request.
+
+ 

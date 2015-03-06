@@ -1,0 +1,27 @@
+.ListContainer {
+   background: #fff;
+    height: 100px;
+    width: auto;
+    border: 1px solid #000000;
+    margin: 5px 5px 5px 5px;
+  
+} 
+
+.ListContainer:hover {
+    cursor: pointer;
+    background: #316AC5;
+}
+
+.ListContainer h1 {
+    margin-top: 0;
+   
+}
+
+.ListContainer p {
+    margin-bottom: 0;
+    margin-right: 5px;
+    margin-top: -20px;
+    font-family: sans-serif;
+    font-size: 14px;
+   
+}

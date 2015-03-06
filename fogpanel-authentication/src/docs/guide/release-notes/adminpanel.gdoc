@@ -1,0 +1,176 @@
+*Admin panel Faq:*
+
+1. *how fogpanel bill cloudstack resources?*
+
+    Fogpanel uses cloudstack api to get usage record from cloudstack-usage table 
+    and bill cloudstack-users resources.
+
+2. *what is billable item?*
+
+    Billable item represents an item that is to be billed. 
+    Billable items are pre-built by fogpanel.Admin users are unable to add it.
+
+3. *what are the types of billable items?*
+
+    Each Billable item is mapped to services. 
+    Based on services billable item are category into two master types those are 
+    * Cloud services based billable item
+    * Billing services based billable item.
+
+     Cloud-services based billable item contain following items:
+
+      * computation offer
+        This item is mapped to running Vm service
+      * Disk offer
+        This item is mapped to Storage service.          
+      * Snapshot
+        This item is mapped to Snapshot service.
+      * Template
+        This item is mapped to template service.
+      * Bandwidth
+        This item is mapped to Bandwidth service.
+      * Stopped Instance
+        This item is mapped to stopped Instance service.
+      * Set-upcost for Instance
+        This item is mapped to setup instance service.
+      * Secondary-Ip cost
+        This item is mapped to secondary ip service.
+      * Vm-snapshot
+        This item is mapped to vm-snapshot service.
+      * Monthly-Instance
+        This item is mapped to Monthly instance service.
+      * MOnthly-volume
+        This item is mapped to MOnthly volume service.
+
+     Billing-services based billable item contain following items:
+
+      * Discount 
+      * Late fee
+      * Custom item
+      * Recurring item
+
+ 4.  *what are invoicing mode?*
+
+    In fogpanel invoice are generated in two mode for user based on invoice mode setting: those are:
+    * Fixed Invoice mode:
+      In this mode invoice is generated on particular day of every month for all of users.
+    * Flexible Invoice mode or floating invoice mode:
+      In this mode invoice is generated based on number of days of create the first vm.   
+      if you set flexible invoice mode day as 10. User have sign-in and created 
+      first vm in their account after 10 days invoice is generated. 
+      Note:- In fogpanel invoice is generated after first vm is created. 
+
+5. *what is invoice type?*
+
+    Invoices are the method whereby businesses bill and request payment from clients
+    In fogpanel two types of invoice type is avaliable those are:
+             * Draft Invoice
+                This invoice type contain current month service usage stat for cloud user.
+             * Final invoice
+                This invoice contain services used for previous month. User must pay bill for Final invoice.
+
+6. *what is service billing?*
+
+    Service billing is the method how fogpanel generate bill for resource. In fogpanel two type of service billing method is  have:
+    Hourly(metering):
+    Resource are chargeable based on hourly like electricity billing. 
+        Billable item applicable for hourly charges.
+          * Computation offer
+          * Disk offer
+          * Template
+          * Stopped Instance
+          * Vm-snapshot
+          * Templates
+
+        Monthly(Periodic):
+        Resource are chargeable based on monthly. It is like dedicated server billing. 
+         if you subscribe for server. You can use that subscribe server or not. 
+         you need to pay bill for datacenter monthly. Following billable item are applicable for monthly charges.
+
+         * Monthly-Instance
+         * Monthly-volume
+         * Custom item
+         * Recurring item
+         * Late fee
+         * Secondary Ip cost
+         * Setup cost Monthly ( One time chargable)
+         * Templates ( Charge both monthly & onetime&Hourly)
+         * Bandwidth
+
+7. *what are account types in fogpanel?*
+
+    Fogpanel have two account types those are:
+    * Trial account -- This account type is use to boost user sigmup.
+    * Retail account- Normal cloud account. 
+
+8. *what is trail management? can i change values provide in the trail management?*
+              
+    Nothing but trail account resource control management. At anytime you can 
+    change resource control limit value. if you change those values it reflect
+    for new trail signup users only not reflect to existing trial account users.
+
+9. *what is retail management? can i change values provide in the retail management?*
+
+    In retail management you need to provide credit limit. At any time you 
+    change retail account credit limit values. It reflect for new retail user signup.
+
+10. *what is credit card processing?*
+
+    Once the payment gateway accepts the transaction, this service records the transaction, removes funds from 
+   the credit cardholder’s account and deposits these into your merchant account.It apply only 
+   for retail account. if this option is enable user pay though fogpanel otherwise admin 
+   integrate third party billing via fogpanel api to process the payments.
+
+11. *how can i made manual payment?*
+
+    Fogpanel not support feature now. in future release we include this option.
+
+12. *can i edit tax percentage?*
+
+    At any time admin edit tax percentage but it reflect next billing cycle only.
+    In fogpanel admin map a tax to several billable item otherwise map a tax to a billable item.
+ 
+13. *what is promotion code?*
+
+    Promotion code is nothing but a credit provide for accounts. Trial account need promo code as mandatory. 
+    Retail account not need promo code. It is optional.
+
+14. *what are payment gateway your fogpanel support?*
+
+    Currently fogpanel support pay-pal only. In future release we are integrate brain-tree,authorize.net etc..
+ 
+15. *how fog-panel discount work?*
+
+    In fog-panel admin user can provide discount for billable items and users too. Currently discount is 
+    provide for computation billable item and user only. In future release we increase this list.
+ 
+16. *how fog-panel apply late-fee?*
+
+    Fogpanel apply late-fee for  due invoice into flexible method late fee is applicable for 
+
+17. *what are currency fog-panel support?*
+
+    Fog-panel support pay-pal supported currencies.
+
+18. *can i setup dual currency in fog-panel?*
+
+    Fog-panel not support dual currency for billing. 
+
+19. *why fog-panel have recurring item and custom item?*
+
+    Depending on the type of products and services you offer, you may have a need to charge 
+    recurring fees for things like software licenses, subscription services, etc. 
+    You can use recurring item option to add those item for user.
+    Recurring item is bill on multiple billing cycle.
+    Custom item is bill per billing cycle only.
+
+20. *can i get reports from fog-panel billing?*
+ 
+    Yes you use option stats menu to get billable items extensive reports.
+
+ 
+
+
+
+
+

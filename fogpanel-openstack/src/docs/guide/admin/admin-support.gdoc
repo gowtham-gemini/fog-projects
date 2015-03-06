@@ -1,0 +1,11 @@
+    Service providers manage their clients sale,support,billing etc .. queries 
+through ticketing system. In fogpanel ticketing system is a fully featured desk 
+that contain departments,pre-defined reply etc.. features.  Based on 
+standard communication flows and features. we classified support system into
+following categorizes. Those are:
+
+ *Departments*
+ *Support Tickets*
+ *Ticket Reply*
+ *Ticket Status*
+

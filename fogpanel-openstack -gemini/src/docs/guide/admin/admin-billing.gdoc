@@ -1,0 +1,16 @@
+   In fogpanel each cloud infra resource like cpu,ram etc .. is a billable items. 
+Each billable item is treated as services for account user. This billing section 
+contain account users used billable items bills on monthly basics. In billing 
+we told bills as invoices also this section contain Account user payments for that 
+bills. In fogpanel billing we have provide provision for admin to add billable
+items for a user or set of users by them self. This section contain those admin 
+add items list too.   
+
+                   !adminguide/billing/0.png!
+
+ *Billing section menu contain following sub-menus:-*
+
+ *Invoice*
+ *Payments*
+ *Items*
+

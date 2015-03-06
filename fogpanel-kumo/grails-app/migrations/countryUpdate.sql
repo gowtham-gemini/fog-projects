@@ -1,0 +1,1 @@
+UPDATE country set country_name = "Aland Islands" where id = 2;

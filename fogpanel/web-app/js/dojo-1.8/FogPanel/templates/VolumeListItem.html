@@ -1,0 +1,17 @@
+<div style="display: inline-block" class="VolumeCointainer btn-info" data-dojo-attach-point="volumeWidget">     
+    <div class="row-fluid" data-dojo-attach-point="info">
+        <div class="row-fluid span12">
+            <span style="font-size: 25px;" class="span8" data-dojo-attach-point="diskSizeNode"></span>
+            <i style="float: right; cursor: pointer;" class="icon-share" data-dojo-attach-point="detachNode" title="${volumeDetachTitle}"></i>
+            <i style="float: right; display: none" class="icon-lock" title="${volumeRootTitle}" data-dojo-attach-point="rootNode"></i>
+        </div>
+        <div class="row-fluid span12">
+            <span style="overflow: hidden; text-overflow: ellipsis;" class="span8" data-dojo-attach-point="diskNameNode"></span>
+            <i style="float: right; display: block; cursor: pointer;" data-dojo-attach-point="snapshotNode" class="icon-camera"  title="${volumeSnapshotTitle}"></i>
+        </div>  
+    </div>
+    <div class="row-fluid span12" data-dojo-attach-point="loder"  style="display: none;">
+        <img title="${volumeSnapshotTitle}" data-dojo-attach-point="loderNode"
+                src="js/dojo-1.8/FogPanel/themes/VolumeListItem/images/loader.gif" alt="${volumeLoaderTitle}" height="65" width="65"> 
+    </div>
+</div>

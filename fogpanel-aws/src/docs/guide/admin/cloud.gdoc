@@ -1,0 +1,15 @@
+  This section contain list of users aquired resources and over all statistics 
+of cloudstack resources are shown in details. Cloud option is use for admin to 
+closely monitor his cloudstack infrastructure resource with the base of 
+this information. They add extra resource in cloud. This section is sub-divided 
+into following category those are:
+
+                          !adminguide/cloud/0.png!
+
+
+ *Infrastructure*
+ *Firewall*
+ *Resource Monitoring*
+ *Maintenance*
+
+

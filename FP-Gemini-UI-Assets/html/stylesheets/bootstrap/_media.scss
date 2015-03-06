@@ -1,0 +1,15 @@
+@media only screen and (max-width:479px) {
+footer p{
+	padding-left:0;
+}
+#loginForm, #loginForm .form-control{
+	width:100%;
+}
+#loginForm label{
+	display:block;
+}
+#loginForm .form-btn{
+	float:none;
+	width:100%;
+}
+}

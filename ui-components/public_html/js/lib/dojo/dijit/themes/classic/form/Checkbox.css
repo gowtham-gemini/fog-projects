@@ -1,0 +1,73 @@
+/* CheckBox
+ * 
+ * Styling CheckBox mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitCheckBox|.dijitCheckBoxIcon - for border, padding, width|height and background image
+ * 
+ * 2. CheckBox within ToggleButton
+ * 		.dijitToggleButton|.dijitToggleButtonChecked .* - for background image
+ * 
+ * 3. Checked state
+ * 		.dijitCheckBoxChecked - for checked background-color|image
+ * 		.dijitToggleButtonChecked - for border, background-color|image, display and width|height
+ * 
+ * 4. Hover state
+ * 		.dijitCheckBoxHover|.dijitCheckBoxCheckedHover - for background image
+ * 
+ * 5. Disabled state
+ * 		.dijitCheckBoxDisabled|.dijitCheckBoxCheckedDisabled - for background image
+ */
+.classic .dijitToggleButton .dijitCheckBoxIcon {
+  background-image: url("../images/checkmarkNoBorder.png");
+}
+.dj_ie6 .classic .dijitToggleButton .dijitCheckBoxIcon {
+  background-image: url("../images/checkmarkNoBorder.gif");
+}
+.classic .dijitCheckBox, .classic .dijitCheckBoxIcon {
+  background-image: url("../form/images/sprite.png");
+  /* checkbox sprite image */
+
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  margin: 0 2px 0 0;
+  padding: 0;
+}
+.dj_ie6 .classic .dijitCheckBox, .dj_ie6 .classic .dijitCheckBoxIcon {
+  background-image: url("../form/images/checkboxAndRadioButtons_IE6.png");
+  /* checkbox sprite image */
+
+}
+.classic .dijitCheckBox, .classic .dijitToggleButton .dijitCheckBoxIcon {
+  /* unchecked */
+
+  background-position: 0 -260px;
+}
+.classic .dijitCheckBoxChecked, .classic .dijitToggleButtonChecked .dijitCheckBoxIcon {
+  /* checked */
+
+  background-position: -114px -260px;
+}
+.classic .dijitCheckBoxDisabled {
+  /* disabled */
+
+  background-position: -154px -260px;
+}
+.classic .dijitCheckBoxCheckedDisabled {
+  /* disabled but checked */
+
+  background-position: -171px -260px;
+}
+.classic .dijitCheckBoxHover {
+  /* hovering over an unchecked enabled checkbox */
+
+  /*	background-position: -45px;*/
+
+}
+.classic .dijitCheckBoxCheckedHover {
+  /* hovering over an checked enabled checkbox */
+
+  /*	background-position: -30px;*/
+
+}

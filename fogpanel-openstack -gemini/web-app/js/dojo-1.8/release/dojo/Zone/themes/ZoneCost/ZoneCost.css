@@ -1,0 +1,36 @@
+.zoneCostWidget {
+    /*width: 650px;*/
+    margin-top: 5px;
+}
+
+/*.zoneCostWidget .dijitTextBox {
+    width: 75px;
+    margin-left: 30px;
+}*/
+
+.zoneName {
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+
+.unitCost {
+    font-size: 18px;
+    color: #FF9900;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.hideCost {
+    display: none;
+}
+
+.costLabel {
+    color: #3CA9E8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+

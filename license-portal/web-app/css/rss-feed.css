@@ -1,0 +1,21 @@
+#container {
+    font-family: Arial,Helvetica,sans-serif;
+    background: none repeat scroll 0 0 #373839;
+    color: #AAAAAA;
+    font-size: 13px;
+    padding: 10px;
+}
+
+#content .feed_item {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 0px 10px 10px 0px;
+    border-bottom: 1px solid #404040;
+}
+
+#content .feed_item_title a {
+    font-size: 13px;
+    font-family: Arial,Helvetica,Garuda,sans-serif;
+    color: #AAAAAA;
+    text-decoration: none;
+}
